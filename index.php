@@ -17,7 +17,7 @@
       <div class="container">
         <a class="navbar-brand" href="index.php">¡House rent Armenia!</a>
         <ul class="menu">
-    <li><a href="#">HOME</a></li>
+    <li><a href="#">HOMEs</a></li>
     <li><a href="#">HOUSES</a></li>
                 <li><a href="#">BOOKING</a></li>
     <li><a href="#">SERVICES</a>
@@ -43,7 +43,7 @@
     <div class ="card" >
         <img src="assests/img/photo1.jpg">
         <h4>Casa Camprestre </h4>
-        <P>Agradable casa para hasta 5 huéspedes </P>
+        <P>Ademas papichulo lo espera! </P>
         <span>
             <i class="fa fa-map-marker"></i>
             EJE CAFETERO, FINLANDIA
