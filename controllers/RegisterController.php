@@ -13,12 +13,20 @@ require_once "../views/Register.php";
 
 
  $user  = new User($name_user,$password,$email, $city, $rol, $pdata);
- $user->createUser();
-
- header('Location:../index.php');
-  
  
+ 
+ $user_response = $user->createUser();
 
+
+
+ if ($user_response ==1){
+    header('Location: ../views/Register.php');
+ }  
+ else{
+    header('Location:../index.php');
+ }
+
+ 
 
 ?>
 
