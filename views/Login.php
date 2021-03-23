@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../assests/css/login.css">
 </head>
 <body>
-<div id="cd-signup" class="form">
+<div class="form">
         <form class="cd-form">
             <h1>Inicia Sesion</h1>
             <p class="fieldset">
@@ -28,11 +28,11 @@
             </p>
 
             <p class="fieldset">
-                <label class="image-replace cd-password" for="signup-password">Password</label>
+                <label class="image-replace cd-password" for="signup-password">Contraseña</label>
                 </Br>
                 </Br>
                 <i class="fas fa-key"></i>
-                <input class="text" id="signup-password" type="password"  placeholder="Password" name="signup-password" id="signup-password" required>
+                <input class="password" id="signup-password" type="password"  placeholder="contraseña" name="signup-password" id="signup-password" required>
                 <a href="#0" class="hide-password"><i class="fas fa-eye"></i></a>
             </p>
             <p class="fieldset">

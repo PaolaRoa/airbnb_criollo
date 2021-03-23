@@ -17,10 +17,15 @@ body{
 .form{
     width: 90%;
     padding: 15px;
+    margin: 10px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cd-form{
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 255, 255);
     margin-top: 150px;
     margin: 20px;
     padding: 30px;
@@ -53,18 +58,23 @@ body{
     border: none;
 }
 
+.fieldset .password{
+    font-size: 20px;
+    width: 60%;
+    padding: 10px;
+    border: none;
+}
+
 .fieldset .button{
     background-color: #FF914D;
     color: white;
     border: none;
     text-align: center;
-    margin: 10px;
+    margin: 10px 40px;
     padding: 10px;
     border-radius: 20px;
     width: 80%;
     
-    align-items: center;
-    justify-content: center;
 }
 
 .fieldset .button:hover{

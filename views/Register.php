@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="../assests/css/register.css">
 </head>
 <body>
-    <div id="cd-signup" class="form">
-        <form class="cd-form">
+    <div class="form">
+        <form class="cd-form" method="POST" action="../controllers/RegisterController.php" >
             <h1>Registrate</h1>
             <p class="fieldset">
-                <label class="image-replace cd-username" for="signup-username">Username</label>
+                <label class="image-replace cd-username" for="signup-username">Nombre de usuario</label>
                     </Br>
                     </Br>
                 <i class="fas fa-user"></i>
-                <input class="text" id="signup-username" type="text" placeholder="Username" name ="signup-username" id="signup-username" required>
+                <input class="text" id="signup-username" type="text" placeholder="Nombre de usuario" name ="signup-username" id="signup-username" required>
             </p>
 
             <p class="fieldset">
@@ -35,18 +35,26 @@
             </p>
 
             <p class="fieldset">
-                <label class="image-replace cd-password" for="signup-password">Password</label>
+                <label class="image-replace cd-password" for="signup-password">Contraseña</label>
                 </Br>
                 </Br>
                 <i class="fas fa-key"></i>
-                <input class="text" id="signup-password" type="password"  placeholder="Password" name="signup-password" id="signup-password" required>
+                <input class="password" id="signup-password" type="password"  placeholder="Contraseña" name="signup-password" id="signup-password" required>
                 <a href="#0" class="hide-password"><i class="fas fa-eye"></i></a>
             </p>
+            <p class="fieldset">
+                <label class="image-replace cd-username" for="signup-username">Ciudad</label>
+                    </Br>
+                    </Br>
+                <i class="fas fa-city"></i>
+                <input class="text" id="signup-username" type="text" placeholder="Ciudad" name ="signup-username" id="signup-username" required>
+            </p>
+
             <p>
-                <label>Rol</label>
+                <label class="image-replace cd-password" for="signup-rol">Rol</label>
                     </Br>
                     </Br>
-                <select class="form-select" aria-label="Default select example" name="rol"  id="rol">
+                <select class="form-select" aria-label="Default select example" name="signup-rol"  id="signup-rol">
                     <option selected>Selecciona en rol</option>
                     <option value="0">Arrendador</option>
                     <option value="1">Arrendatario</option>
@@ -59,13 +67,12 @@
             </p>
 
             <p class="fieldset">
-                <input class="button" type="submit" value="Create account">
+                <input class="button" type="submit" value="Crear cuenta">
             </p>
             <p>¿Ya tienes cuenta?
                 <a class="link" href="../views/Login.php">Iniciar Sesion</a>
             </p>
         </form>
-        </div> 
-     </div>
+    </div>
 </body>
 </html>
