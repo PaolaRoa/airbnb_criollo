@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+   }
+   
+   body{
+    background: #000000;
+   }
+   
+   /* --------------- */
+   /*  HEADER&MENU    */
+   /* --------------- */
+   header{
+    width: 100%;
+   }
+   
+   .navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+   }
+   
+   .navegacion ul{
+    list-style: none;
+   }
+   
+   .menu > li{
+    position: relative;
+    display: inline-block;
+   }
+   
+   .menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #fffbfb;
+    font-family: 'Open sans';
+    text-decoration: none;
+   }
+   
+   .menu li a:hover{
+    color: #05c54e;
+    transition: all .3s;
+   }
+   
+   /* Submenu*/
+   
+   .submenu{
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.514);
+    width: 180%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+   }
+   
+   .submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+   }
+   
+   .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+   }
+   
+   
+   /* --------------- */
+   /*  CARDS          */
+   /* --------------- */
+   
+   /*.contenedor-tarjetas {
+    width: 100%;
+    max-width: 1200px;
+    height: 430;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    
+     }*/
+     
+     .card{
+    width: 320px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin:20px;
+    text-align: center;
+    transition: all 0.25s;
+    font-family: 'Bodoni Moda', serif;
+    color: rgb(2, 2, 2);
+    background-color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    float:left;
+     
+     }
+     
+     .card:hover{
+    transform: translatey(-2%);
+    box-shadow: 0 12 px 16 px rgba (0, 0, 0, 0.2);
+     
+     }
+     
+     .card img{
+    width: 320px;
+    height: 320px;
+    border-radius: 30px;
+   
+    
+     }
+     
+     .contenedor-tajetas .card h4 {
+    font-size: small;
+     }
+     
+     .contenedor-tajetas .card p {
+    padding: 0 1rem;
+    font-size: 15%;
+    font-weight: 300;
+     }
+   
