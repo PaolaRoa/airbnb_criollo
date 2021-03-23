@@ -30,7 +30,8 @@ class User{
     public function validationEmail(){
         $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email'");
 
-        $estmt= $stmt -> execute();
+        $stmt -> execute();
+        $estmt= $stmt->rowCount();
 
         return $estmt;
     }
@@ -38,15 +39,15 @@ class User{
     // CREATE
     public function  createUser(){
 
-        if (self::validationEmail()){
-            return 1;
-        }
-        else{
+        try {
             $stmt = Conexion::connect()->prepare("INSERT INTO users(nameu , email , passwords, city, pdata, rol) VALUES ('$this->name_user','$this->email','$this->password', '$this->city',  $this->pdata,$this->rol)");
             $stmt -> execute();
+            return 1;
+        } catch (\Throwable $th) {
             return 0;
         }
 
+            
     }
 
 }
