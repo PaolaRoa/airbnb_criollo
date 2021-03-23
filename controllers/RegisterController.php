@@ -8,7 +8,7 @@ require_once "../views/Register.php";
  $password = $_POST["signup-password"];
  $email =  $_POST["signup-email"];
  $city =  "Bogota";
- $rol =  $_POST["rol"];
+ $rol =  $_POST["signup-rol"];
  $pdata= 1;
 
 
