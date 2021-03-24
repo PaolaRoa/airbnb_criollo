@@ -72,5 +72,39 @@
         <div class="rent-price pull-left">$200</div>
         <a href="#">VER MAS</a>   
     </div>
+    <div class ="card" >
+        <img src="assests/img/photo1.jpg">
+        <h4>Casa Camprestre </h4>
+        <P>Agradable casa para hasta 5 huéspedes </P>
+        <span>
+            <i class="fa fa-map-marker"></i>
+            EJE CAFETERO, FINLANDIA
+        </span>
+        <span>
+        <i class="fa fa-bed"></i> 3 Bedrooms
+        </span>
+        <span>
+        <i class="fa fa-bath"></i>2 Bathroom
+        </span>
+        <div class="rent-price pull-left">$200</div>
+        <a href="#">VER MAS</a>   
+    </div>
+    <div class ="card" >
+        <img src="assests/img/photo1.jpg">
+        <h4>Casa Camprestre </h4>
+        <P>Agradable casa para hasta 5 huéspedes </P>
+        <span>
+            <i class="fa fa-map-marker"></i>
+            EJE CAFETERO, FINLANDIA
+        </span>
+        <span>
+        <i class="fa fa-bed"></i> 3 Bedrooms
+        </span>
+        <span>
+        <i class="fa fa-bath"></i>2 Bathroom
+        </span>
+        <div class="rent-price pull-left">$200</div>
+        <a href="#">VER MAS</a>   
+    </div>
 </body>
 </html>
