@@ -7,7 +7,7 @@ require_once "../views/Register.php";
  $name_user = $_POST["signup-username"];
  $password = $_POST["signup-password"];
  $email =  $_POST["signup-email"];
- $city =  "Bogota";
+ $city =  $_POST["city"];
  $rol =  $_POST["signup-rol"];
  $pdata= 1;
 
@@ -23,14 +23,12 @@ require_once "../views/Register.php";
     </script>';
  }
  else{
-   //header('Location: ../views/Register.php');
    echo'<script type="text/javascript">
-    alert("este correo ya esta registrado");
-    </script>';
+   alert("este correo ya esta registrado");
+   </script>';
  }
  
 ?>
 
 
 <?php ob_end_flush();?>
-

@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="form">
-        <form class="cd-form" method="POST" action="../controllers/RegisterController.php" >
+        <form class="cd-form" method="POST" id="register-form" action="../controllers/RegisterController.php" >
             <h1>Registrate</h1>
             <p class="fieldset">
                 <label class="image-replace cd-username" for="signup-username">Nombre de usuario</label>
@@ -46,9 +46,11 @@
                 <label class="image-replace cd-username" for="dpto">Departamento</label>
                 <i class="fas fa-city"></i>
                 <select class="form-select" aria-label="Default select example" name="dpto"  id="dpto">
+                    <option value="Bogotá D.C" selected="selected">Bogotá D.C</option>
                 </select>
                 <label class="image-replace cd-username" for="city">Ciudad</label>
                 <select class="form-select" aria-label="Default select example" name="city"  id="city">
+                    <option value="Bogotá D.C" selected="selected">Bogotá D.C</option>
                 </select>
                 
             </p>
