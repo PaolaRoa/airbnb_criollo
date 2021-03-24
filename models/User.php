@@ -47,6 +47,12 @@ class User{
             return 0;
         }
 
+    public function showUser(){
+        $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email'");
+
+        $stmt -> execute();
+        
+    }
             
     }
 
