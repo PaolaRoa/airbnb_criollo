@@ -13,13 +13,14 @@
   <body>
   <!-- HEADER AND MENU -->
   <header>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-light" >
+  
       <div class="container">
-        <a class="navbar-brand" href="index.php">¡House rent Armenia!</a>
+      <img class="logo" src="assests/img/logo.png">
         <ul class="menu">
-    <li><a href="#">HOMEs</a></li>
+    <li><a href="#">HOME</a></li>
     <li><a href="#">HOUSES</a></li>
-                <li><a href="#">BOOKING</a></li>
+                
     <li><a href="#">SERVICES</a>
      <ul class="submenu">
       <li><a href="#">ANUNCIAR CASAS EN ALQUILER</a></li>
@@ -35,7 +36,21 @@
       </div>
     </nav>
     <!-- HEADER AND MENU -->
-   
+ 
+    <div class="formdate">
+       <form name="formulario" method="post" action="/send.php">
+         <!-- Campo de entrada de fecha -->
+         Selecciona la fecha de llegada: 
+        <input type="date" name="fecha" />
+        <!-- Campo de entrada de hora -->
+        Selecciona la hora de chekout:
+        <input type="date" name="fecha" />
+      </form>
+    </div>
+
+    <div class ="title">
+        <h1>ARMENIA EL MEJOR DESTINO</h1>
+    </div>
 
     <!-- CARDS HOUSES -->
     <div class="contedor-tarjetas"> 
@@ -43,23 +58,6 @@
     <div class ="card" >
         <img src="assests/img/photo1.jpg">
         <h4>Casa Camprestre </h4>
-        <P>Ademas papichulo lo espera! </P>
-        <span>
-            <i class="fa fa-map-marker"></i>
-            EJE CAFETERO, FINLANDIA
-        </span>
-        <span>
-        <i class="fa fa-bed"></i> 3 Bedrooms
-        </span>
-        <span>
-        <i class="fa fa-bath"></i>2 Bathroom
-        </span>
-        <div class="rent-price pull-left">$200</div>
-        <a href="#">Leer más</a>   
-    </div>
-    <div class ="card" >
-        <img src="assests/img/photo1.jpg">
-        <h4>Casa Camprestre </h4>
         <P>Agradable casa para hasta 5 huéspedes </P>
         <span>
             <i class="fa fa-map-marker"></i>
@@ -72,24 +70,7 @@
         <i class="fa fa-bath"></i>2 Bathroom
         </span>
         <div class="rent-price pull-left">$200</div>
-        <a href="#">Leer más</a>   
-    </div>
-    <div class ="card" >
-        <img src="assests/img/photo2.jpg">
-        <h4>Casa Camprestre </h4>
-        <P>Agradable casa para hasta 5 huéspedes </P>
-        <span>
-            <i class="fa fa-map-marker"></i>
-            EJE CAFETERO, FINLANDIA
-        </span>
-        <span>
-        <i class="fa fa-bed"></i> 3 Bedrooms
-        </span>
-        <span>
-        <i class="fa fa-bath"></i>2 Bathroom
-        </span>
-        <div class="rent-price pull-left">$200</div>
-        <a href="#">Leer más</a>   
+        <a href="#">VER MAS</a>   
     </div>
 </body>
 </html>
