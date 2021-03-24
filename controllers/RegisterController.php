@@ -16,10 +16,17 @@ require_once "../views/Register.php";
  
  if($user->validationEmail()==0){
     $user->createUser();
-    header('Location: ../index.php');
+    //header('Location: ../index.php');
+    echo'<script type="text/javascript">
+    alert("Registro exitoso");
+    window.location.href="../index.php";
+    </script>';
  }
  else{
-   header('Location: ../views/Register.php');
+   //header('Location: ../views/Register.php');
+   echo'<script type="text/javascript">
+    alert("este correo ya esta registrado");
+    </script>';
  }
  
 ?>

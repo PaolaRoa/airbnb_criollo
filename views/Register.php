@@ -43,11 +43,14 @@
                 <a href="#0" class="hide-password"><i class="fas fa-eye"></i></a>
             </p>
             <p class="fieldset">
-                <label class="image-replace cd-username" for="signup-username">Ciudad</label>
-                    </Br>
-                    </Br>
+                <label class="image-replace cd-username" for="dpto">Departamento</label>
                 <i class="fas fa-city"></i>
-                <input class="text" id="signup-username" type="text" placeholder="Ciudad" name ="signup-username" id="signup-username" required>
+                <select class="form-select" aria-label="Default select example" name="dpto"  id="dpto">
+                </select>
+                <label class="image-replace cd-username" for="city">Ciudad</label>
+                <select class="form-select" aria-label="Default select example" name="city"  id="city">
+                </select>
+                
             </p>
 
             <p>
@@ -74,5 +77,6 @@
             </p>
         </form>
     </div>
+    <script src="../assests/js/dropdown.js"></script>
 </body>
 </html>
