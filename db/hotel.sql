@@ -172,5 +172,8 @@ UNLOCK TABLES;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
+alter table Bookings add total float;
+alter table Bookings drop houseId;
+ALTER TABLE Bookings
+ADD FOREIGN KEY(houseId) REFERENCES houses(idhouses);
 -- Dump completed on 2021-03-23 22:32:27
