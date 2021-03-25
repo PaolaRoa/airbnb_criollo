@@ -12,8 +12,9 @@ require_once "../views/Register.php";
  $pdata= 1;
 
 
- $user  = new User($name_user,$password,$email, $city, $rol, $pdata);
- 
+ $user  = new User();
+  $user->setUserRegister($name_user,$password,$email, $city, $rol, $pdata);
+
  if($user->validationEmail()==0){
     $user->createUser();
     //header('Location: ../index.php');
@@ -27,7 +28,7 @@ require_once "../views/Register.php";
    alert("este correo ya esta registrado");
    </script>';
  }
- 
+
 ?>
 
 
