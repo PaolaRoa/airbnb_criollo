@@ -20,20 +20,26 @@
         <nav class="navbar">
             <div class="container">
                 <a class="navbar-brand" href="../index.php">
-                    <img src="./assests/img/hotel2.png" />
+                    <img class="logo" src="./assests/img/hotel2.png" />
                 </a>
                 <ul class="menu">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">HOUSES</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                    <li><a href="./views/Register.php">LOG IN / REGISTRER</a></li>
+                    <li><a href="#">CONTAC</a></li>
                     <li><a href="#">SERVICES</a>
                         <ul class="submenu">
-                            <li><a href="#">ANUNCIAR CASAS EN ALQUILER</a></li>
-                            <li><a href="#">PODER RENTAR CASAS</a></li>
-                            <li><a href="#">CONTACTO ENTRE ALQUILADOR Y RENTADOR</a></li>
+                            <li><a href="#">Anunciar</a></li>
+                            <li><a href="#">Alquilar</a></li>
+                            <li><a href="#">Contactar</a></li>
                         </ul>
                     </li>
+                    <li><a href="#">LOG IN / REGISTRER</a>
+                        <ul class="submenu">
+                            <li><a href="#">Log In</a></li>
+                            <li><a href="/views/Register.php">Registrer</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
                 </ul>
             </div>
@@ -41,9 +47,20 @@
         <!-- HEADER AND MENU -->
     </header>
 
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="banner-content">
+            <h1>¡House rent Armenia!</h1>
+            <h2>Armenia es el punto de partida ideal para adentrarse en la Colombia cafetera. Es una invitación a vivir una experiencia urbana en medio del más bello ambiente natural.
+                Visitar Armenia es una invitación para disfrutar de la naturaleza y la vida. En la capital del Departamento del Quindío existe una delicada amalgama entre lo rural y lo urbano.</h2>
+
+        </div>
+    </div>
+
     <!-- CARDS HOUSES -->
     <div class="contedor-tarjetas">
 
+
         <div class="card">
             <img src="assests/img/photo1.jpg">
             <h4>Casa Camprestre </h4>
@@ -97,7 +114,8 @@
             <a href="#">VER MAS</a>
         </div>
 
-       
+
+
     </div>
     <!-- Footer -->
 
@@ -111,14 +129,20 @@
 
 
     <div class="col-md-12">
-        <ul class="social-network social-circle">
-            <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
+        <div class="social">
+            <ul class="social-network social-circle">
+                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+
+            <p class="copy">© The Best Team!</p>
+        </div>
     </div>
+
+
 
 </body>
 

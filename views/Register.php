@@ -74,7 +74,7 @@
                 <input class="button" type="submit" value="Crear cuenta">
             </p>
             <p>¿Ya tienes cuenta?
-                <a class="link" href="../views/Login.php">Iniciar Sesion</a>
+                <a class="link" href="index.php">Iniciar Sesion</a>
             </p>
         </form>
     </div>
