@@ -15,7 +15,7 @@ if($user->loginUserValidation()==0){
     echo "alert('no estas registrado')";
  }
  else{
-    echo "alert('esta en la base')";
+    header('Location: ../views/Lesseegalery.php');
  }
 
 ?>

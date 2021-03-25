@@ -10,29 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assests/css/styles.css">
   </head>
   <body>
-  <!-- HEADER AND MENU -->
-  <header>
-  <nav class="navbar navbar-dark bg-dark">
-      <div class="container">
-      <img src=""/>
-        <a class="navbar-brand" href="index.php">¡House rent Armenia!</a>
-        <ul class="menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">HOUSES</a></li>
-            <li><a href="#">BOOKING</a></li>
-            <li><a href="#">SERVICES</a>
-                <ul class="submenu">
-                    <li><a href="#">ANUNCIAR CASAS EN ALQUILER</a></li>
-                    <li><a href="#">PODER RENTAR CASAS</a></li>
-                    <li><a href="#">CONTACTO ENTRE ALQUILADOR Y RENTADOR</a></li>
-                </ul>
-            </li>
-            <li><a href="#">CONTACTO</a></li>
-            <li><a href="#">NOSOTROS</a></li>
-            <li><a href="./views/Register.php">REGISTRO</a></li>
-        </ul>
-      </div>
-    </nav>
+  
     <!-- HEADER AND MENU -->
     <header>
         <nav class="navbar navbar-light">
