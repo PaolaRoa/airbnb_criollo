@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="es">
+  <head>
     <meta charset="UTF-8">
     <title>¡CASAS EN RENTA ARMENIA!</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,9 +8,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- CSS STYLES INDEX -->
     <link rel="stylesheet" type="text/css" href="assests/css/styles.css">
-</head>
-
-<body>
+  </head>
+  <body>
+  <!-- HEADER AND MENU -->
+  <header>
+  <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+      <img src=""/>
+        <a class="navbar-brand" href="index.php">¡House rent Armenia!</a>
+        <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOUSES</a></li>
+            <li><a href="#">BOOKING</a></li>
+            <li><a href="#">SERVICES</a>
+                <ul class="submenu">
+                    <li><a href="#">ANUNCIAR CASAS EN ALQUILER</a></li>
+                    <li><a href="#">PODER RENTAR CASAS</a></li>
+                    <li><a href="#">CONTACTO ENTRE ALQUILADOR Y RENTADOR</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONTACTO</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="./views/Register.php">REGISTRO</a></li>
+        </ul>
+      </div>
+    </nav>
     <!-- HEADER AND MENU -->
     <header>
         <nav class="navbar navbar-light">
