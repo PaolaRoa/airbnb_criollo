@@ -64,11 +64,14 @@
    .submenu{
     position: absolute;
     background-color: #eb600a81;
-    width: 120%;
+    width: 110px;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
     list-style: none;
+
+    margin-left: 0px;
+    margin-right: 0px;
    }
    
    .submenu li a{
