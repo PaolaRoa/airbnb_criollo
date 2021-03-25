@@ -33,7 +33,7 @@ CREATE TABLE `bookings` (
   KEY `users` (`users`),
   CONSTRAINT `bookings_ibfk_1` FOREIGN KEY (`houses`) REFERENCES `houses` (`idhouse`),
   CONSTRAINT `bookings_ibfk_2` FOREIGN KEY (`users`) REFERENCES `users` (`iduser`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `houses` (
   KEY `additional_services` (`additional_services`),
   CONSTRAINT `houses_ibfk_1` FOREIGN KEY (`users`) REFERENCES `users` (`iduser`),
   CONSTRAINT `houses_ibfk_2` FOREIGN KEY (`additional_services`) REFERENCES `services` (`idservice`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +97,7 @@ CREATE TABLE `image` (
   PRIMARY KEY (`idimage`),
   KEY `houses` (`houses`),
   CONSTRAINT `image_ibfk_1` FOREIGN KEY (`houses`) REFERENCES `houses` (`idhouse`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,7 +123,7 @@ CREATE TABLE `services` (
   PRIMARY KEY (`idservice`),
   KEY `houses` (`houses`),
   CONSTRAINT `services_ibfk_1` FOREIGN KEY (`houses`) REFERENCES `houses` (`idhouse`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,7 @@ CREATE TABLE `users` (
   `rol` tinyint(1) DEFAULT NULL,
   `pdata` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`iduser`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
