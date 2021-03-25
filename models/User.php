@@ -14,8 +14,11 @@ class User{
     private $rol;
     private $pdata;
 
+    public function __construct(){
 
-    public function __construct($name_user,$password, $email, $city,$rol,$pdata){
+    }
+
+    public function setUserRegister($name_user,$password, $email, $city,$rol,$pdata){
         $this->name_user =$name_user;
         $this->password =$password;
         $this->email =$email;
@@ -24,6 +27,10 @@ class User{
         $this->pdata =$pdata;
     }
 
+    public function setUserLogin($email, $password){
+        $this->email =$email;
+        $this->password =$password;
+    }
 
     // VALIDATION EMAIL 
 
@@ -46,17 +53,17 @@ class User{
         } catch (\Throwable $th) {
             return 0;
         }
-
-    public function showUser(){
-        $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email'");
-
-        $stmt -> execute();
-        
-    }
-            
     }
 
-}
+    public function loginUserValidation(){
+           $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email' AND passwords='$this->password' ");
+           $stmt -> execute();
+           $estmt= $stmt->rowCount();
+           return $estmt;
+    }
+    }
+
+
 
 
 ?>
