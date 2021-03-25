@@ -5,7 +5,8 @@ require_once "../models/User.php";
 
 
 $email = $_POST["signup-email"];
-$password = $_POST["signup-password"];
+$rawPassword = $_POST["signup-password"];
+$password= hash('sha256', $rawPassword);
 
 
 $user  = new User();
