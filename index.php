@@ -23,20 +23,20 @@
                     <img class="logo" src="./assests/img/hotel2.png" />
                 </a>
                 <ul class="menu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">HOUSES</a></li>
-                    <li><a href="#">CONTAC</a></li>
-                    <li><a href="#">SERVICES</a>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Casas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Nosotros</a>
                         <ul class="submenu">
                             <li><a href="#">Anunciar</a></li>
                             <li><a href="#">Alquilar</a></li>
                             <li><a href="#">Contactar</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">LOG IN / REGISTRER</a>
+                    <li><a href="#">Inicia Sesión/Registrate</a>
                         <ul class="submenu">
-                            <li><a href="#">Log In</a></li>
-                            <li><a href="/views/Register.php">Registrer</a></li>
+                            <li><a href="./views/Login.php">ingresar</a></li>
+                            <li><a href="./views/Register.php">registro</a></li>
                         </ul>
                     </li>
 
