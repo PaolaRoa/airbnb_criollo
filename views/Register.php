@@ -60,8 +60,8 @@
                     </Br>
                 <select class="form-select" aria-label="Default select example" name="signup-rol"  id="signup-rol">
                     <option selected>Selecciona en rol</option>
-                    <option value="0">Arrendador</option>
-                    <option value="1">Arrendatario</option>
+                    <option value="0">Anfitrión</option>
+                    <option value="1">Invitado</option>
                 </select>
             </p>
 

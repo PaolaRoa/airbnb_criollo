@@ -12,10 +12,16 @@ $user  = new User();
 $user->setUserLogin($email, $password);
 
 if($user->loginUserValidation()==0){
-    echo "alert('no estas registrado')";
+
+    echo "no estas registrado , falta manejar esto";
  }
  else{
-    header('Location: ../views/Lesseegalery.php');
+    if($user->validationRol()==0){ 
+      header('Location: ../views/Newhomelessor.php');
+   }else if($user->validationRol()==1)
+   {
+      header('Location: ../views/Lesseegalery.php');
+   }
  }
 
 ?>
