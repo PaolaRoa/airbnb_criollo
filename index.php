@@ -90,7 +90,7 @@
                 </span>
                 <span>
                     <i class="fa fa-bath"></i>2 Bathroom
-                </span>
+w1                </span>
                 <div class="rent-price pull-left">$200</div>
                 <a href="#">VER MAS</a>
             </div>
