@@ -39,7 +39,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    background-color: yellowgreen;
+    background-color: rgb(255, 255, 255);
 }
 
 .fieldset label{
