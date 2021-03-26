@@ -17,14 +17,13 @@ if($user->loginUserValidation()==0){
     echo "no estas registrado , falta manejar esto";
  }
  else{
-    if($user->validationRol()['rol']==0){ 
-      header('Location: ../views/Newhomelessor.php');
+    if($user->validationRol()['rol']==0){
+      
+      
       session_start();
     //  $_SESSION['idusers']= $id_lessor;
       $_SESSION['name_user']= $user->validationRol()['name_user'] ;
       
-
-
 
    }else if($user->validationRol()['rol']==1)
    {
