@@ -112,12 +112,7 @@
             </div>
                    <div class="end">
                         </br>
-                        </br>
-                        <p class="fieldset">
-                            <input type="checkbox" id="accept-terms" required>
-                            <label for="accept-terms">Al agregar una casa, aceptas nuestras condiciones de uso y <a href="#0">Políticas de privacidad</a>.</label>
-                        </p>
-                        </br>
+                      
                         <p class="fieldset">
                             <input class="button" type="submit" value="Crear propiedad">
                         </p>
