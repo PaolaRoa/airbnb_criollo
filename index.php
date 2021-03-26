@@ -47,7 +47,7 @@
         <!-- HEADER AND MENU -->
     </header>
 
-    <!-- BANNER -->
+    <!-- BANNER 
     <div class="banner">
         <div class="banner-content">
             <h1>¡House rent Armenia!</h1>
@@ -55,65 +55,42 @@
                 Visitar Armenia es una invitación para disfrutar de la naturaleza y la vida. En la capital del Departamento del Quindío existe una delicada amalgama entre lo rural y lo urbano.</h2>
 
         </div>
-    </div>
+    </div>-->
 
     <!-- CARDS HOUSES -->
     <div class="contedor-tarjetas">
 
 
         <div class="card">
-            <img src="assests/img/photo1.jpg">
-            <h4>Casa Camprestre </h4>
-            <P>Agradable casa para hasta 5 huéspedes </P>
+            <img src="assests/img/Parque-del-Cafe.jpg">
+            <h4>Parque del Café </h4>
+            <P>El Parque del Café es un parque temático colombiano situado en el corregimiento de Pueblo Tapao, del municipio de Montenegro en Quindío, Colombia. Dispone de 40 atracciones que se dividen en: mecánicas, acuáticas y temáticas. </P>
             <span>
                 <i class="fa fa-map-marker"></i>
-                EJE CAFETERO, FINLANDIA
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.297958972495!2d-75.7728367856766!3d4.540285244292901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e385ef825fa221d%3A0xd35336082b9ca116!2sParque%20del%20Caf%C3%A9!5e0!3m2!1ses-419!2sco!4v1616711556667!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </span>
+        </div>
+
+
+            <div class="card">
+            <img src="assests/img/MARIPOSARIO-QUINDIO.jpg">
+            <h4>Jardín Botanico del Quindio </h4>
+            <p>El Jardín Botánico del Quindío es un centro de investigación científica y de educación ambiental ubicado en la ciudad de Calarcá. Es el primer legalmente constituido en Colombia.</p>
             <span>
-                <i class="fa fa-bed"></i> 3 Bedrooms
+                <i class="fa fa-map-marker"></i>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15909.022041084676!2d-75.6603403!3d4.5479794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x159c0ed6d96d65f!2sParque%20De%20La%20Vida!5e0!3m2!1ses-419!2sco!4v1616712211080!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </span>
-            <span>
-                <i class="fa fa-bath"></i>2 Bathroom
-            </span>
-            <div class="rent-price pull-left">$200</div>
-            <a href="#">VER MAS</a>
         </div>
 
         <div class="card">
-            <img src="assests/img/photo1.jpg">
-            <h4>Casa Camprestre </h4>
-            <P>Agradable casa para hasta 5 huéspedes </P>
+            <img src="assests/img/parquedelavida.jpg">
+            <h4>Parque De La Vida</h4>
+            <p>El Parque de la Vida es el parque urbano más grande e importante de la ciudad de Armenia, Colombia.​ Se encuentra ubicado en el norte de la ciudad.</p>
             <span>
                 <i class="fa fa-map-marker"></i>
-                EJE CAFETERO, FINLANDIA
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15909.820567866507!2d-75.6509772!3d4.5116806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf97d58b928ca87fe!2zSmFyZMOtbiBCb3TDoW5pY28gRGVsIFF1aW5kw61v!5e0!3m2!1ses-419!2sco!4v1616711993719!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </span>
-            <span>
-                <i class="fa fa-bed"></i> 3 Bedrooms
-            </span>
-            <span>
-                <i class="fa fa-bath"></i>2 Bathroom
-            </span>
-            <div class="rent-price pull-left">$200</div>
-            <a href="#">VER MAS</a>
         </div>
-        <div class="card">
-            <img src="assests/img/photo1.jpg">
-            <h4>Casa Camprestre </h4>
-            <P>Agradable casa para hasta 5 huéspedes </P>
-            <span>
-                <i class="fa fa-map-marker"></i>
-                EJE CAFETERO, FINLANDIA
-            </span>
-            <span>
-                <i class="fa fa-bed"></i> 3 Bedrooms
-            </span>
-            <span>
-                <i class="fa fa-bath"></i>2 Bathroom
-            </span>
-            <div class="rent-price pull-left">$200</div>
-            <a href="#">VER MAS</a>
-        </div>
-
 
 
     </div>
