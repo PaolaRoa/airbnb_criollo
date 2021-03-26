@@ -34,7 +34,11 @@
                       Contacto</a></li>
                   <li><a href="#">
                         <i class="fas fa-user"></i>
-                      Usuario</a>
+                      <?php
+                            session_start();
+                            echo $_SESSION['name_user'];
+                      ?>
+                      </a>
                       <ul class="submenu">
                           <li><a href="#"> 
                                 <i class="fas fa-tools"></i>

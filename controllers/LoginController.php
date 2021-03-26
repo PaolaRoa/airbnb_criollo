@@ -11,6 +11,7 @@ $password = $_POST["signup-password"];
 $user  = new User();
 $user->setUserLogin($email, $password);
 
+
 if($user->loginUserValidation()==0){
 
     echo "no estas registrado , falta manejar esto";
@@ -19,8 +20,8 @@ if($user->loginUserValidation()==0){
     if($user->validationRol()['rol']==0){ 
       header('Location: ../views/Newhomelessor.php');
       session_start();
-      $_SESSION['idusers']= $id_lessor;
-      $_SESSION['name_user']= $id_lessor;
+    //  $_SESSION['idusers']= $id_lessor;
+      $_SESSION['name_user']= $user->validationRol()['name_user'] ;
       
 
 
