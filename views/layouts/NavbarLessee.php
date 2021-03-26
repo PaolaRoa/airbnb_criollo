@@ -18,6 +18,7 @@
 </head>
 <body>
     <header>
+<<<<<<< HEAD
         <nav class="navbar">
             <div class="container">
                 <a class="navbar-brand" href="../index.php">
@@ -48,6 +49,27 @@
             </div>
           </nav>
           <!-- HEADER AND MENU -->
+=======
+        <a href="../Lesseegalery.php">
+            <img src="../assests/img/hotel2.png" />
+        </a>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fas fa-bars"></i></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" >Galeria</a></li>
+                <li><a href="#" >Reservas</a></li>
+                <li><a href="#" ><i class="fas fa-question-circle"></i>
+                      Contacto</a></li></a></li>
+                <li><a href="#" ><i class="fas fa-user"></i>
+                      Usuario</a></a></li>
+                <li><a href="#" ><i class="fas fa-tools"></i>
+                        Ayuda</a></li></a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i>
+                        Salir</a></li>
+            </ul>
+        </nav>
+>>>>>>> navbar
     </header>
     </header>
 </body>
