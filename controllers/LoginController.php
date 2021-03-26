@@ -19,6 +19,8 @@ if($user->loginUserValidation()==0){
    session_start();
    header('Location: ../views/Lesseegalery.php');
    $_SESSION['user_email'] = $email;
+   echo session_id();
+   echo $_SESSION['user_email'];
  }
 ?>
 
