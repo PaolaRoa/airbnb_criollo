@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -28,9 +31,9 @@
                       Contacto</a></li>
                   <li><a href="#">
                         <i class="fas fa-user"></i>
-                        <?php session_start();
-                echo $_SESSION['user_email'];
-                ?>
+                        <?php 
+                                echo $_SESSION['user_email'];
+                        ?>
                 </a>
                       <ul class="submenu">
                           <li><a href="#"> 
