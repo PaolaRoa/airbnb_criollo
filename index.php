@@ -26,8 +26,8 @@
                 <ul class="menu">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Casas</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Nosotros</a>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#nosotros">Nosotros</a>
                     <li><a href="#">Inicia Sesión/Registrate</a>
                         <ul class="submenu">
                             <li><a href="./views/Login.php">ingresar</a></li>
@@ -88,6 +88,24 @@
         </div>
         <!-- CARDS TUR END-->
 
+        <!-- OUR -->
+        <a name="nosotros"></a>
+        <div class="ourcont">
+            <p>Somos una empresa líder del mercado inmobiliario, 
+              con más de 45 años de experiencia y solidez. 
+              Nuestro objetivo es ofrecer un excelente servicio, 
+              respaldo, transparencia y comercializar ágilmente su propiedad en materia de Arriendos. 
+              Contamos con un excelente equipo humano, red comercial a través de nuestras sucursales 
+              y oficinas del Grupo. </p>
+
+              <p>Hemos construido nuestro prestigio a través de un servicio transparente, 
+              una sólida experiencia, cumplimiento, conocimiento y un constante liderazgo en el sector 
+              inmobiliario el cual ponemos a su disposición. Nuestra filosofía se basa en comprometernos en conservar, 
+              proteger y fortalecer su patrimonio. </p>
+              
+              <p>Estamos dispuestos a solucionar todas sus necesidades en el sector inmobiliario en la ciudad de Armenia.</p>
+        </div>
+
 
         <!-- Footer -->
 
@@ -102,6 +120,7 @@
             <!-- Grid container -->
             <div class="container pt-4">
                 <!-- Section: Social media -->
+                <a name="contacto"></a>
                 <section class="mb-4">
                     <div class="col-md-12">
                         <div class="social">
