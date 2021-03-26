@@ -1,5 +1,6 @@
-
-
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -37,7 +38,6 @@
                   <li><a href="#">
                         <i class="fas fa-user"></i>
                       <?php
-                            session_start();
                             echo $_SESSION['name_user'];
                       ?>
                       </a>
