@@ -102,18 +102,15 @@
                         <label for="accept-terms"><i class="fas fa-medkit"></i>Botiquín de primeros auxilios</label>
                         </br>
                     </p>
-                    
-                </div>
-            </div>
-                        </br>
-                        </br>
-                   <div class="end">
-                        <p class="fieldset">
+                    <p class="fieldset">
                             <label class="price" for="description">Precio</label>
                             </Br>
                             </Br>
                             <input class="number" type="number" placeholder="eje.$50.000" name="description" id="description" required>
-                        </p>
+                    </p>
+                </div>
+            </div>
+                   <div class="end">
                         </br>
                         </br>
                         <p class="fieldset">

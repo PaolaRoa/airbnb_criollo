@@ -25,7 +25,7 @@ body{
 }
 
 .cd-form{
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 255, 255);
     margin-top: 150px;
     margin: 20px;
     padding: 30px;
@@ -38,6 +38,12 @@ body{
     font-family: 'Satisfy', cursive;
 }
 
+.cd-form .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+
+}
 .fieldset label{
     color: rgb(0, 0, 0);
     margin-left: 20px;
@@ -60,7 +66,7 @@ body{
 
 .fieldset .password{
     font-size: 20px;
-    width: 60%;
+    width: 50%;
     padding: 10px;
     border: none;
 }
@@ -88,4 +94,7 @@ option{
     padding: 10px;
     border:orange;
 }
+
+
+
 
