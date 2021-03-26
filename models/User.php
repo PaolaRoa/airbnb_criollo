@@ -66,7 +66,7 @@ class User{
         $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email' AND password_user='$this->password'");
         $stmt -> execute();
         $estmt= $stmt->fetch();
-        return $estmt['rol'];
+        return $estmt;
     }
     }
 
