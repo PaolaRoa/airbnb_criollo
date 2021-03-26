@@ -16,9 +16,10 @@ if($user->loginUserValidation()==0){
     echo "alert('no estas registrado')";
  }
  else{
-    header('Location: ../views/Lesseegalery.php');
+   session_start();
+   header('Location: ../views/Lesseegalery.php');
+   $_SESSION['user_email'] = $email;
  }
-
 ?>
 
 
