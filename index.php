@@ -28,13 +28,8 @@
                     <li><a href="#">Casas</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#nosotros">Nosotros</a>
-                    <li><a href="#">Inicia Sesión/Registrate</a>
-                        <ul class="submenu">
-                            <li><a href="./views/Login.php">ingresar</a></li>
-                            <li><a href="./views/Register.php">registro</a></li>
-                        </ul>
-                    </li>
-
+                    <li><a href="./views/Login.php">ingresar</a></li>
+                    <li><a href="./views/Register.php">registro</a></li>
                 </ul>
                 </ul>
             </div>
@@ -54,9 +49,8 @@
         <!-- CARDS TUR -->
         <div class="contedor-tarjetas">
 
-
             <div class="card">
-                <img src="assests/img/Parque-del-Cafe.jpg">
+                <img src="assests/img/parquedelcafe.jpeg">
                 <h1>Parque del Café </h1>
                 <P>El Parque del Café es un parque temático colombiano situado en el corregimiento de Pueblo Tapao, del municipio de Montenegro en Quindío, Colombia. Dispone de 40 atracciones que se dividen en: mecánicas, acuáticas y temáticas. </P>
                 <span>
@@ -72,7 +66,7 @@
                 <p>El Jardín Botánico del Quindío es un centro de investigación científica y de educación ambiental ubicado en la ciudad de Calarcá. Es el primer legalmente constituido en Colombia.</p>
                 <span>
                     <i class="fa fa-map-marker"></i>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15909.022041084676!2d-75.6603403!3d4.5479794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x159c0ed6d96d65f!2sParque%20De%20La%20Vida!5e0!3m2!1ses-419!2sco!4v1616712211080!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15909.820567866507!2d-75.6509772!3d4.5116806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf97d58b928ca87fe!2zSmFyZMOtbiBCb3TDoW5pY28gRGVsIFF1aW5kw61v!5e0!3m2!1ses-419!2sco!4v1616711993719!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </span>
             </div>
 
@@ -82,38 +76,45 @@
                 <p>El Parque de la Vida es el parque urbano más grande e importante de la ciudad de Armenia, Colombia.​ Se encuentra ubicado en el norte de la ciudad.</p>
                 <span>
                     <i class="fa fa-map-marker"></i>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15909.820567866507!2d-75.6509772!3d4.5116806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf97d58b928ca87fe!2zSmFyZMOtbiBCb3TDoW5pY28gRGVsIFF1aW5kw61v!5e0!3m2!1ses-419!2sco!4v1616711993719!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15909.022041084676!2d-75.6603403!3d4.5479794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x159c0ed6d96d65f!2sParque%20De%20La%20Vida!5e0!3m2!1ses-419!2sco!4v1616712211080!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </span>
+            </div>
+
+            <div class="card">
+                <img src="assests/img/panaca.jpg">
+                <h1>Panaca </h1>
+                <P>Panaca, Parque Nacional de la Cultura Agropecuaria, ubicado en Quimbaya Quindio.</P>
+                <span>
+                    <i class="fa fa-map-marker"></i>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15907.691788062677!2d-75.8207931!3d4.6078154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74601b4c8ed5a28f!2sPanaca!5e0!3m2!1ses-419!2sco!4v1616796339671!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </span>
             </div>
         </div>
+
+
         <!-- CARDS TUR END-->
 
         <!-- OUR -->
         <a name="nosotros"></a>
-        <div class="ourcont">
-            <p>Somos una empresa líder del mercado inmobiliario, 
-              con más de 45 años de experiencia y solidez. 
-              Nuestro objetivo es ofrecer un excelente servicio, 
-              respaldo, transparencia y comercializar ágilmente su propiedad en materia de Arriendos. 
-              Contamos con un excelente equipo humano, red comercial a través de nuestras sucursales 
-              y oficinas del Grupo. </p>
+        <div class="ourcontec">
+            <h2>Nosotros</h2>
+            <p>Somos una empresa líder del mercado inmobiliario,
+                con más de 45 años de experiencia y solidez.
+                Nuestro objetivo es ofrecer un excelente servicio,
+                respaldo, transparencia y comercializar ágilmente su propiedad en materia de Arriendos.
+                Contamos con un excelente equipo humano, red comercial a través de nuestras sucursales
+                y oficinas del Grupo. </p>
 
-              <p>Hemos construido nuestro prestigio a través de un servicio transparente, 
-              una sólida experiencia, cumplimiento, conocimiento y un constante liderazgo en el sector 
-              inmobiliario el cual ponemos a su disposición. Nuestra filosofía se basa en comprometernos en conservar, 
-              proteger y fortalecer su patrimonio. </p>
-              
-              <p>Estamos dispuestos a solucionar todas sus necesidades en el sector inmobiliario en la ciudad de Armenia.</p>
+            <p>Hemos construido nuestro prestigio a través de un servicio transparente,
+                una sólida experiencia, cumplimiento, conocimiento y un constante liderazgo en el sector
+                inmobiliario el cual ponemos a su disposición. Nuestra filosofía se basa en comprometernos en conservar,
+                proteger y fortalecer su patrimonio. </p>
+
+            <p>Estamos dispuestos a solucionar todas sus necesidades en el sector inmobiliario en la ciudad de Armenia.</p>
         </div>
 
 
         <!-- Footer -->
-
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <!------ Include the above in your HEAD tag ---------->
-
         <!--Pulling Awesome Font -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <footer class="text-center text-white">
