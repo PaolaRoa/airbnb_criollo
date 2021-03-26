@@ -27,87 +27,96 @@
         <form class="cd-form">
             <h1>Agregar una propiedad</h1>
             </br>
-            <p class="fieldset">
-                <label class="image-replace cd-username" for="title">Nombre de la propiedad</label>
-                    </Br>
-                    </Br>
-                <input class="text" type="text" placeholder="Nombre de la propiedad" name ="title" id="title" required>
-            </p>
+            <div class="container">
+                <div>
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="title">Nombre de la propiedad</label>
+                            </Br>
+                            </Br>
+                        <input class="text" type="text" placeholder="Nombre de la propiedad" name ="title" id="title" required>
+                    </p>
 
-            <p class="fieldset">
-                <label class="image-replace cd-email" for="description">Descripción</label>
-                </Br>
-                </Br>
-                <input class="text" type="text" placeholder="Descripción" name="description" id="description" required>
-            </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description">Descripción</label>
+                        </Br>
+                        </Br>
+                        <input class="text" type="text" placeholder="Descripción" name="description" id="description" required>
+                    </p>
 
-            <p class="fieldset">
-                <label class="image-replace cd-email" for="description">imagen principal</label>
-                </Br>
-                </Br>
-                <input class="text" type="image" placeholder="Descripción" name="main-picture" id="main-picture" required>
-            </p>
-            <p class="fieldset">
-                <label class="image-replace cd-email" for="description">Imagenes de apoyo</label>
-                </Br>
-                </Br>
-                <input class="text" type="image" placeholder="Descripción" name="additional-images" id="additional-images" required>
-            </p>
-            <p class="fieldset">
-                <label class="image-replace cd-email" for="description">Habitaciones</label>
-                </Br>
-                </Br>
-                <input class="number" type="number" placeholder="00" name="description" id="description" required>
-            </p>
-            <p class="fieldset">
-                <label class="image-replace cd-email" for="description">Baños</label>
-                </Br>
-                </Br>
-                <input class="number" type="number" placeholder="00" name="description" id="description" required>
-            </p>
-            <p class="fieldset">
-                <label class="image-replace cd-email" for="description">Parqueadero</label>
-                </Br>
-                </Br>
-                <select class="form-select" aria-label="Default select example" name="rol"  id="rol">
-                    <option selected>Selecciona</option>
-                    <option value="0">Si</option>
-                    <option value="1">No</option>
-                </select>
-            </p>
-            <p class="fieldset">
-                <label class="image-replace cd-email" for="description">Internet</label>
-                </Br>
-                </Br>
-                <select class="form-select" aria-label="Default select example" name="rol"  id="rol">
-                    <option selected>Selecciona</option>
-                    <option value="0">Si</option>
-                    <option value="1">No</option>
-                </select>
-            </p>
-            <p class="fieldset">
-                <label class="image-replace cd-email" for="description">Servicios adicionales</label>
-                <p class="fieldset">
-                <input type="checkbox" id="checkbox" >
-                <label for="accept-terms"><i class="fas fa-swimmer"></i>Piscina</label>
-                </br>
-                <input type="checkbox" id="checkbox" >
-                <label for="accept-terms"><i class="fas fa-concierge-bell"></i>Servicios imprescindibles</label>
-                </br>
-                <input type="checkbox" id="checkbox" >
-                <label for="accept-terms"><i class="fas fa-medkit"></i>Botiquín de primeros auxilios</label>
-                </br>
-            </p>
-            </br>
-            </br>
-            <p class="fieldset">
-                <input type="checkbox" id="accept-terms" required>
-                <label for="accept-terms">Al agregar una casa, aceptas nuestras condiciones de uso y <a href="#0">Políticas de privacidad</a>.</label>
-            </p>
-            </br>
-            <p class="fieldset">
-                <input class="button" type="submit" value="Crear propiedad">
-            </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description">imagen principal</label>
+                        </Br>
+                        </Br>
+                        <input class="text" type="image" placeholder="Descripción" name="main-picture" id="main-picture" required>
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description">Imagenes de apoyo</label>
+                        </Br>
+                        </Br>
+                        <input class="text" type="image" placeholder="Descripción" name="additional-images" id="additional-images" required>
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description">Habitaciones</label>
+                        </Br>
+                        </Br>
+                        <input class="number" type="number" placeholder="00" name="description" id="description" required>
+                    </p>
+                </div>
+                <div>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description">Baños</label>
+                        </Br>
+                        </Br>
+                        <input class="number" type="number" placeholder="00" name="description" id="description" required>
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description">Parqueadero</label>
+                        </Br>
+                        </Br>
+                        <select class="form-select" aria-label="Default select example" name="rol"  id="rol">
+                            <option selected>Selecciona</option>
+                            <option value="0">Si</option>
+                            <option value="1">No</option>
+                        </select>
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description">Internet</label>
+                        </Br>
+                        </Br>
+                        <select class="form-select" aria-label="Default select example" name="rol"  id="rol">
+                            <option selected>Selecciona</option>
+                            <option value="0">Si</option>
+                            <option value="1">No</option>
+                        </select>
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description">Servicios adicionales</label>
+                        <p class="fieldset">
+                        <input type="checkbox" id="checkbox" >
+                        <label for="accept-terms"><i class="fas fa-swimmer"></i>Piscina</label>
+                        </br>
+                        <input type="checkbox" id="checkbox" >
+                        <label for="accept-terms"><i class="fas fa-concierge-bell"></i>Servicios imprescindibles</label>
+                        </br>
+                        <input type="checkbox" id="checkbox" >
+                        <label for="accept-terms"><i class="fas fa-medkit"></i>Botiquín de primeros auxilios</label>
+                        </br>
+                    </p>
+                    <p class="fieldset">
+                            <label class="price" for="description">Precio</label>
+                            </Br>
+                            </Br>
+                            <input class="number" type="number" placeholder="eje.$50.000" name="description" id="description" required>
+                    </p>
+                </div>
+            </div>
+                   <div class="end">
+                        </br>
+                      
+                        <p class="fieldset">
+                            <input class="button" type="submit" value="Crear propiedad">
+                        </p>
+                   </div>
         </form>
     </div> <!-- cd-signup -->
     </div>
