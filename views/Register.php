@@ -45,18 +45,6 @@
                         <input class="password" id="signup-password" type="password"  placeholder="Contraseña" name="signup-password" id="signup-password" required>
                          <i class="fas fa-eye" id="show"></i>
 
-<<<<<<< HEAD
-            <p>
-                <label class="image-replace cd-password" for="signup-rol">Rol</label>
-                    </Br>
-                    </Br>
-                <select class="form-select" aria-label="Default select example" name="signup-rol"  id="signup-rol">
-                    <option selected>Selecciona en rol</option>
-                    <option value="0">Anfitrión</option>
-                    <option value="1">Invitado</option>
-                </select>
-            </p>
-=======
                     </p>
                </div>
                 <div>
@@ -79,8 +67,8 @@
 
                     <p>
                         <label class="image-replace cd-password" for="signup-rol">Rol</label>
-                            </Br>
-                            </Br>
+                            </br>
+                            </br>
                         <select class="form-select" aria-label="Default select example" name="signup-rol"  id="signup-rol">
                             <option selected>Selecciona en rol</option>
                             <option value="0">Arrendador</option>
@@ -89,7 +77,6 @@
                     </p>
                 </div>
             </div>
->>>>>>> viewlessor
 
             <p class="fieldset">
                 <input type="checkbox" id="accept-terms" required>
