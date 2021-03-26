@@ -11,14 +11,21 @@ $password = $_POST["signup-password"];
 $user  = new User();
 $user->setUserLogin($email, $password);
 
+
 if($user->loginUserValidation()==0){
 
     echo "no estas registrado , falta manejar esto";
  }
  else{
-    if($user->validationRol()==0){ 
-      header('Location: ../views/Newhomelessor.php');
-   }else if($user->validationRol()==1)
+    if($user->validationRol()['rol']==0){
+      
+      
+      session_start();
+    //  $_SESSION['idusers']= $id_lessor;
+      $_SESSION['name_user']= $user->validationRol()['name_user'] ;
+      
+
+   }else if($user->validationRol()['rol']==1)
    {
       header('Location: ../views/Lesseegalery.php');
    }
