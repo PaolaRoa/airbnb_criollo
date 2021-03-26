@@ -5,7 +5,8 @@ require_once "../models/User.php";
 
 
 $email = $_POST["signup-email"];
-$password = $_POST["signup-password"];
+$rawPassword = $_POST["signup-password"];
+$password= hash('sha256', $rawPassword);
 
 
 $user  = new User();
@@ -18,19 +19,18 @@ if($user->loginUserValidation()==0){
  }
  else{
     if($user->validationRol()['rol']==0){
-      
-      
       session_start();
-    //  $_SESSION['idusers']= $id_lessor;
-      $_SESSION['name_user']= $user->validationRol()['name_user'] ;
-      
+      $user->setSession();
+      header('Location: ../views/Newhomelessor.php');
 
    }else if($user->validationRol()['rol']==1)
    {
+      
+      session_start();
+      $user->setSession();
       header('Location: ../views/Lesseegalery.php');
    }
  }
-
 ?>
 
 

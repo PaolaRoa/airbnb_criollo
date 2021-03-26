@@ -7,6 +7,7 @@ require_once("../utils/conexion.php");
 
 
 class User{
+    private $id;
     private $name_user;
     private $password;
     private $email;
@@ -25,6 +26,9 @@ class User{
         $this->city=$city;
         $this->rol =$rol;
         $this->pdata =$pdata;
+    }
+    public function setId($id){
+        $this->idusers = $id;
     }
 
     public function setUserLogin($email, $password){
@@ -58,9 +62,20 @@ class User{
     public function loginUserValidation(){
            $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email' AND password_user='$this->password' ");
            $stmt -> execute();
+
+           $arr = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            foreach ($arr as $row) {
+                $this->id=$row['idusers'];
+                $this->name_user = $row['name_user'];
+                $this->city = $row['city'];
+                $this->rol = $row['rol'];
+               // $this->$email= $row['email'];
+            }
+           // $this->setUserRegister($datos[0][1],$datos[0][3],$datos[0][2],$datos[0][4],$datos[0][6],$datos[0][5]);
            $estmt= $stmt->rowCount();
            return $estmt;
     }
+<<<<<<< HEAD
 
     public function validationRol(){
         $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email' AND password_user='$this->password'");
@@ -74,6 +89,14 @@ class User{
 
 
 
+=======
+    public function setSession(){
+        $_SESSION['user_email'] =$this->email;
+        $_SESSION['iduser']=$this->id;
+        $_SESSION['rol']= $this->rol;
+
+    }
+>>>>>>> password
     }
 
 

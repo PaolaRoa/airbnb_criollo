@@ -5,7 +5,8 @@ require_once "../models/User.php";
 require_once "../views/Register.php";
 
  $name_user = $_POST["signup-username"];
- $password = $_POST["signup-password"];
+ $rawPassword = $_POST["signup-password"];
+ $password= hash('sha256', $rawPassword);
  $email =  $_POST["signup-email"];
  $city =  $_POST["city"];
  $rol =  $_POST["signup-rol"];
