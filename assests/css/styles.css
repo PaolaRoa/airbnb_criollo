@@ -104,9 +104,8 @@ nav ul {
 /* --------------- */
 
 .banner {
-    padding-top: 55%;
-    width: 80%;
-    height: 50vh;
+    width: 50%;
+    height: 30vh;
     box-shadow: -2px 9px 16px 0px rgb(0 0 0 / 27%);
     background-color: #FF914D;
     background-size: cover;
@@ -129,7 +128,7 @@ nav ul {
 }
 
 .banner-content h1 {
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 0;
     padding-bottom: 30px;
     font-size: 40px;
