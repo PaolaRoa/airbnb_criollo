@@ -75,7 +75,6 @@ class User{
            $estmt= $stmt->rowCount();
            return $estmt;
     }
-<<<<<<< HEAD
 
     public function validationRol(){
         $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email' AND password_user='$this->password'");
@@ -89,14 +88,12 @@ class User{
 
 
 
-=======
     public function setSession(){
         $_SESSION['user_email'] =$this->email;
         $_SESSION['iduser']=$this->id;
         $_SESSION['rol']= $this->rol;
 
     }
->>>>>>> password
     }
 
 
