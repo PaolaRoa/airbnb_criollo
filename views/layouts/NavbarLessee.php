@@ -18,36 +18,28 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="../index.php">
-                    <img src="../assests/img/hotel2.png" />
-                </a>
-              <ul class="menu">
-                  <li><a href="#">Galeria</a></li>
-                  <li><a href="#">Reservas</a></li>
-                  <li><a href="#">
-                        <i class="fas fa-question-circle"></i>
-                      Contacto</a></li>
-                  <li><a href="#">
-                        <i class="fas fa-user"></i>
-                        <?php 
+        <a href="../Lesseegalery.php">
+            <img src="../assests/img/hotel2.png" />
+        </a>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fas fa-bars"></i></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" >Galeria</a></li>
+                <li><a href="#" >Reservas</a></li>
+                <li><a href="#" ><i class="fas fa-question-circle"></i>
+                      Contacto</a></li></a></li>
+                <li><a href="#" ><i class="fas fa-user"></i>
+                <?php 
                                 echo $_SESSION['user_email'];
-                        ?>
-                </a>
-                      <ul class="submenu">
-                          <li><a href="#"> 
-                                <i class="fas fa-tools"></i>
-                              Ayuda</a></li>
-                          <li><a href="#"> 
-                              <i class="fas fa-sign-out-alt"></i>
-                              Salir</a></li>
-                      </ul>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-          <!-- HEADER AND MENU -->
+                        ?>          
+            </a></a></li>
+                <li><a href="#" ><i class="fas fa-tools"></i>
+                        Ayuda</a></li></a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i>
+                        Salir</a></li>
+            </ul>
+        </nav>
     </header>
     </header>
 </body>

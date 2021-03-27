@@ -76,6 +76,7 @@ class User{
            return $estmt;
     }
 
+    
     public function validationRol(){
         $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email' AND password_user='$this->password'");
         $stmt -> execute();

@@ -39,33 +39,17 @@
             </p>
         </form>
     </div>
-
+    <div class="galery">
+        </br>
+        </br>
+        <h1>Galeria</h1>
+        </br>
+        </br>
+    </div>
     <!--Galery-->
     <div class="contedor-tarjetas">
-        <div class="card">
-            <img src="../assests/img/photo1.jpg">
-</br>
-            <h4>Casa Camprestre </h4>
-            <P>Agradable casa para hasta 5 huéspedes </P>
-            <span>
-                <i class="fa fa-map-marker"></i>
-                EJE CAFETERO, FINLANDIA
-            </span>
-            <span>
-                <i class="fa fa-bed"></i>   3 Bedrooms
-            </span>
-            <span>
-                <i class="fa fa-bath"></i>2 Bathroom
-            </span>
-            <div class="rent-price pull-left">$200</div>
-            <a href="#">
-                <button>
-                    VER MAS
-                </button>
-            </a>
-        </div>
-        <div class="card">
-            <img src="../assests/img/photo1.jpg">
+        <div class="card-one">
+                <img src="../assests/img/photo1.jpg">
             </br>
             <h4>Casa Camprestre </h4>
             <P>Agradable casa para hasta 5 huéspedes </P>
@@ -80,34 +64,14 @@
                 <i class="fa fa-bath"></i>2 Bathroom
             </span>
             <div class="rent-price pull-left">$200</div>
-            <a href="#">
+            <a href="../views/LesseeHose.php">
                 <button>
                     VER MAS
                 </button>
             </a>
         </div>
-        <div class="card">
-            <img src="../assests/img/photo1.jpg">
-            </br>
-            <h4>Casa Camprestre </h4>
-            <P>Agradable casa para hasta 5 huéspedes </P>
-            <span>
-                <i class="fa fa-map-marker"></i>
-                EJE CAFETERO, FINLANDIA
-            </span>
-            <span>
-                <i class="fa fa-bed"></i>   3 Bedrooms
-            </span>
-            <span>
-                <i class="fa fa-bath"></i>2 Bathroom
-            </span>
-            <div class="rent-price pull-left">$200</div>
-            <a href="#">
-                <button>
-                    VER MAS
-                </button>
-            </a>
-        </div>
+
+        
     </div>
     
     <!--Footer o contacto-->
