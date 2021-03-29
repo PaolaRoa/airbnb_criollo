@@ -31,7 +31,7 @@
                       Contacto</a></li></a></li>
                 <li><a href="#" ><i class="fas fa-user"></i>
                 <?php 
-                                echo $_SESSION['user_email'];
+                                echo $_SESSION['name_user'];
                         ?>          
             </a></a></li>
                 <li><a href="#" ><i class="fas fa-tools"></i>

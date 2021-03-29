@@ -59,6 +59,7 @@ class User{
         }
     }
 
+    // VALIDATION EMAIL
     public function loginUserValidation(){
            $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email' AND password_user='$this->password' ");
            $stmt -> execute();
@@ -76,7 +77,7 @@ class User{
            return $estmt;
     }
 
-    
+    // VALIDATION ROL
     public function validationRol(){
         $stmt = Conexion::connect()->prepare("SELECT * FROM users WHERE email='$this->email' AND password_user='$this->password'");
         $stmt -> execute();
@@ -84,17 +85,15 @@ class User{
         return $estmt;
     }
 
-    
-
-
-
+    // SET SESSION
 
     public function setSession(){
         $_SESSION['user_email'] =$this->email;
         $_SESSION['iduser']=$this->id;
         $_SESSION['rol']= $this->rol;
-
+        $_SESSION['name_user']= $this->name_user;
     }
+
     }
 
 
