@@ -17,9 +17,7 @@
 </head>
 <body>
     <!--Navbar--->
-    <?php
-        include("../views/layouts/NavbarLessor.php");
-    ?>
+    
     </br>
 
     <!--Form new house-->
