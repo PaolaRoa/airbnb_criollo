@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="../assests/css/login.css">
 </head>
 <body>
+<?php
+    include("../views/layouts/NavbarRegister.php");
+    ?>
+    </br>
 <div class="form">
         <form class="cd-form" method="POST" action="../controllers/LoginController.php">
             <h1>Inicia Sesion</h1>

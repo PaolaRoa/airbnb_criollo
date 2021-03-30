@@ -17,12 +17,14 @@
 </head>
 <body>
     <!--Navbar--->
-    
+    <?php
+    include("../views/layouts/NavbarLessor.php");
+    ?>
     </br>
 
     <!--Form new house-->
     <div id="form" class="form">
-        <form class="cd-form">
+        <form class="cd-form" method="POST" action="../controllers/HouseController.php">
             <h1>Agregar una propiedad</h1>
             </br>
             <div class="container">
@@ -57,7 +59,7 @@
                         <label class="image-replace cd-email" for="description">Habitaciones</label>
                         </Br>
                         </Br>
-                        <input class="number" type="number" placeholder="00" name="description" id="description" required>
+                        <input class="number" type="number" placeholder="00" name="habitaciones" id="habitaciones" required>
                     </p>
                 </div>
                 <div>
@@ -65,13 +67,13 @@
                         <label class="image-replace cd-email" for="description">Baños</label>
                         </Br>
                         </Br>
-                        <input class="number" type="number" placeholder="00" name="description" id="description" required>
+                        <input class="number" type="number" placeholder="00" name="baños" id="baños" required>
                     </p>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description">Parqueadero</label>
                         </Br>
                         </Br>
-                        <select class="form-select" aria-label="Default select example" name="rol"  id="rol">
+                        <select class="form-select" aria-label="Default select example" name="parqueadero"  id="parqueadero">
                             <option selected>Selecciona</option>
                             <option value="0">Si</option>
                             <option value="1">No</option>
@@ -81,7 +83,7 @@
                         <label class="image-replace cd-email" for="description">Internet</label>
                         </Br>
                         </Br>
-                        <select class="form-select" aria-label="Default select example" name="rol"  id="rol">
+                        <select class="form-select" aria-label="Default select example" name="internet"  id="internet">
                             <option selected>Selecciona</option>
                             <option value="0">Si</option>
                             <option value="1">No</option>
@@ -104,7 +106,7 @@
                             <label class="price" for="description">Precio</label>
                             </Br>
                             </Br>
-                            <input class="number" type="number" placeholder="eje.$50.000" name="description" id="description" required>
+                            <input class="number" type="number" placeholder="eje.$50.000" name="price_noche" id="description" required>
                     </p>
                 </div>
             </div>

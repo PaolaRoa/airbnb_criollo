@@ -18,42 +18,30 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="../index.php">
-                    <img src="../assests/img/hotel2.png" />
-                </a>
-              <ul class="menu">
-                  <li><a href="../views/GeneralLessor.php">Home</a></li>
-                  <li><a href="../views/PropertiesLessor.php">Propiedades</a>
-                      <ul class="submenu">
-                          <li><a href="../views/Newhomelessor.php"> 
-                            <i class="fas fa-plus"></i>
-                              Agregar</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="#">
-                        <i class="fas fa-question-circle"></i>
-                      Contacto</a></li>
-                  <li><a href="#">
-                        <i class="fas fa-user"></i>
-                      <?php
-                            echo $_SESSION['name_user'];
-                      ?>
-                      </a>
-                      <ul class="submenu">
-                          <li><a href="#"> 
-                                <i class="fas fa-tools"></i>
-                              Ayuda</a></li>
-                          <li><a href="#"> 
-                              <i class="fas fa-sign-out-alt"></i>
-                              Salir</a></li>
-                      </ul>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-          <!-- HEADER AND MENU -->
+        <a href="#">
+            <img src="../assests/img/hotel2.png" />
+        </a>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fas fa-bars"></i></label>
+        <nav class="menu">
+            <ul>
+                    <li><a href="../views/LosserHouse.php" ><i class="fas fa-question-circle"></i>
+                      Mis Casas</a></li></a></li><li>
+                          <a href="../views/Newhomelessor.php" ><i class="fas fa-question-circle"></i>
+                      Agregar casas</a></li></a></li>
+                <li><a href="" ><i class="fas fa-question-circle"></i>
+                      Contacto</a></li></a></li>
+                <li><a href="#" ><i class="fas fa-user"></i>
+                <?php 
+                                echo $_SESSION['name_user'];
+                        ?>
+            </a></a></li>
+                <li><a href="#" ><i class="fas fa-tools"></i>
+                        Ayuda</a></li></a></li>
+                <li><a href="../utils/logout.php"><i class="fas fa-sign-out-alt"></i>
+                        Salir</a></li>
+            </ul>
+        </nav>
     </header>
     </header>
 </body>
