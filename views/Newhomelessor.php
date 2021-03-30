@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../assests/css/styles.css"> -->
 
     <!-- BOOTSTRAP 4 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -18,13 +18,13 @@
 <body>
     <!--Navbar--->
     <?php
-        include("../views/layouts/NavbarLessor.php");
+    include("../views/layouts/NavbarLessor.php");
     ?>
     </br>
 
     <!--Form new house-->
     <div id="form" class="form">
-        <form class="cd-form">
+        <form class="cd-form" method="POST" action="../controllers/HouseController.php">
             <h1>Agregar una propiedad</h1>
             </br>
             <div class="container">
@@ -59,7 +59,7 @@
                         <label class="image-replace cd-email" for="description">Habitaciones</label>
                         </Br>
                         </Br>
-                        <input class="number" type="number" placeholder="00" name="description" id="description" required>
+                        <input class="number" type="number" placeholder="00" name="habitaciones" id="habitaciones" required>
                     </p>
                 </div>
                 <div>
@@ -67,13 +67,13 @@
                         <label class="image-replace cd-email" for="description">Baños</label>
                         </Br>
                         </Br>
-                        <input class="number" type="number" placeholder="00" name="description" id="description" required>
+                        <input class="number" type="number" placeholder="00" name="baños" id="baños" required>
                     </p>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description">Parqueadero</label>
                         </Br>
                         </Br>
-                        <select class="form-select" aria-label="Default select example" name="rol"  id="rol">
+                        <select class="form-select" aria-label="Default select example" name="parqueadero"  id="parqueadero">
                             <option selected>Selecciona</option>
                             <option value="0">Si</option>
                             <option value="1">No</option>
@@ -83,7 +83,7 @@
                         <label class="image-replace cd-email" for="description">Internet</label>
                         </Br>
                         </Br>
-                        <select class="form-select" aria-label="Default select example" name="rol"  id="rol">
+                        <select class="form-select" aria-label="Default select example" name="internet"  id="internet">
                             <option selected>Selecciona</option>
                             <option value="0">Si</option>
                             <option value="1">No</option>
@@ -92,13 +92,13 @@
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description">Servicios adicionales</label>
                         <p class="fieldset">
-                        <input type="checkbox" id="checkbox" >
+                        <input type="checkbox" id="checkbox_piscina" >
                         <label for="accept-terms"><i class="fas fa-swimmer"></i>Piscina</label>
                         </br>
-                        <input type="checkbox" id="checkbox" >
+                        <input type="checkbox" id="checkbox_servicios" >
                         <label for="accept-terms"><i class="fas fa-concierge-bell"></i>Servicios imprescindibles</label>
                         </br>
-                        <input type="checkbox" id="checkbox" >
+                        <input type="checkbox" id="checkbox_primerosaux" >
                         <label for="accept-terms"><i class="fas fa-medkit"></i>Botiquín de primeros auxilios</label>
                         </br>
                     </p>
@@ -106,7 +106,7 @@
                             <label class="price" for="description">Precio</label>
                             </Br>
                             </Br>
-                            <input class="number" type="number" placeholder="eje.$50.000" name="description" id="description" required>
+                            <input class="number" type="number" placeholder="eje.$50.000" name="price_noche" id="price_noche" required>
                     </p>
                 </div>
             </div>
