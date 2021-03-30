@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../assests/css/register.css">
 </head>
 <body>
-
 <?php
     include("../views/layouts/NavbarRegister.php");
     ?>

@@ -25,15 +25,15 @@
         <label for="btn-menu"><i class="fas fa-bars"></i></label>
         <nav class="menu">
             <ul>
-                    <li><a href="../views/LosserHouse.php" ><i class="fas fa-question-circle"></i>
+                    <li><a href="../controllers/HouseController.php" ><i class="fas fa-question-circle"></i>
                       Mis Casas</a></li></a></li><li>
-                          <a href="../views/Newhomelessor.php" ><i class="fas fa-question-circle"></i>
+                <a href="../views/Newhomelessor.php" ><i class="fas fa-question-circle"></i>
                       Agregar casas</a></li></a></li>
                 <li><a href="" ><i class="fas fa-question-circle"></i>
                       Contacto</a></li></a></li>
                 <li><a href="#" ><i class="fas fa-user"></i>
                 <?php 
-                                echo $_SESSION['name_user'];
+                               echo "Hola! ".$_SESSION['name_user'];
                         ?>
             </a></a></li>
                 <li><a href="#" ><i class="fas fa-tools"></i>

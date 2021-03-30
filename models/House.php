@@ -14,7 +14,12 @@ class House {
     private $id_user;
     private $price_pn;
 
-    public function __construct($name_property,$description,$num_rooms,$num_toilets,$parking_lot,$internet,$id_user,$price_pn){
+    public function __construct(){
+
+    }
+
+
+    public function setHouse($name_property,$description,$num_rooms,$num_toilets,$parking_lot,$internet,$id_user,$price_pn){
         $this->name_property =$name_property;
         $this->description =$description;
         $this->num_rooms =$num_rooms;
@@ -31,11 +36,27 @@ class House {
         return 1;
     }
 
-    public function LessorHouse(){
-        $stmt = Conexion::connect()->prepare("SELECT  name , description , num_rooms FROM houses WHERE users_idusers='$this->id_user'");
+    public function LessorHouse($id){
+        $stmt = Conexion::connect()->prepare("SELECT idhouses , name , description , num_rooms, num_toilets,parking_lot, internet, price_pn FROM houses WHERE users_idusers='$id'");
         $stmt -> execute();
         $arr = $stmt->fetchAll();
         return $arr;
+    }
+
+    public function setSessionHouse($id){
+        $_SESSION['house_lessor'] =$this->LessorHouse($id);
+    }
+
+    public function deleteHouse($id_house, $id_lessor){
+        $stmt = Conexion::connect()->prepare("DELETE FROM houses WHERE idhouses=$id_house");
+        $stmt -> execute();
+        if($stmt -> rowCount() >0){
+            $newHouses = self::LessorHouse($id_lessor);
+            return $newHouses;
+        }
+        else{
+            return "error ocurrio";
+        }
     }
 
 }
