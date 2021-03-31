@@ -13,19 +13,23 @@ class Booking{
 
     }
 
-    public function setBooking($start_d,$final_date, $users_idusers, $houseId){
+    public function setBooking($start_d,$final_date, 
+    $users_idusers, $houseId){
         $this->start_d = $start_d;
         $this->final_date = $final_date;
         $this->users_idusers = $users_idusers;
-        $this->houseId = $houseId();
+        $this->houseId = $houseId;
     }
     public function createBooking(){
-        $stmt = Conexion::connect()->prepare("INSERT INTO Bookings('start_date', final_date, users_idusers, houseId) values($this->$start_d','$this->$final_date','$this->$users_idusers','$this->$houseId)");
+        $con = Conexion::connect();
+        $stmt = $con->prepare("INSERT INTO bookings (`start_date`, final_date, users_idusers, houseId) values('$this->start_d', '$this->final_date',
+         '$this->users_idusers', '$this->houseId')");
 
-        $stmt->execute();
+        $resp = $stmt->execute();
         //set the id that was assign in the last query
-        $id= PDO::lastInsertId();
-        setId($id);
+        $id=$con->lastInsertId();
+        $this->setId($id);
+        return $resp;
         //$stmt2 = Conexion::connect()->prepare("INSERT INTO houses_has_Bookings values($this->$houseId','$this->$idBookings)");    
     }
     public function setId($id){
