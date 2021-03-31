@@ -26,7 +26,7 @@ class Booking{
         //set the id that was assign in the last query
         $id= PDO::lastInsertId();
         setId($id);
-        $stmt2 = Conexion::connect()->prepare("INSERT INTO houses_has_Bookings values($this->$houseId','$this->$idBookings)");    
+        //$stmt2 = Conexion::connect()->prepare("INSERT INTO houses_has_Bookings values($this->$houseId','$this->$idBookings)");    
     }
     public function setId($id){
         $this->idBookings = $id;

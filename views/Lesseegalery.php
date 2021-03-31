@@ -21,18 +21,31 @@
 
     <!--Filter-->
     <div class="filter">
-        <form class="cd-form" method="POST" action="../controllers/RegisterController.php">
+        <form class="cd-form" method="POST" action="../controllers/BookingController.php">
             <p class="fieldset">
-                <label class="image-replace cd-username" for="start-date">Fecha de inicio</label>
+                <label class="image-replace cd-username" for="start-d">Fecha de inicio</label>
                     </Br>
                 <i class="fas fa-calendar-week"></i>
-                <input class="date" type="date" placeholder="start-date" name ="start-date" id="start-date" required>
+                <input class="date" type="date" placeholder="start-d" name ="start-date" id="start-date" min=<?php $hoy=date("Y-m-d"); echo $hoy;?>
+                value=<?php echo $hoy;?> required>
             </p>
             <p class="fieldset">
                 <label class="image-replace cd-username" for="ending-date">Fecha de finalización</label>
                     </Br>
                 <i class="fas fa-calendar-check"></i>
-                <input class="date" type="date" placeholder="ending-date" name ="ending-date" id="ending-date" required>
+                <input class="date" type="date" placeholder="ending-date" name ="ending-date" id="ending-date" 
+                min=<?php
+                $fecha = date('Y-m-d');
+                $nuevafecha = strtotime ( '+1 day' , strtotime ( $fecha ) ) ;
+                $nuevafecha = date ( 'Y-m-d' , $nuevafecha );
+                echo $nuevafecha;
+                ?> 
+                required
+                value=<?php
+                    echo $nuevafecha
+                ?>
+                >
+                
             </p>
             <p class="fieldset">
                 <input class="button" type="submit" value="Buscar">
