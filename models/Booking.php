@@ -8,6 +8,8 @@ class Booking{
     private $final_date;
     private $users_idusers;
     private $houseId;
+    //aqui voy
+    private $total;
 
     public function __construct(){
 
@@ -22,9 +24,7 @@ class Booking{
     }
     public function createBooking(){
         $con = Conexion::connect();
-        $stmt = $con->prepare("INSERT INTO bookings (`start_date`, final_date, users_idusers, houseId) values('$this->start_d', '$this->final_date',
-         '$this->users_idusers', '$this->houseId')");
-
+        $stmt = $con->prepare("INSERT INTO bookings (`start_date`, final_date, users_idusers, houseId, total) values('$this->start_d', '$this->final_date','$this->users_idusers', '$this->houseId', '$this->total')");
         $resp = $stmt->execute();
         //set the id that was assign in the last query
         $id=$con->lastInsertId();
@@ -35,8 +35,20 @@ class Booking{
     public function setId($id){
         $this->idBookings = $id;
     }
-    /*public function get_avalaiblehouses($start_d, $end_date){
-        $stmt = Conexion::connect()prepare("SELECT houseId from Bookings");
-    }*/
+    public function setTotal($idHouse){
+        //calc days with start and end date
+        $date1 = new DateTime($this->start_d);
+        $date2 = new DateTime($this->final_date);
+        $diff = $date1->diff($date2);
+        $days = $diff->days;
+        $con = Conexion::connect();
+        $stmt = $con->prepare("SELECT price_pn FROM houses where  idhouses='$idHouse'");
+        $stmt->execute();
+        $price = $stmt->fetchColumn();
+        //calc total
+        $total = $price * $days;
+        $this->total = $total;   
+    }
+
 
 }
