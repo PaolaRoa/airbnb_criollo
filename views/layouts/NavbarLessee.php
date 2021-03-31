@@ -37,7 +37,7 @@
             </a></a></li>
                 <li><a href="../LesseeHelp.php" ><i class="fas fa-tools"></i>
                         Ayuda</a></li></a></li>
-                <li><a href="#"><i class="fas fa-sign-out-alt"></i>
+                <li><a href="../utils/logout.php"><i class="fas fa-sign-out-alt"></i>
                         Salir</a></li>
             </ul>
         </nav>
