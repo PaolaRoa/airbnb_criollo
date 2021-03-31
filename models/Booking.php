@@ -31,8 +31,8 @@ class Booking{
     public function setId($id){
         $this->idBookings = $id;
     }
-    public function get_houses(){
-        $stmt = Conexio
-    }
+    /*public function get_avalaiblehouses($start_d, $end_date){
+        $stmt = Conexion::connect()prepare("SELECT houseId from Bookings");
+    }*/
 
 }

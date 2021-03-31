@@ -27,7 +27,17 @@
                     </Br>
                 <i class="fas fa-calendar-week"></i>
                 <input class="date" type="date" placeholder="start-d" name ="start-date" id="start-date" min=<?php $hoy=date("Y-m-d"); echo $hoy;?>
-                value=<?php echo $hoy;?> required>
+                value=<?php 
+                    if(isset($_SESSION['start_date'])){
+                        echo  $_SESSION['start_date'];
+                    }
+                    else{
+                        echo $hoy;
+                    }
+                   
+                
+                ?> 
+                required>
             </p>
             <p class="fieldset">
                 <label class="image-replace cd-username" for="end-date">Fecha de finalización</label>
@@ -42,7 +52,12 @@
                 ?> 
                 required
                 value=<?php
-                    echo $nuevafecha
+                    if(isset($_SESSION['end_date'])){
+                        echo  $_SESSION['end_date'];
+                    }
+                    else{
+                        echo $nuevafecha;
+                    }
                 ?>
                 >
                 
@@ -64,6 +79,7 @@
         <?php
             $houses= $_SESSION['houses'];
             foreach ($houses as $house) {
+                $idHouse = $house['idhouses'];
                 $name=$house['name'];
                 $description = $house['description'];
                 $beds= $house['num_rooms'];
@@ -85,7 +101,7 @@
                                 <i class='fa fa-bath'></i>".$bahts."
                                  </span>
                                 <div class='rent-price pull-left'>".$price."</div>
-                                 <a href='../views/LesseeHose.php'>
+                                 <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>
                                  <button>
                                 VER MAS
                                 </button>
