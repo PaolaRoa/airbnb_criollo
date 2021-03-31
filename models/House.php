@@ -58,6 +58,13 @@ class House {
             return "error ocurrio";
         }
     }
+    //search all houses
+    static public function get_houses(){
+        $stmt = Conexion::connect()->prepare("SELECT * FROM houses");
+        $stmt->execute();
+        $arrHouses = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $arrHouses;
+    }
 
 }
 

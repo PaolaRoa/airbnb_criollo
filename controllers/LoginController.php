@@ -2,6 +2,7 @@
 <?php 
 
 require_once "../models/User.php";
+require_once "../models/House.php";
 
 
 $email = $_POST["signup-email"];
@@ -28,6 +29,8 @@ if($user->loginUserValidation()==0){
       
       session_start();
       $user->setSession();
+      $houses = House::get_houses();
+      $_SESSION['houses']= $houses;
       header('Location: ../views/Lesseegalery.php');
    }
  }

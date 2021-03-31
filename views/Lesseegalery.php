@@ -21,7 +21,7 @@
 
     <!--Filter-->
     <div class="filter">
-        <form class="cd-form" method="POST" action="../controllers/BookingController.php">
+        <form class="cd-form" method="POST" action="../controllers/BookingController.php?action=search">
             <p class="fieldset">
                 <label class="image-replace cd-username" for="start-d">Fecha de inicio</label>
                     </Br>
@@ -30,7 +30,7 @@
                 value=<?php echo $hoy;?> required>
             </p>
             <p class="fieldset">
-                <label class="image-replace cd-username" for="ending-date">Fecha de finalización</label>
+                <label class="image-replace cd-username" for="end-date">Fecha de finalización</label>
                     </Br>
                 <i class="fas fa-calendar-check"></i>
                 <input class="date" type="date" placeholder="ending-date" name ="ending-date" id="ending-date" 
@@ -61,6 +61,40 @@
     </div>
     <!--Galery-->
     <div class="contedor-tarjetas">
+        <?php
+            $houses= $_SESSION['houses'];
+            foreach ($houses as $house) {
+                $name=$house['name'];
+                $description = $house['description'];
+                $beds= $house['num_rooms'];
+                $bahts = $house['num_toilets'];
+                $price = $house['price_pn'];
+                echo "        <div class='card-one'>
+                                <img src='../assests/img/photo1.jpg'>
+                                 </br>
+                                <h4>".$name."</h4>
+                                <P>".$description."</P>
+                                 <span>
+                                 <i class='fa fa-map-marker'></i>
+                                EJE CAFETERO, FINLANDIA
+                                </span>
+                                 <span>
+                                 <i class='fa fa-bed'></i>".$beds."
+                                 </span>
+                                    <span>
+                                <i class='fa fa-bath'></i>".$bahts."
+                                 </span>
+                                <div class='rent-price pull-left'>".$price."</div>
+                                 <a href='../views/LesseeHose.php'>
+                                 <button>
+                                VER MAS
+                                </button>
+                                </a>
+                                </div>";
+          
+               // $this->$email= $row['email'];
+            };
+        ?>
         <div class="card-one">
                 <img src="../assests/img/photo1.jpg">
             </br>

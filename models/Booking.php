@@ -31,5 +31,8 @@ class Booking{
     public function setId($id){
         $this->idBookings = $id;
     }
+    public function get_houses(){
+        $stmt = Conexio
+    }
 
 }
