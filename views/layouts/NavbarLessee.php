@@ -2,7 +2,7 @@
     session_start();
 ?>
     <header>
-        <a href="#">
+        <a href="../views/GeneralLessee.php">
             <img src="../assests/img/hotel2.png" />
         </a>
         <input type="checkbox" id="btn-menu">
@@ -10,11 +10,11 @@
         <nav class="menu">
             <ul>
                 <li><a href="../views/Lesseegalery.php" >Galeria</a></li>
-                <li><a href="#" >Reservas</a></li>
-                <li><a href="#" ><i class="fas fa-question-circle"></i>
+                <li><a href="../views/BookingLessee.php" >Reservas</a></li>
+                <li><a href="#contacto" ><i class="fas fa-question-circle"></i>
                       Contacto</a></li></a></li>
-                <li><a href="#" ><i class="fas fa-user"></i>
-                <?php 
+                <li><a href="../views/Porfile.php" ><i class="fas fa-user"></i>
+                        <?php 
                                 echo $_SESSION['user_email'];
                         ?>          
             </a></a></li>

@@ -10,7 +10,9 @@
     <!-- BOOTSTRAP 4 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>¡CASAS EN RENTA ARMENIA!</title>
+    <link rel="stylesheet" href="../assests/css/Navbarlessee.css">
     <link rel="stylesheet" href="../assests/css/register.css">
+    <link rel="stylesheet" href="../assests/css/footer.css">
 </head>
 <body>
 <?php
@@ -56,14 +58,14 @@
                         <i class="fas fa-map-marker-alt"></i><label class="image-replace cd-username" for="dpto">Departamento</label>
                         </br>
                         </br>
-                        <select class="form-select" aria-label="Default select example" name="dpto"  id="dpto">
+                        <select class="form-select" aria-label="Default select example" name="dpto"  id="dpto" >
                             <option value="Bogotá D.C" selected="selected">Bogotá D.C</option>
                         </select>
                         </br>
                         <i class="fas fa-map-marker-alt"></i><label class="image-replace cd-username" for="city">Ciudad</label>
                         </br>
                         </br>
-                        <select class="form-select" aria-label="Default select example" name="city"  id="city">
+                        <select class="form-select" aria-label="Default select example" name="city"  id="city" >
                             <option value="Bogotá D.C" selected="selected">Bogotá D.C</option>
                         </select>
                         
@@ -73,8 +75,8 @@
                         <label class="image-replace cd-password" for="signup-rol">Rol</label>
                             </br>
                             </br>
-                        <select class="form-select" aria-label="Default select example" name="signup-rol"  id="signup-rol">
-                            <option selected>Selecciona en rol</option>
+                        <select class="form-select" aria-label="Default select example" name="signup-rol"  id="signup-rol" required>
+                            <option >Selecciona en rol</option>
                             <option value="0">Arrendador</option>
                             <option value="1">Arrendatario</option>
                         </select>
@@ -95,6 +97,11 @@
             </p>
         </form>
     </div>
+
+    <!--footer-->
+    <?php
+        include("../views/layouts/Footer.php");
+    ?>
     <script src="js/jquery.js"></script>
     <script src="../assests/js/dropdown.js"></script>
     <script src="../assests/js/ViewPassword.js"></script>

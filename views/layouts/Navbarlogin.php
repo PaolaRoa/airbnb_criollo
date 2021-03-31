@@ -1,7 +1,6 @@
 <?php
     session_start();
 ?>
-<body>
     <header>
         <a href="../index.php">
             <img src="../assests/img/hotel2.png" />
@@ -10,8 +9,8 @@
         <label for="btn-menu"><i class="fas fa-bars"></i></label>
         <nav class="menu">
             <ul>
-                <li><a href="../views/Login.php" >
-                      iniciar sesión</a></li></a></li>
+                <li><a href="../views/Register.php" >
+                      Registrarse</a></li></a></li>
                 <li><a href="#contacto" ><i class="fas fa-question-circle"></i>
                       Contacto</a></li></a></li>
                 
