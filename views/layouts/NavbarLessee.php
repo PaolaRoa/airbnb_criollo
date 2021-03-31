@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- FONT AWESOEM -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
     <link rel="stylesheet"  href="../assests/css/Navbarlessee.css">
 
 </head>
@@ -25,18 +26,18 @@
         <label for="btn-menu"><i class="fas fa-bars"></i></label>
         <nav class="menu">
             <ul>
-                <li><a href="#" >Galeria</a></li>
+                <li><a href="../Lesseegalery.php" >Galeria</a></li>
                 <li><a href="#" >Reservas</a></li>
                 <li><a href="#" ><i class="fas fa-question-circle"></i>
                       Contacto</a></li></a></li>
                 <li><a href="#" ><i class="fas fa-user"></i>
                 <?php 
-                                echo $_SESSION['name_user'];
-                        ?>
+                                echo $_SESSION['user_email'];
+                        ?>          
             </a></a></li>
-                <li><a href="#" ><i class="fas fa-tools"></i>
+                <li><a href="../LesseeHelp.php" ><i class="fas fa-tools"></i>
                         Ayuda</a></li></a></li>
-                <li><a href="../utils/logout.php"><i class="fas fa-sign-out-alt"></i>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i>
                         Salir</a></li>
             </ul>
         </nav>
