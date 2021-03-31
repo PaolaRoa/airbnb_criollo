@@ -8,43 +8,83 @@ session_start();
 
 // CREATE HOUSE
 
-if(isset($_POST["title"]))
-{
-   $name_house = $_POST["title"] ;
-   $description = $_POST["description"];
-   $num_rooms =$_POST["habitaciones"];
-   $num_toilets=$_POST["baños"];
-   $parking_lot =$_POST["parqueadero"];
-   $internet= $_POST["internet"];
-   $price_pn=$_POST["price_noche"];
+// if(isset($_POST["title"]))
+// {
+//    $name_house = $_POST["title"] ;
+//    $description = $_POST["description"];
+//    $num_rooms =$_POST["habitaciones"];
+//    $num_toilets=$_POST["baños"];
+//    $parking_lot =$_POST["parqueadero"];
+//    $internet= $_POST["internet"];
+//    $price_pn=$_POST["price_noche"];
 
-   $house = new House();
-   $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn);
+//    $house = new House();
+//    $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn);
 
 
-   if ($house->createHouse()==1)
-   {
+//    if ($house->createHouse()==1)
+//    {
 
-      echo'<script type="text/javascript">
-      alert("Registro de casa exitoso");
-      window.location.href="../views/Newhomelessor.php";
-      </script>';
-   }
-}
+//       echo'<script type="text/javascript">
+//       alert("Registro de casa exitoso");
+//       window.location.href="../views/Newhomelessor.php";
+//       </script>';
+//    }
+// }
 
 
 // DELETE AND EDIT HOUSE AJAX
-else if (isset($_POST["typeoperation"])){
+if (isset($_POST["typeoperation"])){
 
    $id_house = $_POST["id"];
    $type_query = $_POST["typeoperation"];
    $id_lessor=  $_SESSION['iduser'];
+
+
    switch($type_query){
       case 'delete':
          $house = new House();
          $newHouse =$house->deleteHouse($id_house,$id_lessor);
          echo json_encode($newHouse);
         break;
+
+        case 'edit':
+         $house = new House();
+         $getHouse =$house->getHouse($id_house);
+         echo json_encode($getHouse);
+        break;
+
+
+        case 'update':
+         $id_house = $_POST["id_u"];
+         $name = $_POST["name_u"];
+         $description = $_POST["description_u"];
+         $num_rooms = $_POST["num_rooms_u"];
+         $num_toilets = $_POST["num_toilets_u"];
+         $parking_lot = $_POST["parqueadero_u"];
+         $internet = $_POST["internet_u"];
+         $price_pn = $_POST["price_pn_u"];
+         $house = new House();
+
+         echo json_encode($house->updateHouse($id_house, $id_lessor,$name, $description, $num_rooms, $num_toilets, $parking_lot, $internet, $price_pn));
+
+        break;
+
+        case 'insert':
+
+         $name_house = $_POST["title"] ;
+         $description = $_POST["description"];
+         $num_rooms =$_POST["habitaciones"];
+         $num_toilets=$_POST["baños"];
+         $parking_lot =$_POST["parqueadero"];
+         $internet= $_POST["internet"];
+         $price_pn=$_POST["price_noche"];
+         $house = new House();
+         $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn);
+
+         echo json_encode($house->createHouse());
+         break;
+
         default:
          break;
 

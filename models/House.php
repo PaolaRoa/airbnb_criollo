@@ -59,6 +59,29 @@ class House {
         }
     }
 
+    public function getHouse($id_house){
+        $stmt = Conexion::connect()->prepare("SELECT * FROM houses WHERE idhouses=$id_house");
+        if($stmt -> execute()){
+            $getHouses = $stmt ->fetchAll(PDO::FETCH_ASSOC);
+            return $getHouses;
+        }
+        else{
+            return "error ocurrio";
+        }
+    }
+
+    public function updateHouse($id_house,$id_lessor,$name, $description, $num_rooms, $num_toilets, $parking_lot, $internet, $price_pn ){
+        $stmt = Conexion::connect()->prepare("UPDATE houses SET name='$name',description='$description', num_rooms=$num_rooms, num_toilets=$num_toilets, parking_lot='$parking_lot', internet='$internet', price_pn='$price_pn' WHERE idhouses=$id_house");
+        $stmt -> execute();
+        if($stmt -> rowCount() >0){
+            $newHouses = self::LessorHouse($id_lessor);
+            return $newHouses;
+        }
+        else{
+            return "error ocurrio";
+        }
+    }
+
 }
 
 

@@ -24,7 +24,7 @@
 
     <!--Form new house-->
     <div id="form" class="form">
-        <form class="cd-form" method="POST" action="../controllers/HouseController.php">
+        <form class="cd-form" id="form_add_house">
             <h1>Agregar una propiedad</h1>
             </br>
             <div class="container">
@@ -112,9 +112,8 @@
             </div>
                    <div class="end">
                         </br>
-                      
                         <p class="fieldset">
-                            <input class="button" type="submit" value="Crear propiedad">
+                             <button class="button" type="submit" >Crear propiedad</button>
                         </p>
                    </div>
         </form>
@@ -122,5 +121,10 @@
     </div>
 </form>
 </div>
+
+
+
+<script src="../assests/js/createHouse.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>

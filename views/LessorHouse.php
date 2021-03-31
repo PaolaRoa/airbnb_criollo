@@ -27,18 +27,15 @@
           <p><?php echo $descrip['description'] ?></p>
           <p><?php echo $descrip['num_rooms'] ?></p>
           <p><?php echo $descrip['num_toilets'] ?></p>
-          <p><?php echo $descrip['parking_lot'] ?></p>
-          <p><?php echo $descrip['internet'] ?></p>
+          <p><?php $parking =$descrip['parking_lot'] ==0 ?  "Si" :  "No" ; echo $parking?></p>
+          <p><?php $internet = $$descrip['internet']==0 ? "Si": "No"; echo $internet?></p>
           <p><?php echo $descrip['price_pn'] ?></p>
-          <button>Editar</button>
+          <button onclick="editHouse(<?php echo $descrip['idhouses']?>)">Editar</button>
           <button onclick="deleteHouse(<?php echo $descrip['idhouses']?>)">Eliminar</button>
 
         </div>
       <?php
-    
-     
     }
-    
     ?>
 
     </div>
