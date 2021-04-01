@@ -19,6 +19,7 @@
     include("../views/layouts/Navbarlogin.php");
     ?>
     </br>
+
 <div class="form">
         <form class="cd-form" method="POST" action="../controllers/LoginController.php">
             <h1>Inicia Sesion</h1>
@@ -36,7 +37,7 @@
                 </Br>
                 <i class="fas fa-key"></i>
                 <input class="password" id="signup-password" type="password"  placeholder="contraseña" name="signup-password" id="signup-password" required>
-                <a href="#0" class="hide-password"><i class="fas fa-eye"></i></a>
+                <i class="fas fa-eye" id="show"></i>
             </p>
             <p class="fieldset">
                 <input class="button" type="submit" value="Entrar">
@@ -47,11 +48,12 @@
         </form>
         </div> <!-- cd-signup -->
      </div>
+</br>
 
      <!--footer-->
     <?php
         include("../views/layouts/Footer.php");
     ?>
-    
+    <script src="../assests/js/ViewPassword.js"></script>
 </body>
 </html>

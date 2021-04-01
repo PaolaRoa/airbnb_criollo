@@ -92,3 +92,53 @@ option{
     padding: 10px;
     border:orange;
 }
+
+
+@media (max-width: 800px) {
+    .form{
+        width: 90%;
+        padding: 15px;
+        margin: 10px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .fieldset .button{
+        background-color: #FF914D;
+        color: white;
+        border: none;
+        text-align: center;
+        margin: 10px 50px;
+        padding: 10px;
+        border-radius: 20px;
+        width: 60%;
+        
+    }
+    
+    .fieldset .button:hover{
+        background-color: #EB600A;
+        color: white;
+    }
+}
+@media (width: 1024px) {
+    .form{
+        width: 90%;
+        height: 1110px;
+        padding: 15px;
+        margin: 10px;
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

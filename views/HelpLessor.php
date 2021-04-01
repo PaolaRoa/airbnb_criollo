@@ -19,7 +19,39 @@
     include("../views/layouts/NavbarLessor.php");
     $lessorhouse =$_SESSION['house_lessor'];
     ?>
-    <h1>Formulario de ayuda o quejas</h1>
+    <div>
+        <h1>¿Tienes alguna queja o reclamo?</h1>
+        <p>Comentanos la dificultad que presentas y uno de nuestros asesores se comunicara con tigo por correo electronico</p>
+        <div class="form">
+        <form class="cd-form" method="POST" action="../controllers/LoginController.php">
+            <p class="fieldset">
+                <label class="image-replace cd-email" for="signup-asunto">Asunto</label>
+                </Br>
+                </Br>
+                
+                <input class="text" id="signup-email" type="email" placeholder="Asunto" name="signup-email" id="signup-email" required>
+            </p>
+            </br>
+            </br>
+            <p class="fieldset">
+                <label class="image-replace cd-password" for="signup-password">Mensaje</label>
+                </Br>
+                </Br>
+                <i class="fas fa-sticky-note"></i>
+                <input class="text" id="signup-password" type="text"  placeholder="Mensaje" name="signup-password" id="signup-password" required>
+            </p>
+            </br>
+            </br>
+            <p class="fieldset">
+                <input class="button" type="submit" value="Enviar">
+            </p>
+            <p>¿Deseas comunicarte directamente con un asesor?
+                <a class="link" href="../views/Register.php">haz clic aquí</a>
+            </p>
+        </form>
+
+        </div>
+    </div>
 
     <!--Footer-->
     <?php

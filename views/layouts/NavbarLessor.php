@@ -9,12 +9,12 @@
         <label for="btn-menu"><i class="fas fa-bars"></i></label>
         <nav class="menu">
             <ul>
-                    <li><a href="../controllers/HouseController.php" ><i class="fas fa-question-circle"></i>
-                      Mis Casas</a></li></a></li><li>
-                <a href="../views/Newhomelessor.php" ><i class="fas fa-question-circle"></i>
-                      Agregar casas</a></li></a></li>
+                    <li><a href="../controllers/HouseController.php" ><i class="fas fa-home"></i>
+                      Mis Casas</a></li>
+                <a href="../views/Newhomelessor.php" ><i class="fas fa-plus"></i>
+                      Agregar casas</a></li>
                 <li><a href="#contacto" ><i class="fas fa-question-circle"></i>
-                      Contacto</a></li></a></li>
+                      Contacto</a></li>
                 <li><a href="../views/Porfile.php" ><i class="fas fa-user"></i>
                 <?php 
                                echo "Hola! ".$_SESSION['name_user'];

@@ -25,7 +25,7 @@
         <form class="cd-form" method="POST" id="register-form" action="../controllers/RegisterController.php" >
             <h1>Registrate</h1>
             </br>
-            <div class="container">
+            <div class="container"> 
                <div>
                 <p class="fieldset">
                         <label class="image-replace cd-username" for="signup-username">Nombre de usuario</label>
@@ -76,8 +76,7 @@
                             </br>
                             </br>
                         <select class="form-select" aria-label="Default select example" name="signup-rol"  id="signup-rol" required>
-                            <option >Selecciona en rol</option>
-                            <option value="0">Arrendador</option>
+                            <option value="0" select>Arrendador</option>
                             <option value="1">Arrendatario</option>
                         </select>
                     </p>
