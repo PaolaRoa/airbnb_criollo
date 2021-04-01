@@ -11,31 +11,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- FONT AWESOEM -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet"  href="./assests/css/Navbarlessee.css">
     <link rel="stylesheet" href="assests/css/styles.css">
+    <link rel="stylesheet"  href="./assests/css/footer.css">
 
 </head>
 
 <body>
-    <!-- HEADER AND MENU -->
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="../index.php">
-                    <img class="logo" src="./assests/img/hotel2.png" />
-                </a>
-                <ul class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Casas</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#nosotros">Nosotros</a>
-                    <li><a href="./views/Login.php">ingresar</a></li>
-                    <li><a href="./views/Register.php">registro</a></li>
-                </ul>
-                </ul>
-            </div>
-        </nav>
-        <!-- HEADER AND MENU  END-->
-
+    <?php
+        include("./views/layouts/Navbarindex.php");
+    ?>
+    </br>
+    </br>
+    </br>
 
         <!-- BANNER -->
         <div class="banner">
@@ -45,7 +33,8 @@
             </div>
         </div>
         <!--BANNER END -->
-
+    </br>
+    </br>
         <!-- CARDS TUR -->
         <div class="contedor-tarjetas">
 
@@ -94,6 +83,9 @@
 
         <!-- CARDS TUR END-->
 
+    </br>
+    </br>
+    </br>
         <!-- OUR -->
         <a name="nosotros"></a>
         <div class="ourcontec">
@@ -113,31 +105,10 @@
             <p>Estamos dispuestos a solucionar todas sus necesidades en el sector inmobiliario en la ciudad de Armenia.</p>
         </div>
 
+        <?php
+            include("./views/layouts/Footer.php");
+        ?>
 
-        <!-- Footer -->
-        <!--Pulling Awesome Font -->
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <footer class="text-center text-white">
-            <!-- Grid container -->
-            <div class="container pt-4">
-                <!-- Section: Social media -->
-                <a name="contacto"></a>
-                <section class="mb-4">
-                    <div class="col-md-12">
-                        <div class="social">
-                            <ul class="social-network social-circle">
-                                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                        <p>© 2020 Copyright:The Best Team!</p>
-                    </div>
-                </section>
-            </div>
-        </footer>
 </body>
 
 </html>
