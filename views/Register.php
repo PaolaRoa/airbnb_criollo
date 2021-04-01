@@ -89,7 +89,7 @@
             </p>
 
             <p class="fieldset">
-                <input class="button" type="submit" value="Crear cuenta">
+                <button class="button" type="submit">Crear cuenta</button>
             </p>
             <p>¿Ya tienes cuenta?
                 <a class="link" href="Login.php">Iniciar Sesion</a>
@@ -101,7 +101,8 @@
     <?php
         include("../views/layouts/Footer.php");
     ?>
-    <script src="js/jquery.js"></script>
+
+    <script src="../assests/js/createUser.js"></script>
     <script src="../assests/js/dropdown.js"></script>
     <script src="../assests/js/ViewPassword.js"></script>
 </body>
