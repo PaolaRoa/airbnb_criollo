@@ -7,24 +7,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-image: url(https://i.blogs.es/c68014/casa-3d/450_1000.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    padding: 0;
+    background-color: rgba(253, 179, 110, 0.164);
 }
 
 .form{
-    width: 90%;
-    padding: 15px;
-    margin: 10px;
-    margin-left: 50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90%;
+    height: 70vh;
+    margin: 10px 10px;
+    padding: 0;
+    
 }
 
 .cd-form{
+    align-items: center;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
     margin-top: 150px;
     margin: 20px;
@@ -60,7 +61,7 @@ body{
 
 .fieldset .password{
     font-size: 20px;
-    width: 60%;
+    width: 70%;
     padding: 10px;
     border: none;
 }
@@ -80,4 +81,144 @@ body{
 .fieldset .button:hover{
     background-color: #EB600A;
     color: white;
+}
+
+
+
+/* Responsive*/
+
+@media (height: 1366px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 1110px;
+        margin: 10px 10px;
+        padding: 0;
+        
+    }
+
+    .cd-form{
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        width: 600px;
+        height: 700px;
+        margin-top: 150px;
+        margin: 20px;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .cd-form h1{
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        color: #FF914D;
+        font-family: 'Satisfy', cursive;
+    }
+     .fieldset{
+         padding: 50px 0;
+     }
+
+     .fieldset .text{
+        font-size: 20px;
+        width: 80%;
+        padding: 10px;
+        border: none;
+    }
+    
+    .fieldset .password{
+        font-size: 20px;
+        width: 70%;
+        padding: 10px;
+    }
+}
+
+@media (height: 1024px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 772px;
+        margin: 10px 10px;
+        padding: 0;
+        
+    }
+
+    .cd-form h1{
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        color: #FF914D;
+        font-family: 'Satisfy', cursive;
+    }
+     .fieldset{
+         padding: 20px 0;
+     }
+}
+
+@media (max-width: 420px) {
+    .fieldset .text{
+        font-size: 20px;
+        width: 65%;
+        padding: 10px;
+        border: none;
+    }
+    
+    .fieldset .password{
+        font-size: 20px;
+        width: 40%;
+        padding: 10px;
+    }   
+}
+
+@media (width: 320px) {
+    .fieldset .text{
+        font-size: 20px;
+        width: 65%;
+        padding: 10px;
+        border: none;
+    }
+    
+    .fieldset .password{
+        font-size: 20px;
+        width: 35%;
+        padding: 10px;
+    }   
+}
+
+@media (width: 280px) {
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 600px;
+        margin: 10px 10px;
+        padding: 0;
+        
+    }
+
+    .fieldset{
+        padding: 10px 0;
+    }
+    .fieldset .text{
+        font-size: 20px;
+        width: 90%;
+        padding: 10px;
+        border: none;
+    }
+    
+    .fieldset .password{
+        font-size: 20px;
+        width: 90%;
+        padding: 10px;
+    }   
 }

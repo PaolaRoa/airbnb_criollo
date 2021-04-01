@@ -7,12 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡House rent Armenia!</title>
 
-    <!-- BOOTSTRAP 4 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- FONT AWESOEM -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet"  href="./assests/css/Navbarlessee.css">
     <link rel="stylesheet" href="assests/css/styles.css">
+    <link rel="stylesheet"  href="./assests/css/testimonial.css">
     <link rel="stylesheet"  href="./assests/css/footer.css">
 
 </head>
@@ -90,20 +89,80 @@
         <a name="nosotros"></a>
         <div class="ourcontec">
             <h2>Nosotros</h2>
-            <p>Somos una empresa líder del mercado inmobiliario,
-                con más de 45 años de experiencia y solidez.
-                Nuestro objetivo es ofrecer un excelente servicio,
-                respaldo, transparencia y comercializar ágilmente su propiedad en materia de Arriendos.
-                Contamos con un excelente equipo humano, red comercial a través de nuestras sucursales
-                y oficinas del Grupo. </p>
+            </br>
+           <div class="order">
+                <div class="info">
+                    <p>Somos una empresa líder del mercado inmobiliario,
+                        con más de 45 años de experiencia y solidez.
+                        Nuestro objetivo es ofrecer un excelente servicio,
+                        respaldo, transparencia y comercializar ágilmente su propiedad en materia de Arriendos.
+                        Contamos con un excelente equipo humano, red comercial a través de nuestras sucursales
+                        y oficinas del Grupo. </p>
 
-            <p>Hemos construido nuestro prestigio a través de un servicio transparente,
-                una sólida experiencia, cumplimiento, conocimiento y un constante liderazgo en el sector
-                inmobiliario el cual ponemos a su disposición. Nuestra filosofía se basa en comprometernos en conservar,
-                proteger y fortalecer su patrimonio. </p>
+                    <p>Hemos construido nuestro prestigio a través de un servicio transparente,
+                        una sólida experiencia, cumplimiento, conocimiento y un constante liderazgo en el sector
+                        inmobiliario el cual ponemos a su disposición. Nuestra filosofía se basa en comprometernos en conservar,
+                        proteger y fortalecer su patrimonio. </p>
 
-            <p>Estamos dispuestos a solucionar todas sus necesidades en el sector inmobiliario en la ciudad de Armenia.</p>
+                    <p>Estamos dispuestos a solucionar todas sus necesidades en el sector inmobiliario en la ciudad de Armenia.</p>
+                </div>
+                <div class="picture"></div>
+           </div>
         </div>
+        </br>
+        </br>
+
+        <div class="testimonials">
+            <div class="inner">
+                <h3>Testimonios</h3>
+                <div class="border"></div>
+                    <div class="row">
+                        <div class="testimonial">
+                            <img src="./assests/img/testimonio1.jpg">
+                                <div class="name">Sandra Castro</div>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit in nam doloribus magni ab repudiandae fugiat consequuntur voluptatibus ex? Labore sit itaque laborum veritatis est repellendus quo eligendi. Quos.</p>
+                        </div>
+
+                        <!--Testimonial two-->
+                        <div class="testimonial">
+                            <img src="./assests/img/testimonio2.jpg">
+                                <div class="name">Juan Castillo</div>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit in nam doloribus magni ab repudiandae fugiat consequuntur voluptatibus ex? Labore sit itaque laborum veritatis est repellendus quo eligendi. Quos.</p>
+                        </div>
+
+                        <!--Testimonial tree-->
+                        <div class="testimonial">
+                            <img src="./assests/img/testimonio3.jpg">
+                                <div class="name">Camila Sabogal</div>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit in nam doloribus magni ab repudiandae fugiat consequuntur voluptatibus ex? Labore sit itaque laborum veritatis est repellendus quo eligendi. Quos.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+        </br>
+        </br>
 
         <?php
             include("./views/layouts/Footer.php");

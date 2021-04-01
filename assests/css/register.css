@@ -7,11 +7,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-image: url(https://i.blogs.es/c68014/casa-3d/450_1000.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-color: rgba(253, 179, 110, 0.164);
 }
 
 .form{
@@ -96,5 +92,63 @@ option{
 }
 
 
+@media (max-width: 800px) {
+    .form{
+        width: 90%;
+        padding: 15px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .cd-form .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    
+    }
 
+    .fieldset .text{
+        font-size: 20px;
+        width: 65%;
+        padding: 10px;
+        border: none;
+    }
+    
+    .fieldset .password{
+        font-size: 20px;
+        width: 35%;
+        padding: 10px;
+        border: none;
+    }
+    
+    .fieldset .button{
+        background-color: #FF914D;
+        color: white;
+        border: none;
+        text-align: center;
+        margin: 10px 50px;
+        padding: 10px;
+        border-radius: 20px;
+        width: 60%;
+        
+    }
+    
+    .fieldset .button:hover{
+        background-color: #EB600A;
+        color: white;
+    }
+}
+
+@media (height: 1366px) {
+    .form{
+        width: 90%;
+        padding: 15px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1110px;
+    }
+}

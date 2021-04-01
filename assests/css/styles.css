@@ -157,3 +157,32 @@ body {
     color: #FF914D;
     font-size: 40px;
 }
+
+.ourcontec .order{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.ourcontec .info p{
+    margin: 20px 40px;
+    padding: 20px;
+}
+
+.ourcontec .picture{
+    margin: 20px 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url(https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 800px) {
+    .ourcontec .order{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
