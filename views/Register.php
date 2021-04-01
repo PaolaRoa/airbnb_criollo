@@ -22,7 +22,7 @@
 
 
     <div class="form">
-        <form class="cd-form" method="POST" id="register-form" action="../controllers/RegisterController.php" >
+        <form class="cd-form"  id="register-user-form" >
             <h1>Registrate</h1>
             </br>
             <div class="container"> 
