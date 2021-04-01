@@ -89,7 +89,7 @@
             </p>
 
             <p class="fieldset">
-                <button class="button" type="submit">Crear cuenta</button>
+                <button class="button" type="submit" style="outline">Crear cuenta</button>
             </p>
             <p>¿Ya tienes cuenta?
                 <a class="link" href="Login.php">Iniciar Sesion</a>
@@ -105,5 +105,6 @@
     <script src="../assests/js/createUser.js"></script>
     <script src="../assests/js/dropdown.js"></script>
     <script src="../assests/js/ViewPassword.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>

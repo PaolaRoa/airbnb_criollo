@@ -10,14 +10,13 @@ user_form.addEventListener("submit", (e) => {
     method: "post",
     body: datas_user,
   })
-    .then((data) => data.json())
+    .then((data) =>data.json())
     .then((data) => {
-      console.log(data)
-    //   house_form.reset();
-    //   Swal.fire("Exito", "Tu propiedad ha sido creada", "success");
+      user_form.reset();
+      Swal.fire("Exito", "Tu usuario ha sido creado", "success");
     })
     .catch(function (error) {
-      console.error("eror", error);
+      Swal.fire("Error", "ya hay un usuario con este correo", "warning");
     });
   
 
