@@ -25,7 +25,6 @@ if($user->loginUserValidation()==0){
 
    }else if($user->validationRol()['rol']==1)
    {
-      
       session_start();
       $user->setSession();
       header('Location: ../views/Lesseegalery.php');
