@@ -22,7 +22,7 @@
 
 
     <div class="form">
-        <form class="cd-form"  id="register-user-form" >
+        <form class="cd-form"  id="register-user-form" autocomplete="off">
             <h1>Registrate</h1>
             </br>
             <div class="container"> 

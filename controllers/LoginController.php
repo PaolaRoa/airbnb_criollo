@@ -2,7 +2,9 @@
 <?php 
 
 require_once "../models/User.php";
+require_once "../utils/funcionesvalidacion.php";
 
+$errors = array();
 
 $email = $_POST["signup-email"];
 $rawPassword = $_POST["signup-password"];
@@ -15,7 +17,7 @@ $user->setUserLogin($email, $password);
 
 if($user->loginUserValidation()==0){
 
-    echo "no estas registrado , falta manejar esto";
+   header('Location: ../views/Login.php');
  }
  else{
     if($user->validationRol()['rol']==0){
