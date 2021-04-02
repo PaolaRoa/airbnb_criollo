@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     
     <link rel="stylesheet"  href="../assests/css/Navbarlessee.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../assests/css/footer.css">
 </head>
 <body>
@@ -22,24 +22,24 @@
     $lessorhouse =$_SESSION['house_lessor'];
     ?>
 
-    <h1>Hola soy las casas<h1>
-    <div class="card" id="card-house">
+    <h1>Tus casas en arrendamiento<h1>
+    <div class="card" style="width: 40%; margin: auto auto" >
     <?php
     foreach($lessorhouse as $house=>$descrip){
        ?>
-        <img src="../assests/img/parquedelcafe.jpeg" alt="Avatar" style="width:50%">
-        <div class="container">
-          <h4><b> <?php echo $descrip['name'] ?></b></h4>
-          <p><?php echo $descrip['description'] ?></p>
-          <p><?php echo $descrip['num_rooms'] ?></p>
-          <p><?php echo $descrip['num_toilets'] ?></p>
-          <p><?php $parking =$descrip['parking_lot'] ==0 ?  "Si" :  "No" ; echo $parking?></p>
-          <p><?php $internet = $$descrip['internet']==0 ? "Si": "No"; echo $internet?></p>
-          <p><?php echo $descrip['price_pn'] ?></p>
-          <button onclick="editHouse(<?php echo $descrip['idhouses']?>)">Editar</button>
-          <button onclick="deleteHouse(<?php echo $descrip['idhouses']?>)">Eliminar</button>
-
-        </div>
+            <img src="../assests/img/parquedelcafe.jpeg" class="card-img-top" alt="photos">
+            <div class="card-body">
+            <h5 class="card-title"><?php echo $descrip['name'] ?></h5>
+            <p class="card-text"><?php echo $descrip['description'] ?></p>
+            </div>
+             <ul class="list-group list-group-flush">
+            <li class="list-group-item"><?php echo $descrip['num_rooms'] ?></li>
+            <li class="list-group-item"><?php echo $descrip['num_toilets'] ?></li>
+            <li class="list-group-item"><?php $internet = $$descrip['internet']==0 ? "Si": "No"; echo $internet?></li>
+            </ul>
+            <button class="btn btn-primary" onclick="editHouse(<?php echo $descrip['idhouses']?>)">Editar</button>
+            <button class="btn btn-danger" onclick="deleteHouse(<?php echo $descrip['idhouses']?>)">Eliminar</button>
+            <br>
       <?php
     }
     ?>
