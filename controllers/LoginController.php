@@ -21,7 +21,7 @@ if($user->loginUserValidation()==0){
     if($user->validationRol()['rol']==0){
       session_start();
       $user->setSession();
-      header('Location: ../views/Newhomelessor.php');
+      header('Location: ../views/GeneralLessor.php');
 
    }else if($user->validationRol()['rol']==1)
    {

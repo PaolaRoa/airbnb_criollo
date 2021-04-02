@@ -16,14 +16,12 @@
 </head>
 <body>
 
-    
     <?php
     include("../views/layouts/NavbarLessor.php");
     $lessorhouse =$_SESSION['house_lessor'];
     ?>
 
-    <h1>Tus casas en arrendamiento<h1>
-    <div class="card" style="width: 40%; margin: auto auto" >
+    <div class="card" style="width: 60%; margin: auto auto" >
     <?php
     foreach($lessorhouse as $house=>$descrip){
        ?>
