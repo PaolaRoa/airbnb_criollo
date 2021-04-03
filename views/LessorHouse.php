@@ -18,7 +18,10 @@
 
     <?php
     include("../views/layouts/NavbarLessor.php");
-    $lessorhouse =$_SESSION['house_lessor'];
+    ?>
+
+    <?php
+      $lessorhouse =$_SESSION['house_lessor'];
     ?>
 
     <div class="card mt-4" style="width: 60%; margin: auto auto" id="card-house">
