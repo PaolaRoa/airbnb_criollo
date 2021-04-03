@@ -21,7 +21,7 @@
     $lessorhouse =$_SESSION['house_lessor'];
     ?>
 
-    <div class="card" style="width: 60%; margin: auto auto" >
+    <div class="card mt-4" style="width: 60%; margin: auto auto" id="card-house">
     <?php
     foreach($lessorhouse as $house=>$descrip){
        ?>
@@ -34,7 +34,7 @@
             <li class="list-group-item"><?php echo $descrip['num_rooms'] ?></li>
             <li class="list-group-item"><?php echo $descrip['num_toilets'] ?></li>
             <li class="list-group-item"><?php $internet = $$descrip['internet']==0 ? "Si": "No"; echo $internet?></li>
-            </ul>
+           </ul>
             <button class="btn btn-primary" onclick="editHouse(<?php echo $descrip['idhouses']?>)">Editar</button>
             <button class="btn btn-danger" onclick="deleteHouse(<?php echo $descrip['idhouses']?>)">Eliminar</button>
             <br>

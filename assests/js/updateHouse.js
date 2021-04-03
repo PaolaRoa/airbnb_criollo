@@ -6,18 +6,19 @@ const showhouse = (houses) => {
 
   for (let house of houses) {
     card_houses.innerHTML += `
-         <img src="../assests/img/parquedelcafe.jpeg" alt="Avatar" style="width:50%">
-         <div class="container">
-           <h4><b> ${house.name}</b></h4>
-           <p>${house.description}</p>
-           <p>${house.num_rooms}</p>
-           <p>${house.num_toilets}</p>
-           <p>${house.parking_lot}</p>
-           <p>${house.internet}</p>
-           <p>${house.price_pn}</p>
-           <button onclick="editHouse(${house.idhouses})">Editar</button>
-           <button onclick="deleteHouse(${house.idhouses})">Eliminar</button>
-        </div>
+    <img src="../assests/img/parquedelcafe.jpeg" class="card-img-top" alt="photos">
+    <div class="card-body">
+    <h5 class="card-title">${house.name}</h5>
+    <p class="card-text">${house.description}</p>
+    </div>
+     <ul class="list-group list-group-flush">
+    <li class="list-group-item">${house.num_rooms}</li>
+    <li class="list-group-item">${house.num_toilets}</li>
+    <li class="list-group-item">${house.internet}</li>
+   </ul>
+    <button class="btn btn-primary" onclick="editHouse(${house.idhouses})">Editar</button>
+    <button class="btn btn-danger" onclick="deleteHouse(${house.idhouses})">Eliminar</button>
+    <br>
            `;
   }
 };
