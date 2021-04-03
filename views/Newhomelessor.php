@@ -26,7 +26,7 @@
 
     <!--Form new house-->
     <div id="form" class="form">
-        <form class="cd-form" id="form_add_house">
+        <form class="cd-form" id="form_add_house" autocomplete="off">
             <h1>Agregar una propiedad</h1>
             </br>
             <div class="container">
