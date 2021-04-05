@@ -139,8 +139,10 @@
     </div>
     
      <!--footer-->
+     
     <?php
         include("../views/layouts/Footer.php");
     ?>
+    <script src="../assests/js/validateDate.js"></script>
 </body>
 </html>
