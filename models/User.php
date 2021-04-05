@@ -2,7 +2,7 @@
 
 
 require_once("../utils/conexion.php");
-
+require_once("../models/House.php");
 
 
 
