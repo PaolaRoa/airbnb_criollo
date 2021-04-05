@@ -3,34 +3,13 @@
 
 require_once "../models/House.php";
 
+require_once "../models/AditionalServer.php";
+
+
+
 session_start();
 
 
-// CREATE HOUSE
-
-// if(isset($_POST["title"]))
-// {
-//    $name_house = $_POST["title"] ;
-//    $description = $_POST["description"];
-//    $num_rooms =$_POST["habitaciones"];
-//    $num_toilets=$_POST["baños"];
-//    $parking_lot =$_POST["parqueadero"];
-//    $internet= $_POST["internet"];
-//    $price_pn=$_POST["price_noche"];
-
-//    $house = new House();
-//    $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn);
-
-
-//    if ($house->createHouse()==1)
-//    {
-
-//       echo'<script type="text/javascript">
-//       alert("Registro de casa exitoso");
-//       window.location.href="../views/Newhomelessor.php";
-//       </script>';
-//    }
-// }
 
 
 // DELETE AND EDIT HOUSE AJAX
@@ -81,6 +60,20 @@ if (isset($_POST["typeoperation"])){
          $price_pn=$_POST["price_noche"];
          $house = new House();
          $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn);
+
+
+         
+         $piscina = $_POST["piscina"];
+         $limpieza = $_POST["limpieza"];
+         $aire = $_POST["aire"];
+         $agua = $_POST["agua"];
+         $sauna = $_POST["sauna"];
+
+         $serveradd  = new AditionalServer();
+
+         $serveradd->setAddServer($piscina);
+         $serveradd->createAddServer();
+
 
          echo json_encode($house->createHouse());
          break;

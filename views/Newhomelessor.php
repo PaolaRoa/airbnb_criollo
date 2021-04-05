@@ -94,15 +94,24 @@
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description">Servicios adicionales</label>
                         <p class="fieldset">
-                        <input type="checkbox" id="checkbox_piscina" >
-                        <label for="accept-terms"><i class="fas fa-swimmer"></i>Piscina</label>
+                        <input type="checkbox" id="checkbox_piscina" value="piscina" name="piscina">
+                        <label for="accept-terms"><i class="fas fa-swimmer" ></i>Piscina</label>
                         </br>
-                        <input type="checkbox" id="checkbox_servicios" >
-                        <label for="accept-terms"><i class="fas fa-concierge-bell"></i>Servicios imprescindibles</label>
+                        <input type="checkbox" id="checkbox_servicios" value="limpieza" name="limpieza" >
+                        <label for="accept-terms"><i class="fas fa-concierge-bell" ></i>Limpieza</label>
                         </br>
-                        <input type="checkbox" id="checkbox_primerosaux" >
-                        <label for="accept-terms"><i class="fas fa-medkit"></i>Botiquín de primeros auxilios</label>
+                        <input type="checkbox" id="checkbox_primerosaux" value="aire" name="aire">
+                        <label for="accept-terms"><i class="fas fa-medkit" ></i>Aire acondicionado</label>
                         </br>
+                        </br>
+                        <input type="checkbox" id="checkbox_primerosaux" value="agua" name="agua">
+                        <label for="accept-terms"><i class="fas fa-medkit" ></i>Agua caliente</label>
+                        </br>
+                        </br>
+                        <input type="checkbox" id="checkbox_primerosaux"  value="sauna" name="sauna">
+                        <label for="accept-terms"><i class="fas fa-medkit" ></i>Sauna</label>
+                        </br>
+
                     </p>
                     <p class="fieldset">
                             <label class="price" for="description">Precio</label>
