@@ -21,7 +21,7 @@
     </br>
 
 <div class="form">
-        <form class="cd-form" method="POST" action="../controllers/LoginController.php">
+        <form class="cd-form" method="POST" action="../controllers/LoginController.php" autocomplete="off" >
             <h1>Inicia Sesion</h1>
             <p class="fieldset">
                 <label class="image-replace cd-email" for="signup-email">E-mail</label>

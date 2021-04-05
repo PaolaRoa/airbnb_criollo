@@ -22,7 +22,7 @@
 
 
     <div class="form">
-        <form class="cd-form" method="POST" id="register-form" action="../controllers/RegisterController.php" >
+        <form class="cd-form"  id="register-user-form" autocomplete="off">
             <h1>Registrate</h1>
             </br>
             <div class="container"> 
@@ -89,7 +89,7 @@
             </p>
 
             <p class="fieldset">
-                <input class="button" type="submit" value="Crear cuenta">
+                <button class="button" type="submit" style="outline">Crear cuenta</button>
             </p>
             <p>¿Ya tienes cuenta?
                 <a class="link" href="Login.php">Iniciar Sesion</a>
@@ -101,8 +101,10 @@
     <?php
         include("../views/layouts/Footer.php");
     ?>
-    <script src="js/jquery.js"></script>
+
+    <script src="../assests/js/createUser.js"></script>
     <script src="../assests/js/dropdown.js"></script>
     <script src="../assests/js/ViewPassword.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>

@@ -48,15 +48,21 @@ class User{
     }
 
     // CREATE
-    public function  createUser(){
+    // public function  createUser(){
 
-        try {
-            $stmt = Conexion::connect()->prepare("INSERT INTO users(name_user , email , password_user, city, pdata, rol) VALUES ('$this->name_user','$this->email','$this->password', '$this->city',  $this->pdata,$this->rol)");
-            $stmt -> execute();
-            return 1;
-        } catch (\Throwable $th) {
-            return 0;
-        }
+    //     try {
+    //         $stmt = Conexion::connect()->prepare("INSERT INTO users(name_user , email , password_user, city, pdata, rol) VALUES ('$this->name_user','$this->email','$this->password', '$this->city',  $this->pdata,$this->rol)");
+    //         $stmt -> execute();
+    //         return 1;
+    //     } catch (\Throwable $th) {
+    //         return 0;
+    //     }
+    // }
+
+    public function  createUser(){
+        $stmt = Conexion::connect()->prepare("INSERT INTO users(name_user , email , password_user, city, pdata, rol) VALUES ('$this->name_user','$this->email','$this->password', '$this->city',  $this->pdata,$this->rol)");
+        $stmt -> execute();
+        return 1;
     }
 
     // VALIDATION EMAIL

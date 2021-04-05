@@ -15,8 +15,8 @@
                       Contacto</a></li></a></li>
                 <li><a href="../views/Porfile.php" ><i class="fas fa-user"></i>
                         <?php 
-                                echo $_SESSION['user_email'];
-                        ?>          
+                                echo "Hola ".$_SESSION['name_user'];
+                        ?>
             </a></a></li>
                 <li><a href="../views/LesseeHelp.php" ><i class="fas fa-tools"></i>
                         Ayuda</a></li></a></li>

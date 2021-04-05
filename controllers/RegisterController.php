@@ -1,35 +1,37 @@
 <?php ob_start() ?>
-<?php 
+<?php
 
 require_once "../models/User.php";
-require_once "../views/Register.php";
 
- $name_user = $_POST["signup-username"];
- $rawPassword = $_POST["signup-password"];
- $password= hash('sha256', $rawPassword);
- $email =  $_POST["signup-email"];
- $city =  $_POST["city"];
- $rol =  $_POST["signup-rol"];
- $pdata= 1;
+if (isset($_POST["typeoperation"])){
+    $type_query = $_POST["typeoperation"];
+
+    switch($type_query){
+      case 'insert_user':
+        $name_user = $_POST["signup-username"];
+        $rawPassword = $_POST["signup-password"];
+        $password= hash('sha256', $rawPassword);
+        $email =  $_POST["signup-email"];
+        $city =  $_POST["city"];
+        $rol =  $_POST["signup-rol"];
+        $pdata= 1;
+
+        $user  = new User();
+        $user->setUserRegister($name_user,$password,$email, $city, $rol, $pdata);
+
+          if($user->validationEmail()==0){
+            echo json_encode($user->createUser());
+          }
+          
+
+      break;
+
+      default:
+      break;
+    }
 
 
- $user  = new User();
-  $user->setUserRegister($name_user,$password,$email, $city, $rol, $pdata);
-
- if($user->validationEmail()==0){
-    $user->createUser();
-    //header('Location: ../index.php');
-    echo'<script type="text/javascript">
-    alert("Registro exitoso");
-    window.location.href="../index.php";
-    </script>';
- }
- else{
-   echo'<script type="text/javascript">
-   alert("este correo ya esta registrado");
-   </script>';
- }
-
+}
 ?>
 
 
