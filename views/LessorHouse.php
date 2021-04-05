@@ -43,7 +43,9 @@
              <ul class="list-group list-group-flush">
             <li class="list-group-item"><?php echo $descrip['num_rooms'] ?></li>
             <li class="list-group-item"><?php echo $descrip['num_toilets'] ?></li>
-            <li class="list-group-item"><?php $internet = $$descrip['internet']==0 ? "Si": "No"; echo $internet?></li>
+            <li class="list-group-item"><?php echo $descrip['internet'] ?></li>
+            <li class="list-group-item"><?php echo $descrip['parking_lot'] ?></li>
+            <li class="list-group-item"><?php echo $descrip['price_pn'] ?></li>
            </ul>
             <button class="btn btn-primary" onclick="editHouse(<?php echo $descrip['idhouses']?>)">Editar</button>
             <button class="btn btn-danger" onclick="deleteHouse(<?php echo $descrip['idhouses']?>)">Eliminar</button>

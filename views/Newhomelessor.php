@@ -77,8 +77,8 @@
                         </Br>
                         <select class="form-select" aria-label="Default select example" name="parqueadero"  id="parqueadero">
                             <option selected>Selecciona</option>
-                            <option value="0">Si</option>
-                            <option value="1">No</option>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
                         </select>
                     </p>
                     <p class="fieldset">
@@ -87,8 +87,8 @@
                         </Br>
                         <select class="form-select" aria-label="Default select example" name="internet"  id="internet">
                             <option selected>Selecciona</option>
-                            <option value="0">Si</option>
-                            <option value="1">No</option>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
                         </select>
                     </p>
                     <p class="fieldset">

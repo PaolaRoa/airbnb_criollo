@@ -15,6 +15,8 @@ const showhouse = (houses) => {
     <li class="list-group-item">${house.num_rooms}</li>
     <li class="list-group-item">${house.num_toilets}</li>
     <li class="list-group-item">${house.internet}</li>
+    <li class="list-group-item">${house.parking_lot}</li>
+    <li class="list-group-item">${house.price_pn}</li>
    </ul>
     <button class="btn btn-primary" onclick="editHouse(${house.idhouses})">Editar</button>
     <button class="btn btn-danger" onclick="deleteHouse(${house.idhouses})">Eliminar</button>
@@ -47,38 +49,38 @@ const editHouse = (id) => {
         var internet = item.internet;
         var price_pn = item.price_pn;
 
-        if (parking_lot == 0) {
+        if (parking_lot === "Si") {
           parking_lot = `
             <select class="form-control" aria-label="Default select example" name="parqueadero_u"  id="parqueadero_u">
             <option >Selecciona</option>
-            <option value="0" selected >Si</option>
-            <option value="1">No</option>
+            <option value="Si" selected >Si</option>
+            <option value="No">No</option>
             </select>
             `;
-        } else if (parking_lot == 1) {
+        } else if (parking_lot == "No") {
           parking_lot = `
             <select class="form-control" aria-label="Default select example" name="parqueadero_u"  id="parqueadero_u">
             <option >Selecciona</option>
-            <option value="0"  >Si</option>
-            <option value="1" selected>No</option>
+            <option value="Si"  >Si</option>
+            <option value="No" selected>No</option>
             </select>
             `;
         }
 
-        if (internet == 0) {
+        if (internet ==="Si") {
           internet = `
           <select class="form-control" aria-label="Default select example" name="internet_u"  id="internet_u">
           <option >Selecciona</option>
-          <option value="0" selected >Si</option>
-          <option value="1">No</option>
+          <option value="Si" selected >Si</option>
+          <option value="No">No</option>
           </select>
           `;
-        } else if (internet == 1) {
+        } else if (internet == "No") {
           internet = `
           <select class="form-control"  aria-label="Default select example" name="internet_u"  id="internet_u">
           <option >Selecciona</option>
-          <option value="0"  >Si</option>
-          <option value="1" selected>No</option>
+          <option value="Si"  >Si</option>
+          <option value="No" selected>No</option>
           </select>
           `;
         }
