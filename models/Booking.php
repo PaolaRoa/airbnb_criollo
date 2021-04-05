@@ -24,7 +24,7 @@ class Booking{
     }
     public function createBooking(){
         $con = Conexion::connect();
-        $stmt = $con->prepare("INSERT INTO bookings (`start_date`, final_date, users_idusers, houseId, total) values('$this->start_d', '$this->final_date','$this->users_idusers', '$this->houseId', '$this->total')");
+        $stmt = $con->prepare("INSERT INTO Bookings (`start_date`, final_date, users_idusers, houseId, total) values('$this->start_d', '$this->final_date','$this->users_idusers', '$this->houseId', '$this->total')");
         $resp = $stmt->execute();
         //set the id that was assign in the last query
         $id=$con->lastInsertId();
@@ -48,6 +48,21 @@ class Booking{
         //calc total
         $total = $price * $days;
         $this->total = $total;   
+    }
+    public function getAvalaibles($sDate, $eDate){
+        $con = Conexion::connect();
+        $stmt = $con->prepare("select h.*
+        FROM houses h
+        left join Bookings b 
+        on h.idhouses = b.houseId
+        where 
+        '$sDate' not between b.start_date and b.final_date
+        and '$eDate' not between b.start_date and b.final_date
+        or h.idhouses not in 
+        (select houseId from Bookings)");
+        $resp = $stmt->execute();
+        $arrHouses = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $arrHouses;
     }
 
 

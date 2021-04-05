@@ -35,8 +35,6 @@
                     else{
                         echo $hoy;
                     }
-                   
-                
                 ?> 
                 required>
             </p>
