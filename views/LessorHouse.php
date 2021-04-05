@@ -26,6 +26,13 @@
 
     <div class="card mt-4" style="width: 60%; margin: auto auto" id="card-house">
     <?php
+    if (count($lessorhouse)==0){
+        ?>
+        <h1> <?php echo $_SESSION['name_user']?> no tienes casas registradas</h1>
+    <?php
+    }
+    else{
+
     foreach($lessorhouse as $house=>$descrip){
        ?>
             <img src="../assests/img/parquedelcafe.jpeg" class="card-img-top" alt="photos">
@@ -42,6 +49,8 @@
             <button class="btn btn-danger" onclick="deleteHouse(<?php echo $descrip['idhouses']?>)">Eliminar</button>
             <br>
       <?php
+    }
+
     }
     ?>
 

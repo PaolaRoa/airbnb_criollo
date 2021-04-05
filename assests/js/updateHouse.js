@@ -36,13 +36,14 @@ const editHouse = (id) => {
   })
     .then((data) => data.json())
     .then((data) => {
+      let parking_lot;
       for (let item of data) {
         var id = item.idhouses;
         var name = item.name;
         var description = item.description;
         var num_rooms = item.num_rooms;
         var num_toilets = item.num_toilets;
-        var parking_lot = item.parking_lot;
+        parking_lot = item.parking_lot;
         var internet = item.internet;
         var price_pn = item.price_pn;
 
