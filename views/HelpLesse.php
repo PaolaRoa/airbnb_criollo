@@ -19,8 +19,8 @@
 
     <!--Navbar-->
     <?php
-    include("../views/layouts/NavbarLessor.php");
-    $lessorhouse = $_SESSION['house_lessor'];
+    include("../views/layouts/NavbarLessee.php");
+    
     ?>
     <!-- BANNER -->
     <div class="banner">

@@ -20,7 +20,7 @@
                                echo "Hola! ".$_SESSION['name_user'];
                         ?>
             </a></a></li>
-                <li><a href="../views/Help.php" ><i class="fas fa-tools"></i>
+                <li><a href="../views/HelpLessor.php" ><i class="fas fa-tools"></i>
                         Ayuda</a></li></a></li>
                 <li><a href="../utils/logout.php"><i class="fas fa-sign-out-alt"></i>
                         Salir</a></li>

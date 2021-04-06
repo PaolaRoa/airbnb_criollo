@@ -150,7 +150,7 @@ const editHouse = (id) => {
 
 const deleteHouse = (id) => {
     Swal.fire({
-        title: "Estas seguro de querer eliminar esta casa?",
+        title: "¿Estas seguro de querer eliminar esta casa?",
         text: "Ya no se podra recuperar",
         icon: "warning",
         showCancelButton: true,
