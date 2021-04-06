@@ -3,6 +3,7 @@
 
 require_once "../models/Booking.php";
 require_once "../models/House.php";
+require_once "../models/AditionalServerHelp.php";
 
 $action = $_GET['action'];
 switch ($action){
@@ -54,9 +55,11 @@ function showHouse(){
     $houseId = $_GET['id'];
     $houseObj = new House();
     $house = $houseObj->getHouse($houseId);
-
+    $servicesObj = new AditionalServerHelp();
+    $services = $servicesObj->getHouseServices($houseId);
     session_start();
     $_SESSION['houseDetail'] = $house;
+    $_SESSION['houseServices'] = $services;
     header('Location: ../views/LesseeHouse.php');
 }
 ?>

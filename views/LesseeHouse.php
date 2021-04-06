@@ -48,6 +48,7 @@
             </div>
             <div class="info">
             <?php
+                    
                     $house = $_SESSION['houseDetail'];
                     foreach ($house as $houseTemp) {
                         $idHouse = $houseTemp['idhouses'];
@@ -79,69 +80,38 @@
                                 <p>$internet</p>
                             </div>
                         </div>
-                        <div class='data-two'>
-                            <h2>Servicios adicionales</h2>
-                            <div class='items'>
-                                <i class='fas fa-swimmer'></i>
-                                <i class='fas fa-concierge-bell'></i>
-                                <i class='fas fa-medkit'></i>
-                                <i class='fas fa-medkit'></i>
-                                <i class='fas fa-medkit'></i>
-                            </div>
-                        </div>
                         <div class='price'>
                                 <h3>Precio:</h3>
                                 <p>$price</p>
                                 <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>
                                     <button>Reservar</button>
                                 <a>
-                        </div>
-                    </div>";
+                        </div>";
+                    
+                    /*$services = $_SESSION['houseServices'];
+                    foreach($services as $s){
+                        echo "<i class='fas fa-swimmer'></i>";
+                    }*/
                     
                     }
-
                 ?>
+                <div class='data-two'>
+                            <h2>Servicios adicionales</h2>
+                            <div class='items'>
+                                <?php
+                                    $services = $_SESSION['houseServices'];
+                                    foreach($services as $s){
+                                        echo "<i class='fas fa-swimmer'></i>";}
+                                ?>
+                                <!--<i class='fas fa-swimmer'></i>
+                                <i class='fas fa-concierge-bell'></i>
+                                <i class='fas fa-medkit'></i>
+                                <i class='fas fa-medkit'></i>
+                                <i class='fas fa-medkit'></i>-->
+                            </div>
+                        </div>
+                </div>;
                 </div>
-                <!--<h1>Nombre de la casa</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nihil tenetur, accusamus fugiat quidem voluptatem ad consequatur atque rerum iste maxime totam eligendi illum. Quidem modi dignissimos sequi tempore a.</p>
-                <div class="data">
-                    <div class="items">
-                        <h2>Habitaciones:</h2>
-                        <p>4</p>
-                    </div>
-                    <div class="items">
-                        <h2>Baños:</h2>
-                        <p>3</p>
-                    </div>
-                    <div class="items">
-                        <h2>Parqueadero:</h2>
-                        <p>si</p>
-                    </div>
-                    <div class="items">
-                        <h2>Internet:</h2>
-                        <p>si</p>
-                    </div>
-                </div>
-                <div class="data-two">
-                    <h2>Servicios adicionales</h2>
-                    <div class="items">
-                        <i class="fas fa-swimmer"></i>
-                        <i class="fas fa-concierge-bell"></i>
-                        <i class="fas fa-medkit"></i>
-                        <i class="fas fa-medkit"></i>
-                        <i class="fas fa-medkit"></i>
-                    </div>
-                </div>
-                <div class="price">
-                        <h3>Precio:</h3>
-                        <p>$50.000</p>
-                        <button>Reservar</button>
-                </div>
-            </div>
-        </div>-->
-
-        <!--Otras propiedades-->
-    <!--Slider-->
         <div class="two">
             <h2>Otras propiedades</h2>
                 <div class="others">
