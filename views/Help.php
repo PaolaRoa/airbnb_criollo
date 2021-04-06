@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     
     <link rel="stylesheet"  href="../assests/css/Navbarlessee.css">
-
+    <link rel="stylesheet"  href="../assests/css/Help.css">
     <link rel="stylesheet" href="../assests/css/footer.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
     include("../views/layouts/NavbarLessor.php");
     $lessorhouse =$_SESSION['house_lessor'];
     ?>
-    <div>
+    <div class="container">
         <h1>¿Tienes alguna queja o reclamo?</h1>
         <p>Comentanos la dificultad que presentas y uno de nuestros asesores se comunicara con tigo por correo electronico</p>
         <div class="form">

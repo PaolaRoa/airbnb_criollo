@@ -19,7 +19,7 @@ body{
 
 footer{
     width: 100%;
-    height: auto;
+    height: 100px;
     background-color: #FF914D;
     border-radius: 25px 25px 0px 0px;
     box-shadow: 0px -7px 10px 3px rgb(0 0 0 / 13%);
