@@ -12,7 +12,6 @@ switch ($action){
         book();
         break;
 }
-
 function search(){
     session_start();
     $_SESSION['start_date']= $_POST['start-date'];
