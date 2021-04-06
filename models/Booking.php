@@ -24,13 +24,13 @@ class Booking{
     }
     public function createBooking(){
         $con = Conexion::connect();
-        $stmt = $con->prepare("INSERT INTO Bookings (`start_date`, final_date, users_idusers, houseId, total) values('$this->start_d', '$this->final_date','$this->users_idusers', '$this->houseId', '$this->total')");
+        $stmt = $con->prepare("INSERT INTO Bookings (`start_date`, final_date, users_idusers, housesId, total) values('$this->start_d', '$this->final_date','$this->users_idusers', '$this->houseId', '$this->total')");
         $resp = $stmt->execute();
         //set the id that was assign in the last query
         $id=$con->lastInsertId();
         $this->setId($id);
         return $resp;
-        //$stmt2 = Conexion::connect()->prepare("INSERT INTO houses_has_Bookings values($this->$houseId','$this->$idBookings)");    
+        //$stmt2 = Conexion::connect()->prepare("INSERT INTO houses_has_Bookings values($this->$housesId','$this->$idBookings)");    
     }
     public function setId($id){
         $this->idBookings = $id;
@@ -54,12 +54,12 @@ class Booking{
         $stmt = $con->prepare("select h.*
         FROM houses h
         left join Bookings b 
-        on h.idhouses = b.houseId
+        on h.idhouses = b.housesId
         where 
         '$sDate' not between b.start_date and b.final_date
         and '$eDate' not between b.start_date and b.final_date
         or h.idhouses not in 
-        (select houseId from Bookings)");
+        (select housesId from Bookings)");
         $resp = $stmt->execute();
         $arrHouses = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $arrHouses;
