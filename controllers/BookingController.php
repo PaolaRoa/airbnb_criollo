@@ -2,6 +2,7 @@
 <?php
 
 require_once "../models/Booking.php";
+require_once "../models/House.php";
 
 $action = $_GET['action'];
 switch ($action){
@@ -11,6 +12,9 @@ switch ($action){
     case "book":
         book();
         break;
+    case "detail":
+        showHouse();
+        //header('Location: ../views/LesseHouse.php');
 }
 function search(){
     session_start();
@@ -46,9 +50,14 @@ function book(){
         </script>';
     }
 }
+function showHouse(){
+    $houseId = $_GET['id'];
+    $houseObj = new House();
+    $house = $houseObj->getHouse($houseId);
 
-
-
-
+    session_start();
+    $_SESSION['houseDetail'] = $house;
+    header('Location: ../views/LesseeHouse.php');
+}
 ?>
 <?php ob_end_flush();?>

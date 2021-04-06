@@ -99,15 +99,15 @@
                                     <span>
                                 <i class='fa fa-bath'></i>".$bahts."
                                  </span>
-                                <div class='rent-price pull-left'>".$price."</div>
-                                 <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>
+                                <div class='rent-price pull-left'>".$price."</div>   
+                                 <a href='../controllers/BookingController.php?action=detail&id=".$idHouse."'>
                                  <button>
                                 VER MAS
                                 </button>
                                 </a>
                                 </div>";
           
-               // $this->$email= $row['email'];
+               // $this->$email= $row['email'] <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>;
             };
         ?>
         <div class="card-one">
@@ -141,6 +141,6 @@
     <?php
         include("../views/layouts/Footer.php");
     ?>
-    <script src="../assests/js/validateDate.js"></script>
+    <!--<script src="../assests/js/validateDate.js"></script>-->
 </body>
 </html>
