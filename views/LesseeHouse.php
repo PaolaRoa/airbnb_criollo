@@ -97,6 +97,7 @@
                         </div>
                         <div class="info">
                         <h1>Nombre de la casa</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor qui ipsum molestiae commodi sed quod dolorem odit, fugit itaque, deserunt ad ex, quibusdam consectetur obcaecati necessitatibus nulla accusantium repellendus. Ullam.</p>
                         </div>
                     </div>
         </div>
