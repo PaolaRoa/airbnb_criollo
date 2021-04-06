@@ -9,7 +9,9 @@
         <label for="btn-menu"><i class="fas fa-bars"></i></label>
         <nav class="menu">
             <ul>
-                <li><a href="../views/Register.php" >
+                <li><a href="../views/Register.php" ><i class="fas fa-user-plus"></i>
+
+
                       Registrarse</a></li></a></li>
                 <li><a href="#contacto" ><i class="fas fa-question-circle"></i>
                       Contacto</a></li></a></li>
