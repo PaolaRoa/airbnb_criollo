@@ -100,15 +100,15 @@
                         <input type="checkbox" id="checkbox_servicios" value="limpieza" name="limpieza" >
                         <label for="accept-terms"><i class="fas fa-concierge-bell" ></i>Limpieza</label>
                         </br>
-                        <input type="checkbox" id="checkbox_primerosaux" value="aire" name="aire">
+                        <input type="checkbox" id="checkbox_aire" value="aire" name="aire">
                         <label for="accept-terms"><i class="fas fa-medkit" ></i>Aire acondicionado</label>
                         </br>
                         </br>
-                        <input type="checkbox" id="checkbox_primerosaux" value="agua" name="agua">
+                        <input type="checkbox" id="checkbox_agua" value="agua" name="agua">
                         <label for="accept-terms"><i class="fas fa-medkit" ></i>Agua caliente</label>
                         </br>
                         </br>
-                        <input type="checkbox" id="checkbox_primerosaux"  value="sauna" name="sauna">
+                        <input type="checkbox" id="checkbox_sauna"  value="sauna" name="sauna">
                         <label for="accept-terms"><i class="fas fa-medkit" ></i>Sauna</label>
                         </br>
 
@@ -128,10 +128,14 @@
                         </p>
                    </div>
         </form>
+
+
     </div> <!-- cd-signup -->
     </div>
 </form>
 </div>
+
+
 
 
 <?php

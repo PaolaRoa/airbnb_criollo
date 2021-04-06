@@ -4,8 +4,6 @@ house_form.addEventListener("submit", (e) => {
   e.preventDefault();
   let datas_add = new FormData(document.getElementById("form_add_house"));
 
-
- 
   const url = "../controllers/HouseController.php";
   datas_add.append("typeoperation", "insert");
   
