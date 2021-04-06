@@ -38,21 +38,7 @@
 
 
             <div class="form">
-                <div class="politics">
-                    <p>Comentanos la dificultad que presentas y uno de nuestros asesores se comunicara con tigo por correo electronico
-
-                        </br>
-                        ¡IMPORTANTE!
-                        </br>
-                        SURAMERICANA pagará la indemnización que corresponde a los dos (2)
-                        primeros meses del incumplimiento por parte del inquilino, dentro del mes siguiente
-                        a la fecha en la que se formaliza la reclamación. Un mes después de efectuado el
-                        primer pago, SURAMERICANA realizará el segundo pago, y así sucesivamente hasta que
-                        ilino entregue el inmueble o pague la deuda que tiene con el arrendador.
-                        El límite máximo de indemnización es de treinta y seis (36) meses siempre y
-                        cuando se encuentre en vigencia este contrato de seguro.
-                    </p>
-                </div>
+    
                 <form class="cd-form" method="POST" action="../controllers/LoginController.php">
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="signup-asunto"></label>
