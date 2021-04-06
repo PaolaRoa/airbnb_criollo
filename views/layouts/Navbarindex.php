@@ -14,7 +14,8 @@
                     Casas</a></li>
                 <li><a href="#contacto" ><i class="fas fa-question-circle"></i>
                     Contacto</a></li></a></li>
-                <li><a href="#nosotros" >Nosotros</a></li>
+                <li><a href="#nosotros" ><i class="fas fa-users"></i>
+                    Nosotros</a></li>
                 <li><a href="./views/Login.php" ><i class="fas fa-user-circle"></i>
                     Ingreso</a></li>
                 <li><a href="./views/Register.php" ><i class="fas fa-user-plus"></i>

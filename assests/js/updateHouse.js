@@ -4,25 +4,36 @@ const showhouse = (houses) => {
 
     for (let house of houses) {
         card_houses.innerHTML += `
-    <img src="../assests/img/parquedelcafe.jpeg" class="card-img-top" alt="photos">
-                <div class="card-body">
-                    <h3 class="card-title">${house.name}</h3>
+        <div class="card ">
+            <!-- Data main -->
+            <img src="../assests/img/parquedelcafe.jpeg" class="card-img-top" alt="photos">
+            <div class="card-body">
+                <h3 class="card-title">${house.name}</h3>
+                <div>
                     <p class="card-text">${house.description}</p>
                 </div>
+                
+            </div>
 
-                <!-- House Components -->
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="fas fa-bed"></i> ${house.num_rooms}Habitaciones </li>
-                    <li class="list-group-item"><i class="fas fa-bath"></i>${house.num_toilets} Baños</li>
-                    <li class="list-group-item"><i class="fas fa-wifi"></i>${house.internet}  Zona WiFi </li>
-                    <li class="list-group-item"><i class="fas fa-parking"></i>${house.parking_lot} Parqueadero</li>
-                    <li class="list-group-item"><i class="fas fa-dollar-sign"></i>${house.price_pn}  Valor por noche </li>
-                </ul>
+            <!-- House Components -->
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-bed"></i>${house.num_rooms} Habitaciones </li>
+                <li class="list-group-item"><i class="fas fa-bath"></i>${house.num_toilets} Baños</li>
+                <li class="list-group-item"><i class="fas fa-wifi"></i>Zona WiFi: ${house.internet}</li>
+                <li class="list-group-item"><i class="fas fa-parking"></i>Parqueadero: ${house.parking_lot}</li>
+            </ul>
 
-                <!-- Buttons Crud -->
+            <ul class="list-group-two">
+                <li class="list-group-item"><i class="fas fa-dollar-sign"></i>${house.price_pn} Valor por noche </li>
+            </ul>
+
+            <!-- Buttons Crud -->
+            <div class="buttons">
                 <button class="btn-primary" onclick="editHouse(${house.idhouses})"><i class="fas fa-pencil-alt"></i>Editar</button>
                 <button class="btn-danger" onclick="deleteHouse(${house.idhouses})"><i class="fas fa-trash-alt"></i>Eliminar</button>
-                <br>
+                </br>
+            </div>
+        </div>
            `;
     }
 };
