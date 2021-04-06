@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(253, 179, 110, 0.164);
+    background-color: rgba(253, 179, 110, 0);
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,10 +19,9 @@ body{
     height: 70vh;
     margin: 10px 10px;
     padding: 0;
-    
 }
 
-.cd-form{
+.cd-form {
     align-items: center;
     justify-content: center;
     background-color: rgb(255, 255, 255);
@@ -32,14 +30,15 @@ body{
     padding: 30px;
     border-radius: 20px;
 }
-.cd-form h1{
+
+.cd-form h1 {
     text-align: center;
     padding-top: 10px;
     color: #FF914D;
     font-family: 'Satisfy', cursive;
 }
 
-.fieldset label{
+.fieldset label {
     color: rgb(0, 0, 0);
     margin-left: 20px;
 }
@@ -51,22 +50,21 @@ body{
     margin-right: 10px;
 }
 
-
-.fieldset .text{
+.fieldset .text {
     font-size: 20px;
     width: 80%;
     padding: 10px;
     border: none;
 }
 
-.fieldset .password{
+.fieldset .password {
     font-size: 20px;
     width: 70%;
     padding: 10px;
     border: none;
 }
 
-.fieldset .button{
+.fieldset .button {
     background-color: #FF914D;
     color: white;
     border: none;
@@ -75,20 +73,18 @@ body{
     padding: 10px;
     border-radius: 20px;
     width: 80%;
-    
 }
 
-.fieldset .button:hover{
+.fieldset .button:hover {
     background-color: #EB600A;
     color: white;
 }
 
 
-
 /* Responsive*/
 
 @media (height: 1366px) {
-    .form{
+    .form {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -97,10 +93,8 @@ body{
         height: 1110px;
         margin: 10px 10px;
         padding: 0;
-        
     }
-
-    .cd-form{
+    .cd-form {
         align-items: center;
         justify-content: center;
         background-color: rgb(255, 255, 255);
@@ -111,26 +105,23 @@ body{
         padding: 30px;
         border-radius: 20px;
     }
-
-    .cd-form h1{
+    .cd-form h1 {
         text-align: center;
         padding-top: 10px;
         margin-bottom: 30px;
         color: #FF914D;
         font-family: 'Satisfy', cursive;
     }
-     .fieldset{
-         padding: 50px 0;
-     }
-
-     .fieldset .text{
+    .fieldset {
+        padding: 50px 0;
+    }
+    .fieldset .text {
         font-size: 20px;
         width: 80%;
         padding: 10px;
         border: none;
     }
-    
-    .fieldset .password{
+    .fieldset .password {
         font-size: 20px;
         width: 70%;
         padding: 10px;
@@ -138,7 +129,7 @@ body{
 }
 
 @media (height: 1024px) {
-    .form{
+    .form {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -147,54 +138,49 @@ body{
         height: 772px;
         margin: 10px 10px;
         padding: 0;
-        
     }
-
-    .cd-form h1{
+    .cd-form h1 {
         text-align: center;
         padding-top: 10px;
         margin-bottom: 30px;
         color: #FF914D;
         font-family: 'Satisfy', cursive;
     }
-     .fieldset{
-         padding: 20px 0;
-     }
+    .fieldset {
+        padding: 20px 0;
+    }
 }
 
 @media (max-width: 420px) {
-    .fieldset .text{
+    .fieldset .text {
         font-size: 20px;
         width: 65%;
         padding: 10px;
         border: none;
     }
-    
-    .fieldset .password{
+    .fieldset .password {
         font-size: 20px;
         width: 40%;
         padding: 10px;
-    }   
+    }
 }
 
 @media (width: 320px) {
-    .fieldset .text{
+    .fieldset .text {
         font-size: 20px;
         width: 65%;
         padding: 10px;
         border: none;
     }
-    
-    .fieldset .password{
+    .fieldset .password {
         font-size: 20px;
         width: 35%;
         padding: 10px;
-    }   
+    }
 }
 
 @media (width: 280px) {
-
-    .form{
+    .form {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -203,22 +189,19 @@ body{
         height: 600px;
         margin: 10px 10px;
         padding: 0;
-        
     }
-
-    .fieldset{
+    .fieldset {
         padding: 10px 0;
     }
-    .fieldset .text{
+    .fieldset .text {
         font-size: 20px;
         width: 90%;
         padding: 10px;
         border: none;
     }
-    
-    .fieldset .password{
+    .fieldset .password {
         font-size: 20px;
         width: 90%;
         padding: 10px;
-    }   
+    }
 }
