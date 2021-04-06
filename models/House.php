@@ -33,8 +33,18 @@ class House {
     public function createHouse(){
         $stmt = Conexion::connect()->prepare("INSERT INTO houses(name , description, num_rooms ,num_toilets, parking_lot, 	internet, users_idusers, price_pn) VALUES ('$this->name_property','$this->description', ' $this->num_rooms','$this->num_toilets', '$this->parking_lot','$this->internet', '$this->id_user','$this->price_pn' )");
         $stmt -> execute();
+        // $id=$stmt->lastInsertId();
         return 1;
     }
+
+    public function Last_id(){
+        $stmt = Conexion::connect()->prepare("SELECT idhouses FROM houses ORDER BY idhouses DESC LIMIT 1");
+        $stmt -> execute();
+        $arr = $stmt->fetch();
+        return $arr;
+    }
+
+
 
     public function LessorHouse($id){
         $stmt = Conexion::connect()->prepare("SELECT idhouses , name , description , num_rooms, num_toilets,parking_lot, internet, price_pn FROM houses WHERE users_idusers='$id'");
@@ -88,6 +98,10 @@ class House {
             return "error ocurrio";
         }
     }
+
+    
+
+
 
 }
 

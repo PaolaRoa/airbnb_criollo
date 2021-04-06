@@ -3,34 +3,13 @@
 
 require_once "../models/House.php";
 
+require_once "../models/AditionalServerHelp.php";
+
+
+
 session_start();
 
 
-// CREATE HOUSE
-
-// if(isset($_POST["title"]))
-// {
-//    $name_house = $_POST["title"] ;
-//    $description = $_POST["description"];
-//    $num_rooms =$_POST["habitaciones"];
-//    $num_toilets=$_POST["baños"];
-//    $parking_lot =$_POST["parqueadero"];
-//    $internet= $_POST["internet"];
-//    $price_pn=$_POST["price_noche"];
-
-//    $house = new House();
-//    $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn);
-
-
-//    if ($house->createHouse()==1)
-//    {
-
-//       echo'<script type="text/javascript">
-//       alert("Registro de casa exitoso");
-//       window.location.href="../views/Newhomelessor.php";
-//       </script>';
-//    }
-// }
 
 
 // DELETE AND EDIT HOUSE AJAX
@@ -82,7 +61,40 @@ if (isset($_POST["typeoperation"])){
          $house = new House();
          $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn);
 
-         echo json_encode($house->createHouse());
+         $create_house=$house->createHouse();
+
+         $lastid_house= $house->Last_id();
+
+         // // aditional server
+         $piscina = $_POST["piscina"];
+         $limpieza = $_POST["limpieza"];
+         $aire = $_POST["aire"];
+         $agua = $_POST["agua"];
+         $sauna = $_POST["sauna"];
+
+         $servers = array($piscina, $limpieza, $aire, $agua, $sauna);
+
+         foreach($servers as $server )
+         {
+               if($server != NULL){
+
+
+                  $serveradd  = new AditionalServerHelp();
+                  // set for id service
+                  $serveradd->setServer($server);
+                  $idserver =$serveradd->idServer();
+                  // set fot add server
+                  $serveradd->setServerHelp($lastid_house["idhouses"], $idserver["idadditional_services"]);
+                  $serveradd->createServerHelp();
+
+
+
+               }
+         }
+
+
+
+         echo json_encode($create_house);
          break;
 
         default:
@@ -104,13 +116,6 @@ else
    window.location.href="../views/LessorHouse.php";
    </script>';
 }
-
-
-
-
-
-
-
 
 
 ?>
