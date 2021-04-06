@@ -101,7 +101,7 @@
                                 <?php
                                     $services = $_SESSION['houseServices'];
                                     foreach($services as $s){
-                                        echo "<i class='fas fa-swimmer'></i>";}
+                                        echo "<i class='fas' id=$s></i>";}
                                 ?>
                                 <!--<i class='fas fa-swimmer'></i>
                                 <i class='fas fa-concierge-bell'></i>
@@ -136,5 +136,10 @@
         include("../views/layouts/Footer.php");
     ?>
     <script src="../assests/js/imageHouse.js"></script>
+    <script src="../assests/js/setIconService.js"></script>
+
+
+
+
 </body>
 </html>
