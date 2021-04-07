@@ -34,6 +34,7 @@
                     }
                     else{
                         echo $hoy;
+                        $_SESSION['start_date']=$hoy;
                     }
                 ?> 
                 required>
@@ -56,6 +57,7 @@
                     }
                     else{
                         echo $nuevafecha;
+                        $_SESSION['end_date']=$nuevafecha;
                     }
                 ?>
                 >
@@ -141,6 +143,6 @@
     <?php
         include("../views/layouts/Footer.php");
     ?>
-    <!--<script src="../assests/js/validateDate.js"></script>-->
+    <script src="../assests/js/validateDate.js"></script>
 </body>
 </html>
