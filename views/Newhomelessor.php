@@ -26,7 +26,7 @@
 
     <!--Form new house-->
     <div id="form" class="form">
-        <form class="cd-form" id="form_add_house" autocomplete="off">
+        <form class="cd-form" id="form_add_house" autocomplete="off" enctype="multipart/form-data">
             <h1>Agregar una propiedad</h1>
             </br>
             <div class="container">
@@ -46,17 +46,18 @@
                     </p>
 
                     <p class="fieldset">
-                        <label class="image-replace cd-email" for="description">imagen principal</label>
+                        <label class="image-replace" for="description">imagen principal</label>
                         </Br>
                         </Br>
-                        <input class="text" type="image" placeholder="Descripción" name="main-picture" id="main-picture" required>
+                        <input class="text" type="file" placeholder="Descripción" name="main-picture" id="main-picture" required>
+
                     </p>
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="description">Imagenes de apoyo</label>
+                    <!-- <p class="fieldset">
+                        <label class="image-replace " for="description">Imagenes de apoyo</label>
                         </Br>
                         </Br>
-                        <input class="text" type="image" placeholder="Descripción" name="additional-images" id="additional-images" required>
-                    </p>
+                        <input class="text" type="file" placeholder="Descripción" name="additional-images" id="additional-images" required>
+                    </p> -->
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description">Habitaciones</label>
                         </Br>
@@ -132,8 +133,11 @@
 
     </div> <!-- cd-signup -->
     </div>
+
+
 </form>
 </div>
+
 
 
 

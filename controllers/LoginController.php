@@ -18,7 +18,12 @@ $user->setUserLogin($email, $password);
 
 if($user->loginUserValidation()==0){
 
+   session_start();
+   $_SESSION["msg"] = "Verifica tu usuario o constraseña";
+   $_SESSION["msg_type"] = "danger";
+
    header('Location: ../views/Login.php');
+
  }
  else{
     if($user->validationRol()['rol']==0){

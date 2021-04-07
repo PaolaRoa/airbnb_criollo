@@ -5,6 +5,7 @@ require_once "../models/House.php";
 
 require_once "../models/AditionalServerHelp.php";
 
+require_once "../models/Imagenes.php";
 
 
 session_start();
@@ -93,6 +94,21 @@ if (isset($_POST["typeoperation"])){
          }
 
 
+
+
+         // $imagen = $_FILES['main-picture']['name'];
+         // $nombre = time();
+         // $url = $nombre."-".$imagen;
+         // $storage_img=$_SERVER['DOCUMENT_ROOT'];
+
+
+         // $temp  = $_FILES['main-picture']['tmp_name'];
+
+         // $Imagen = new Imagenes();
+         // $Imagen->setImagen($url);
+         // $Imagen->createImagenMain();
+
+         // move_uploaded_file($temp,$storage_img."/"."airbnb_criollo"."/"."imagenes"."/".$url);
 
          echo json_encode($create_house);
          break;
