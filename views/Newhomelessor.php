@@ -46,7 +46,8 @@
                     </p>
 
                     <p class="fieldset">
-                        <label class="image-replace" for="description">imagen principal</label>
+                      
+                        <label class="image-replace cd-email" for="description"><i class="fas fa-image"></i>imagen principal</label>
                         </Br>
                         </Br>
                         <input class="text" type="file" placeholder="Descripción" name="main-picture" id="main-picture" required>
@@ -54,12 +55,14 @@
                     </p>
                     <!-- <p class="fieldset">
                         <label class="image-replace " for="description">Imagenes de apoyo</label>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description"><i class="fas fa-images"></i>Imagenes de apoyo</label>
                         </Br>
                         </Br>
                         <input class="text" type="file" placeholder="Descripción" name="additional-images" id="additional-images" required>
                     </p> -->
                     <p class="fieldset">
-                        <label class="image-replace cd-email" for="description">Habitaciones</label>
+                        <label class="image-replace cd-email" for="description"><i class="fas fa-bed"></i>Habitaciones</label>
                         </Br>
                         </Br>
                         <input class="number" type="number" placeholder="00" name="habitaciones" id="habitaciones" required>
@@ -67,13 +70,13 @@
                 </div>
                 <div>
                     <p class="fieldset">
-                        <label class="image-replace cd-email" for="description">Baños</label>
+                        <label class="image-replace cd-email" for="description"><i class="fas fa-bath"></i>Baños</label>
                         </Br>
                         </Br>
                         <input class="number" type="number" placeholder="00" name="baños" id="baños" required>
                     </p>
                     <p class="fieldset">
-                        <label class="image-replace cd-email" for="description">Parqueadero</label>
+                        <label class="image-replace cd-email" for="description"><i class="fas fa-parking"></i>Parqueadero</label>
                         </Br>
                         </Br>
                         <select class="form-select" aria-label="Default select example" name="parqueadero"  id="parqueadero">
@@ -83,7 +86,7 @@
                         </select>
                     </p>
                     <p class="fieldset">
-                        <label class="image-replace cd-email" for="description">Internet</label>
+                        <label class="image-replace cd-email" for="description"><i class="fas fa-wifi"></i>Internet</label>
                         </Br>
                         </Br>
                         <select class="form-select" aria-label="Default select example" name="internet"  id="internet">
@@ -98,24 +101,26 @@
                         <input type="checkbox" id="checkbox_piscina" value="piscina" name="piscina">
                         <label for="accept-terms"><i class="fas fa-swimmer" ></i>Piscina</label>
                         </br>
+                        </br>
                         <input type="checkbox" id="checkbox_servicios" value="limpieza" name="limpieza" >
-                        <label for="accept-terms"><i class="fas fa-concierge-bell" ></i>Limpieza</label>
+                        <label for="accept-terms"><i class="fas fa-broom"></i>Limpieza</label>
+                        </br>
                         </br>
                         <input type="checkbox" id="checkbox_aire" value="aire" name="aire">
-                        <label for="accept-terms"><i class="fas fa-medkit" ></i>Aire acondicionado</label>
+                        <label for="accept-terms"><i class="fas fa-wind"></i>Aire acondicionado</label>
                         </br>
                         </br>
                         <input type="checkbox" id="checkbox_agua" value="agua" name="agua">
-                        <label for="accept-terms"><i class="fas fa-medkit" ></i>Agua caliente</label>
+                        <label for="accept-terms"><i class="fas fa-shower"></i>Agua caliente</label>
                         </br>
                         </br>
                         <input type="checkbox" id="checkbox_sauna"  value="sauna" name="sauna">
-                        <label for="accept-terms"><i class="fas fa-medkit" ></i>Sauna</label>
+                        <label for="accept-terms"><i class="fas fa-hot-tub"></i>Sauna</label>
                         </br>
 
                     </p>
                     <p class="fieldset">
-                            <label class="price" for="description">Precio</label>
+                            <label class="price" for="description"><i class="fas fa-dollar-sign"></i>Valor por noche</label>
                             </Br>
                             </Br>
                             <input class="number" type="number" placeholder="eje.$50.000" name="price_noche" id="price_noche" required>

@@ -31,58 +31,54 @@
     </div>
     <!--BANNER END -->
 
-
+    <!--CARD MASTER -->
     <div class="contedor-tarjetas">
+        <!--FORM -->
+        <div class="form">
 
-        <div class="card">
-
-
-            <div class="form">
-                <div class="politics">
-                    <p>Comentanos la dificultad que presentas y uno de nuestros asesores se comunicara con tigo por correo electronico
-
-                        </br>
-                        ¡IMPORTANTE!
-                        </br>
-                        SURAMERICANA pagará la indemnización que corresponde a los dos (2)
-                        primeros meses del incumplimiento por parte del inquilino, dentro del mes siguiente
-                        a la fecha en la que se formaliza la reclamación. Un mes después de efectuado el
-                        primer pago, SURAMERICANA realizará el segundo pago, y así sucesivamente hasta que
-                        ilino entregue el inmueble o pague la deuda que tiene con el arrendador.
-                        El límite máximo de indemnización es de treinta y seis (36) meses siempre y
-                        cuando se encuentre en vigencia este contrato de seguro.
-                    </p>
-                </div>
-                <form class="cd-form" method="POST" action="../controllers/LoginController.php">
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="signup-asunto"></label>
+            <form class="cd-form" method="POST" action="../controllers/LoginController.php">
+                <p class="fieldset">
+                    <label class="image-replace cd-email" for="signup-asunto"></label>
 
 
-                        <i class="fas fa-pencil-alt"></i> <input class="text" id="signup-email" type="email" placeholder="Asunto" name="signup-email" id="signup-email" required>
-                    </p>
+                    <i class="fas fa-pencil-alt"></i> <input class="text" id="signup-email" type="email" placeholder="Asunto" name="signup-email" id="signup-email" required>
+                </p>
+                </br>
+                </br>
+                </br>
+                <p class="fieldset">
+                    <label class="image-replace cd-password" for="signup-password"></label>
+
+                    <i class="fas fa-envelope-open-text"></i>
+
+
+                    <input class="text" id="signup-password" type="text" placeholder="Mensaje" name="signup-password" id="signup-password" required>
+                </p>
+                </br>
+                </br>
+                <p class="fieldset">
+                    <input class="button" type="submit" value="Enviar">
+                </p>
+                <p>¿Deseas comunicarte directamente con un asesor?
+                    <a class="link" href="../views/Register.php">haz clic aquí</a>
+                </p>
+            </form>
+            <!--POLITICS 
+            <div class="politics">
+                <p>Comentanos la dificultad que presentas y uno de nuestros asesores se comunicara con tigo por correo electronico
                     </br>
-                    </br>
-                    </br>
-                    <p class="fieldset">
-                        <label class="image-replace cd-password" for="signup-password"></label>
+                    ¡IMPORTANTE!SURAMERICANA pagará la indemnización que corresponde a los dos (2)
+                    primeros meses del incumplimiento por parte del inquilino, dentro del mes siguiente
+                    a la fecha en la que se formaliza la reclamación. Un mes después de efectuado el
+                    primer pago, SURAMERICANA realizará el segundo pago, y así sucesivamente hasta que
+                    ilino entregue el inmueble o pague la deuda que tiene con el arrendador.
+                    El límite máximo de indemnización es de treinta y seis (36) meses siempre y
+                    cuando se encuentre en vigencia este contrato de seguro.
+                </p>
+            </div>-->
 
-                        <i class="fas fa-envelope-open-text"></i>
-
-
-                        <input class="text" id="signup-password" type="text" placeholder="Mensaje" name="signup-password" id="signup-password" required>
-                    </p>
-                    </br>
-                    </br>
-                    <p class="fieldset">
-                        <input class="button" type="submit" value="Enviar">
-                    </p>
-                    <p>¿Deseas comunicarte directamente con un asesor?
-                        <a class="link" href="../views/Register.php">haz clic aquí</a>
-                    </p>
-                </form>
-
-            </div>
         </div>
+
     </div>
 
     <!--Footer-->
