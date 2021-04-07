@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <!-- Footer -->
  <footer>
     <a name="contacto"></a>

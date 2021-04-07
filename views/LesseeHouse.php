@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    /*session_start();*/
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -47,46 +47,71 @@
                 </div>
             </div>
             <div class="info">
-                <h1>Nombre de la casa</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nihil tenetur, accusamus fugiat quidem voluptatem ad consequatur atque rerum iste maxime totam eligendi illum. Quidem modi dignissimos sequi tempore a.</p>
-                <div class="data">
-                    <div class="items">
-                        <h2>Habitaciones:</h2>
-                        <p>4</p>
-                    </div>
-                    <div class="items">
-                        <h2>Baños:</h2>
-                        <p>3</p>
-                    </div>
-                    <div class="items">
-                        <h2>Parqueadero:</h2>
-                        <p>si</p>
-                    </div>
-                    <div class="items">
-                        <h2>Internet:</h2>
-                        <p>si</p>
-                    </div>
+            <?php
+                    
+                    $house = $_SESSION['houseDetail'];
+                    foreach ($house as $houseTemp) {
+                        $idHouse = $houseTemp['idhouses'];
+                        $name=$houseTemp['name'];
+                        $description = $houseTemp['description'];
+                        $beds= $houseTemp['num_rooms'];
+                        $baths = $houseTemp['num_toilets'];
+                        $price = $houseTemp['price_pn'];
+                        $parking = $houseTemp['parking_lot'];
+                        $internet = $houseTemp['internet'];
+                        echo "
+                        <h1>$name</h1>
+                        <p>$description</p>
+                        <div class='data'>
+                            <div class='items'>
+                                <h2>Habitaciones:</h2>
+                                <p>$beds</p>
+                            </div>
+                            <div class='items'>
+                                <h2>Baños:</h2>
+                                <p>$baths</p>
+                            </div>
+                            <div class='items'>
+                                <h2>Parqueadero:</h2>
+                                <p>$parking</p>
+                            </div>
+                            <div class='items'>
+                                <h2>Internet:</h2>
+                                <p>$internet</p>
+                            </div>
+                        </div>
+                        <div class='price'>
+                                <h3>Precio:</h3>
+                                <p>$price</p>
+                                <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>
+                                    <button>Reservar</button>
+                                <a>
+                        </div>";
+                    
+                    /*$services = $_SESSION['houseServices'];
+                    foreach($services as $s){
+                        echo "<i class='fas fa-swimmer'></i>";
+                    }*/
+                    
+                    }
+                ?>
+                <div class='data-two'>
+                            <h2>Servicios adicionales</h2>
+                            <div class='items'>
+                                <?php
+                                    $services = $_SESSION['houseServices'];
+                                    foreach($services as $s){
+                                        echo "<i class='fas' id=$s></i>";}
+                                ?>
+                                <!--<i class='fas fa-swimmer'></i>
+                                <i class='fas fa-concierge-bell'></i>
+                                <i class='fas fa-medkit'></i>
+                                <i class='fas fa-medkit'></i>
+                                <i class='fas fa-medkit'></i>-->
+                            </div>
+                        </div>
+                </div>;
                 </div>
-                <div class="data-two">
-                    <h2>Servicios adicionales</h2>
-                    <div class="items">
-                        <i class="fas fa-swimmer"></i>
-                        <i class="fas fa-concierge-bell"></i>
-                        <i class="fas fa-medkit"></i>
-                        <i class="fas fa-medkit"></i>
-                        <i class="fas fa-medkit"></i>
-                    </div>
-                </div>
-                <div class="price">
-                        <h3>Precio:</h3>
-                        <p>$50.000</p>
-                        <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-
-        <!--Otras propiedades-->
-    <!--Slider-->
         <div class="two">
             <h2>Otras propiedades</h2>
                 <div class="others">
@@ -111,5 +136,10 @@
         include("../views/layouts/Footer.php");
     ?>
     <script src="../assests/js/imageHouse.js"></script>
+    <script src="../assests/js/setIconService.js"></script>
+
+
+
+
 </body>
 </html>
