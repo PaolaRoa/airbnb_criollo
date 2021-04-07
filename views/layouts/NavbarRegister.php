@@ -15,10 +15,6 @@
                       
                 <li><a href="#contacto" ><i class="fas fa-question-circle"></i>
                       Contacto</a></li></a></li>
-                
-                <li><a href="../views/Help.php" ><i class="fas fa-tools"></i>
-                        Ayuda</a></li></a></li>
-               
             </ul>
         </nav>
     </header>
