@@ -15,8 +15,8 @@
                       Agregar casas</a></li>
                 <li><a href="#contacto" ><i class="fas fa-question-circle"></i>
                       Contacto</a></li>
-                <li><a href="../views/Porfile.php" ><i class="fas fa-user"></i>
-                <?php 
+                <li><a href="../views/GeneralLessor.php" ><i class="fas fa-user"></i>
+                <?php
                                echo "Hola! ".$_SESSION['name_user'];
                         ?>
             </a></a></li>

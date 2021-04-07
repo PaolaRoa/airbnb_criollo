@@ -15,7 +15,7 @@ session_start();
                     Reservas</a></li>
             <li><a href="#contacto"><i class="fas fa-question-circle"></i>
                     Contacto</a></li></a></li>
-            <li><a href="../views/Porfile.php"><i class="fas fa-user"></i>
+            <li><a href="../views/Lesseegalery.php"><i class="fas fa-user"></i>
                     <?php
                     echo "Hola " . $_SESSION['name_user'];
                     ?>

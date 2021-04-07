@@ -101,6 +101,7 @@ session_start();
     ?>
     </div>
 
+    
     <script src="../assests/js/updateHouse.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
