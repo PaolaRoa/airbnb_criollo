@@ -96,19 +96,22 @@ if (isset($_POST["typeoperation"])){
 
 
 
-         // $imagen = $_FILES['main-picture']['name'];
-         // $nombre = time();
-         // $url = $nombre."-".$imagen;
-         // $storage_img=$_SERVER['DOCUMENT_ROOT'];
+         $imagen = $_FILES['main-picture']['name'];
+         $nombre = time();
+         $url = $nombre."-".$imagen;
+         $storage_img=$_SERVER['DOCUMENT_ROOT'];
+         $main =1;
 
+         $_SESSION["ID"]=$lastid_house;
+         $_SESSION["URL"]=$url;
 
-         // $temp  = $_FILES['main-picture']['tmp_name'];
+         $temp  = $_FILES['main-picture']['tmp_name'];
 
-         // $Imagen = new Imagenes();
-         // $Imagen->setImagen($url);
-         // $Imagen->createImagenMain();
+         $Imagen = new Imagenes();
+         $Imagen->setImagen($url, $main , $lastid_house["idhouses"]);
+         $Imagen->createImagenMain();
 
-         // move_uploaded_file($temp,$storage_img."/"."airbnb_criollo"."/"."imagenes"."/".$url);
+         move_uploaded_file($temp,$storage_img."/"."airbnb_criollo"."/"."imagenes"."/".$url);
 
          echo json_encode($create_house);
          break;

@@ -7,20 +7,25 @@ require_once("../utils/conexion.php");
 class Imagenes {
 
   
-    private $nombre;
+    private $url;
+    private $main;
+    private $id_house;
 
 
     public function __construct(){
 
     }
 
-    public function setImagen( $nombre){
+    public function setImagen( $url , $main, $id_house){
+        $this->url = $url;
+        $this->main = $main;
+        $this->id_house = $id_house;
 
-        $this->nombre = $nombre;
+
     }
 
     public function createImagenMain(){
-        $stmt = Conexion::connect()->prepare("INSERT INTO imagenes(  nombre ) VALUES ('$this->nombre')");
+        $stmt = Conexion::connect()->prepare("INSERT INTO images(  url , main , houses_idhouses ) VALUES ('$this->url','$this->main', '$this->id_house')");
         $stmt -> execute();
         return 1;
     }

@@ -140,6 +140,12 @@
 
 
 
+<?php
+var_dump($_SESSION["ID"]);
+var_dump($_SESSION["URL"]);
+
+
+?>
 
 
 <?php
