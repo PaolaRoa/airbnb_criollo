@@ -100,32 +100,46 @@ const editHouse = (id) => {
             }
 
             Swal.fire({
-                title: "Actulizar información",
+                title: "Actualizar información",
                 html: `
-        <form id="update_form" class="form-group">
-        <input class="form-control" type = "number" name="id_u" hidden="true" value="${id}" placeholder ${id}>
-        <hr>
-        <label>Nombre Casa</label>
-        <input class="form-control" type = "text" name="name_u" value="${name}" placeholder ${name}>
-        <hr>
-        <label>Descripción</label>
-        <input class="form-control" type = "text" name="description_u"  value="${description}" placeholder ${description}>
-        <hr>
-        <label>Numero de habitaciones</label>
-        <input class="form-control" type = "number" name="num_rooms_u" value="${num_rooms}" placeholder ${num_rooms}>
-        <hr>
-        <label>Numero de baños</label>
-        <input class="form-control" type = "number" name="num_toilets_u"  value="${num_toilets}"placeholder ${num_toilets}>
-        <hr>
-        <label>Parqueaderos</label>
-        ${parking_lot}
-        <hr>
-        <label>Internet</label>
-        ${internet}
-        <hr>
-        <label>Precio por noche</label>
-        <input  class="form-control" type = "number" name="price_pn_u" value="${price_pn}" placeholder ${price_pn}>
-        <hr>
+        <form id="update_form" class="form-group-modifi">
+            <input class="form-control-modifi" type = "number" name="id_u" hidden="true" value="${id}" placeholder ${id}>
+        
+            <label>Nombre Casa</label>
+            <input class="form-control-modifi" type = "text" name="name_u" value="${name}" placeholder ${name}>
+        
+            <label>Descripción</label>
+            <input class="form-control-modifi" type = "text" name="description_u"  value="${description}" placeholder ${description}>
+           
+        
+            <label>Numero de habitaciones</label>
+            <input class="form-control-modifi" type = "number" name="num_rooms_u" value="${num_rooms}" placeholder ${num_rooms}>
+           
+        
+            <label>Numero de baños</label>
+            <input class="form-control-modifi" type = "number" name="num_toilets_u"  value="${num_toilets}"placeholder ${num_toilets}>
+           
+            <div></div>
+            </br>
+            <label>Parqueaderos</label>
+            ${parking_lot}
+            
+            <div></div>
+            </br>
+            <label>Internet</label>
+            ${internet}
+           
+            <div></div>
+            </br>
+            <label>Dirección</label>
+            <input class="form-control-modifi" type = "text" name="direction_u"  value="${description}" placeholder ${description}>
+
+            <div></div>
+            </br>
+            <label>Precio por noche</label>
+            <input  class="form-control-modifi" type = "number" name="price_pn_u" value="${price_pn}" placeholder ${price_pn}>
+           
+        
         </form>
       `,
                 showCancelButton: true,
