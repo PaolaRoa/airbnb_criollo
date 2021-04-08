@@ -15,9 +15,11 @@ switch ($action){
         break;
     case "detail":
         showHouse();
+        break;
         //header('Location: ../views/LesseHouse.php');
     case "bookings":
         getBookings();
+        break;
 }
 function search(){
     session_start();
@@ -43,13 +45,15 @@ function book(){
     if($resp){
         echo '<script type="text/javascript">
         alert("Registro exitoso");
-        window.location.href="../index.php";
+        window.location.href="../controllers/BookingController.php?action=bookings"
         </script>';
+        //getBookings();
+
     }
     else{
         echo'<script type="text/javascript">
         alert("no se pudo reservar");
-        window.location.href="../index.php";
+        window.location.href="../views/Lesseegalery.php";
         </script>';
     }
 }
@@ -65,11 +69,12 @@ function showHouse(){
     header('Location: ../views/LesseeHouse.php');
 }
 function getBookings(){
+    session_start();
     $booking = new Booking();
     $iduser = $_SESSION['iduser'];
     $userbookings = $booking->getUserBookings($iduser);
-    session_start();
     $_SESSION['userBookings'] = $userbookings;
+    header('Location: ../views/BookingLessee.php');
 }
 ?>
 <?php ob_end_flush();?>

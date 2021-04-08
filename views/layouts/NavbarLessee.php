@@ -11,7 +11,7 @@ session_start();
         <ul>
             <li><a href="../views/Lesseegalery.php"><i class="fas fa-camera-retro"></i>
                     Galeria</a></li>
-            <li><a href="../views/BookingLessee.php"><i class="fas fa-key"></i>
+            <li><a href="../controllers/BookingController.php?action=bookings"><i class="fas fa-key"></i>
                     Reservas</a></li>
             <li><a href="#contacto"><i class="fas fa-question-circle"></i>
                     Contacto</a></li></a></li>
