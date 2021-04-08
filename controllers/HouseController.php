@@ -73,9 +73,11 @@ if (isset($_POST["typeoperation"])){
          $parking_lot = $_POST["parqueadero_u"];
          $internet = $_POST["internet_u"];
          $price_pn = $_POST["price_pn_u"];
+         $direction = $_POST["direction_u"];
+
          $house = new House();
 
-         echo json_encode($house->updateHouse($id_house, $id_lessor,$name, $description, $num_rooms, $num_toilets, $parking_lot, $internet, $price_pn));
+         echo json_encode($house->updateHouse($id_house, $id_lessor,$name, $description, $num_rooms, $num_toilets, $parking_lot, $internet, $price_pn, $direction));
 
         break;
 
@@ -88,8 +90,11 @@ if (isset($_POST["typeoperation"])){
          $parking_lot =$_POST["parqueadero"];
          $internet= $_POST["internet"];
          $price_pn=$_POST["price_noche"];
+         $direction = $_POST["direction"];
+
+
          $house = new House();
-         $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn);
+         $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn, $direction);
 
          $create_house=$house->createHouse();
 
@@ -191,6 +196,7 @@ if (isset($_POST["typeoperation"])){
 
 else
 {
+  
    $house = new House();
    $house->setSessionHouse($_SESSION['iduser']);
 

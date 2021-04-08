@@ -6,13 +6,13 @@ const showhouse = (houses) => {
         card_houses.innerHTML += `
         <div class="card ">
             <!-- Data main -->
-            <img src="../assests/img/parquedelcafe.jpeg" class="card-img-top" alt="photos">
+            <img src="../imagenes/${house.url}" class="card-img-top" alt="photos">
             <div class="card-body">
                 <h3 class="card-title">${house.name}</h3>
+                <h3 class="card-title">${house.direccion}</h3>  
                 <div>
                     <p class="card-text">${house.description}</p>
                 </div>
-                
             </div>
 
             <!-- House Components -->
@@ -64,6 +64,8 @@ const editHouse = (id) => {
                 parking_lot = item.parking_lot;
                 var internet = item.internet;
                 var price_pn = item.price_pn;
+                var direccion = item.direccion;
+                
 
                 if (parking_lot === "Si") {
                     parking_lot = `
@@ -135,14 +137,12 @@ const editHouse = (id) => {
             <div></div>
             </br>
             <label>Dirección</label>
-            <input class="form-control-modifi" type = "text" name="direction_u"  value="${description}" placeholder ${description}>
+            <input class="form-control-modifi" type = "text" name="direction_u"  value="${direccion}" placeholder ${direccion}>
 
             <div></div>
             </br>
             <label>Precio por noche</label>
             <input  class="form-control-modifi" type = "number" name="price_pn_u" value="${price_pn}" placeholder ${price_pn}>
-           
-        
         </form>
       `,
                 showCancelButton: true,

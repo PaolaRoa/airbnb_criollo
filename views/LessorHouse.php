@@ -57,9 +57,11 @@ session_start();
             ?>
                 <div class="card ">
                     <!-- Data main -->
-                    <img src="../assests/img/parquedelcafe.jpeg" class="card-img-top" alt="photos">
+                    <img src="../imagenes/<?php echo $descrip['url']?>" class="card-img-top" alt="photos">
                     <div class="card-body">
                         <h3 class="card-title"><?php echo $descrip['name'] ?></h3>
+                        <h3 class="card-title"><?php echo $descrip['direccion'] ?></h3>
+
                         <div>
                             <p class="card-text"><?php echo $descrip['description'] ?></p>
                         </div>
@@ -104,8 +106,6 @@ session_start();
     <?php
     include("../views/layouts/Footer.php");
     ?>
-
-
 
 
     </div>
