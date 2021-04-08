@@ -20,6 +20,9 @@ switch ($action){
     case "bookings":
         getBookings();
         break;
+    case "delete":
+        delete();
+        break;
 }
 function search(){
     session_start();
@@ -75,6 +78,23 @@ function getBookings(){
     $userbookings = $booking->getUserBookings($iduser);
     $_SESSION['userBookings'] = $userbookings;
     header('Location: ../views/BookingLessee.php');
+}
+function delete(){
+    $idB = $_GET['idB'];
+    $booking = new Booking($idB);
+    $resp = $booking->deleteBooking($idB);
+    if($resp){
+        echo '<script type="text/javascript">
+        alert("se ha eliminado la reserva");
+        window.location.href="../controllers/BookingController.php?action=bookings"
+        </script>';
+    }
+    else{
+        echo '<script type="text/javascript">
+        alert("no se pudó eliminar");
+        window.location.href="../controllers/BookingController.php?action=bookings"
+        </script>';
+    }
 }
 ?>
 <?php ob_end_flush();?>

@@ -67,13 +67,19 @@ class Booking{
     public function getUserBookings($iduser){
         $con = Conexion::connect();
         $stmt = $con->prepare("
-        SELECT h.*, b.total, b.start_date, b.final_date FROM 
+        SELECT h.*, b.total, b.start_date, b.final_date, b.idBookings FROM 
         houses h, Bookings b
         where h.idhouses = b.housesId
         and b.users_idusers =$iduser");
         $stmt->execute();
         $arrBookings = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $arrBookings;
+    }
+    public function deleteBooking($idB){
+        $con = Conexion::connect();
+        $stmt = $con-> prepare("DELETE FROM Bookings where idBookings = $idB");
+        $resp = $stmt->execute();
+        return $resp;
     }
 
 }

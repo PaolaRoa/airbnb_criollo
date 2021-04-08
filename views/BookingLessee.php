@@ -35,6 +35,7 @@
             $bookings = $_SESSION['userBookings'];
             foreach ($bookings as $houseTemp) {
                 $idHouse = $houseTemp['idhouses'];
+                $idB = $houseTemp['idBookings'];
                 $name=$houseTemp['name'];
                 $description = $houseTemp['description'];
                 $beds= $houseTemp['num_rooms'];
@@ -49,21 +50,21 @@
                                 <img src='../assests/img/photo1.jpg'>
                                  </br>
                                 <h4>".$name."</h4>
-                                <P>".$description."</P>
-                                 <span>
-                                 <i class='fa fa-map-marker'></i>
-                                EJE CAFETERO, FINLANDIA
-                                </span>
+                                <div class='booking'>
+                                    <h3>Fechas de reserva:</h3>
+                                    <p>$start</p>
+                                    <p>$end</p>
+                                    </div>
                                  <span>
                                  <i class='fa fa-bed'></i>".$beds."
                                  </span>
                                     <span>
                                 <i class='fa fa-bath'></i>".$baths."
                                  </span>
-                                <div class='rent-price pull-left'>$total</div>   
-                                 <a href=''>
+                                <div class='rent-price pull-left'>Total: $$total</div>   
+                                 <a href='../controllers/BookingController.php?action=delete&idB=$idB''>
                                  <button>
-                                VER MAS
+                                    Eliminar reserva
                                 </button>
                                 </a>
                                 </div>";
