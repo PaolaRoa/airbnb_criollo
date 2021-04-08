@@ -16,6 +16,8 @@ switch ($action){
     case "detail":
         showHouse();
         //header('Location: ../views/LesseHouse.php');
+    case "bookings":
+        getBookings();
 }
 function search(){
     session_start();
@@ -61,6 +63,13 @@ function showHouse(){
     $_SESSION['houseDetail'] = $house;
     $_SESSION['houseServices'] = $services;
     header('Location: ../views/LesseeHouse.php');
+}
+function getBookings(){
+    $booking = new Booking();
+    $iduser = $_SESSION['iduser'];
+    $userbookings = $booking->getUserBookings($iduser);
+    session_start();
+    $_SESSION['userBookings'] = $userbookings;
 }
 ?>
 <?php ob_end_flush();?>
