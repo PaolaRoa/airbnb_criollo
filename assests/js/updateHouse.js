@@ -30,6 +30,9 @@ const showhouse = (houses) => {
             <!-- Buttons Crud -->
             <div class="buttons">
                 <button class="btn-primary" onclick="editHouse(${house.idhouses})"><i class="fas fa-pencil-alt"></i>Editar</button>
+                <a href="../controllers/HouseController.php?action=detail&id=${house.idhouses}">
+                                 <button class="btn-primary"><i class="fas fa-eye"></i>Ver más</button>
+                                </a>
                 <button class="btn-danger" onclick="deleteHouse(${house.idhouses})"><i class="fas fa-trash-alt"></i>Eliminar</button>
                 </br>
             </div>

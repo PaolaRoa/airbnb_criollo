@@ -30,21 +30,7 @@ function validaPassword($var1, $var2){
 }
 
  
-function resultBlock($errors){
-    if(count($errors)>0){
-        echo "<div id='error' class='alert alert-danger' role='alert'>
-        <a href='#' onclick =\"showHide('error');\"><[x]</a>
-        <ul>
-        ";
-        foreach($errors as $error){
-            echo "<li>".$error."</li>";
-        }
-        echo "<ul>";
-        echo "</div>";
 
-    }
-
-}
 
 
 

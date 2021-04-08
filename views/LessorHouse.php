@@ -1,6 +1,10 @@
 <?php
 session_start();
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +25,7 @@ session_start();
 
     <?php
     include("../views/layouts/NavbarLessor.php");
-    ?>
+   ?>
 
     <?php
     $lessorhouse = $_SESSION['house_lessor'];
@@ -50,7 +54,7 @@ session_start();
         } else {
 
             foreach ($lessorhouse as $house => $descrip) {
-            ?>                
+            ?>
                 <div class="card ">
                     <!-- Data main -->
                     <img src="../assests/img/parquedelcafe.jpeg" class="card-img-top" alt="photos">
@@ -72,19 +76,21 @@ session_start();
                     <ul class="list-group-two">
                         <li class="list-group-item"><i class="fas fa-dollar-sign"></i><?php echo $descrip['price_pn'] ?> Valor por noche </li>
                     </ul>
-
                     <!-- Buttons Crud -->
                     <div class="buttons">
                         <button class="btn-primary" onclick="editHouse(<?php echo $descrip['idhouses'] ?>)"><i class="fas fa-pencil-alt"></i>Editar</button>
+                        <a href="../controllers/HouseController.php?action=detail&id=<?php echo $descrip['idhouses'] ?>">
+                                 <button class="btn-primary"><i class="fas fa-eye"></i>
+                                Ver más
+                                </button>
+                                </a>
                         <button class="btn-danger" onclick="deleteHouse(<?php echo $descrip['idhouses'] ?>)"><i class="fas fa-trash-alt"></i>Eliminar</button>
                         </br>
                     </div>
                 </div>
-        <?php
+                    <?php
+                }
             }
-        
-        
-        }
         ?>
 
     </div>
@@ -93,15 +99,17 @@ session_start();
     <!-- CARDS HOUSEs IN RENT END -->
 
 
-
     <div>
     <!--Footer-->
     <?php
     include("../views/layouts/Footer.php");
     ?>
+
+
+
+
     </div>
 
-    
     <script src="../assests/js/updateHouse.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 

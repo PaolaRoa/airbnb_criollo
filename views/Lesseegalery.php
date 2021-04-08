@@ -112,7 +112,7 @@
                // $this->$email= $row['email'] <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>;
             };
         ?>
-        <div class="card-one">
+        <!-- <div class="card-one">
                 <img src="../assests/img/photo1.jpg">
             </br>
             <h4>Casa Camprestre </h4>
@@ -133,7 +133,7 @@
                     VER MAS
                 </button>
             </a>
-        </div>
+        </div> -->
 
         
     </div>

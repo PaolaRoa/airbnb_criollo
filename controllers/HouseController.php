@@ -11,6 +11,35 @@ require_once "../models/Imagenes.php";
 session_start();
 
 
+$action = $_GET['action'];
+switch ($action){
+   case "detail":
+
+      $houseId = $_GET['id'];
+      $houseObj = new House();
+      $house = $houseObj->getHouse($houseId);
+      $servicesObj = new AditionalServerHelp();
+      $services = $servicesObj->getHouseServices($houseId);
+      session_start();
+      $_SESSION['houseDetail'] = $house;
+      $_SESSION['houseServices'] = $services;
+      header('Location: ../views/LessorHouseDetail.php');
+   
+
+      break;
+
+      default:
+      break;
+
+
+
+}
+
+
+
+
+
+
 
 
 // DELETE AND EDIT HOUSE AJAX
@@ -116,6 +145,8 @@ if (isset($_POST["typeoperation"])){
          echo json_encode($create_house);
          break;
 
+      
+
         default:
          break;
 
@@ -131,10 +162,17 @@ else
    $house = new House();
    $house->setSessionHouse($_SESSION['iduser']);
 
+   $server = new AditionalServerHelp();
+   $newserver =$server->getServices($_SESSION['iduser']);
+   $_SESSION["server_house"]= $newserver;
+
    echo '<script type="text/javascript">
    window.location.href="../views/LessorHouse.php";
    </script>';
 }
+
+
+
 
 
 ?>

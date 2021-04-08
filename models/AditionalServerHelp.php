@@ -44,6 +44,16 @@ class AditionalServerHelp{
     }
 
 
+    public function getServices($iduser){
+        $con = Conexion::connect();
+        $stmt = $con->prepare(" SELECT idadditional_services FROM  additional_services_help INNER JOIN houses ON houses.idhouses= additional_services_help.houses_idhouses INNER JOIN users ON users.idusers = houses.users_idusers WHERE idusers='$iduser'");
+        $stmt->execute();
+        $arr = $stmt->fetchAll(PDO::FETCH_COLUMN, 0);
+        return $arr;
+    }
+
+
+
 
 
 }

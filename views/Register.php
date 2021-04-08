@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!-- BOOTSTRAP 4 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>¡CASAS EN RENTA ARMENIA!</title>
     <link rel="stylesheet" href="../assests/css/Navbarlessee.css">
@@ -21,11 +23,24 @@
     </br>
 
     <div class="container">
+
+    <?php   if(isset( $_SESSION["msg"])) { ?>
+            <div class="alert alert-<?= $_SESSION["msg_type"];?> alert-dismissible fade show" role="alert">
+            <?= $_SESSION["msg"] ?>
+            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+                
+            </button>
+          </div>
+          <?php session_unset();
+        }
+    ?>
+
+
         <div class="form">
-            <form class="cd-form"  id="register-user-form" autocomplete="off">
+            <form class="cd-form"  id="register-user-form" autocomplete="off" name="registerform">
                 <h1>Registrate</h1>
                 </br>
-                <div class="container"> 
+                <div class="container">
                 <div>
                     <p class="fieldset">
                             <label class="image-replace cd-username" for="signup-username">Nombre de usuario</label>
@@ -48,8 +63,18 @@
                             </Br>
                             </Br>
                             <i class="fas fa-key"></i>
-                            <input class="password" id="signup-password" type="password"  placeholder="Contraseña" name="signup-password" id="signup-password" required>
+                            <input class="password" id="signup-password" type="password"  placeholder="Contraseña" name="signuppassword" id="signup-password" required>
                             <i class="fas fa-eye" id="show"></i>
+
+                        </p>
+
+                        <p class="fieldset">
+                            <label class="image-replace cd-password" for="signup-password">Confirmar Contraseña</label>
+                            </Br>
+                            </Br>
+                            <i class="fas fa-key"></i>
+                            <input class="password" id="signup-password_v" type="password"  placeholder="Confirma Contraseña" name="signuppassword_v" id="signup-password_v" required>
+                            <i class="fas fa-eye" id="show_v"></i>
 
                         </p>
                 </div>
@@ -68,7 +93,7 @@
                             <select class="form-select" aria-label="Default select example" name="city"  id="city" >
                                 <option value="Bogotá D.C" selected="selected">Bogotá D.C</option>
                             </select>
-                            
+
                         </p>
 
                         <p>
@@ -91,7 +116,7 @@
                 </p>
 
                 <p class="fieldset">
-                    <button class="button" type="submit" style="outline">Crear cuenta</button>
+                    <button class="button" type="submit" onClick="PassworValidation()" style="outline">Crear cuenta</button>
                 </p>
                 <p>¿Ya tienes cuenta?
                     <a class="link" href="Login.php">Iniciar Sesion</a>
@@ -113,10 +138,20 @@
     ?>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+
+
+
     <script src="../assests/js/createUser.js"></script>
     <script src="../assests/js/dropdown.js"></script>
     <script src="../assests/js/ViewPassword.js"></script>
-    <script src="../assests/js/ViewTerms.js"></script>
+    <!-- <script src="../assests/js/ViewTerms.js"></script> -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
