@@ -53,14 +53,14 @@
                         <input class="text" type="file" placeholder="Descripción" name="main-picture" id="main-picture" required>
 
                     </p>
-                    <!-- <p class="fieldset">
+                    <p class="fieldset">
                         <label class="image-replace " for="description">Imagenes de apoyo</label>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description"><i class="fas fa-images"></i>Imagenes de apoyo</label>
                         </Br>
                         </Br>
                         <input class="text" type="file" placeholder="Descripción" name="additional-images" id="additional-images" required>
-                    </p> -->
+                    </p>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description"><i class="fas fa-bed"></i>Habitaciones</label>
                         </Br>

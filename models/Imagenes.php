@@ -32,6 +32,14 @@ class Imagenes {
 
 
 
+    public function getImageMain($idhouse){
+        $stmt = Conexion::connect()->prepare("select url from images inner join houses on images.houses_idhouses = houses.idhouses where main=1 and houses_idhouses='$idhouse'");
+        $stmt->execute();
+        $arrimages = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $arrimages;
+    }
+
+
 }
 
 

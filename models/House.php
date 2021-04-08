@@ -13,6 +13,7 @@ class House {
     private $internet;
     private $id_user;
     private $price_pn;
+    
 
     public function __construct(){
 
@@ -53,6 +54,13 @@ class House {
         return $arr;
     }
 
+    public function LessorHouseImg($id){
+        $stmt = Conexion::connect()->prepare("  '$id'");
+        $stmt -> execute();
+        $arr = $stmt->fetchAll();
+        return $arr;
+    }
+
     public function setSessionHouse($id){
         $_SESSION['house_lessor'] =$this->LessorHouse($id);
     }
@@ -75,6 +83,7 @@ class House {
         $arrHouses = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $arrHouses;
     }
+
 
     public function getHouse($id_house){
         $stmt = Conexion::connect()->prepare("SELECT * FROM houses WHERE idhouses=$id_house");
