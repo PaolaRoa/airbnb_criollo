@@ -11,6 +11,18 @@ body{
     
 }
 
+.galery {
+    background-color: #ff914d60;
+}
+
+.galery h1 {
+    font-family: 'Satisfy', cursive;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+
 .container{
     height: calc(100% - 200px);
     /* background-color: blueviolet; */
@@ -98,8 +110,6 @@ body{
     grid-template-rows: 1fr 1fr;
 }
 
-
-
 .container-one .info .data .items{
     display: flex;
 	flex-direction: row;
@@ -137,6 +147,19 @@ body{
     color: #ffffff;
 }
 
+.info .booking{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+.info .booking h3{
+    color: #FF914D;
+}
+
 .info .price{
     display: flex;
 	flex-direction: row;
@@ -147,7 +170,7 @@ body{
 }
 
 .info .price h3{
-   color: #FF914D;
+    color: #FF914D;
 }
 
 .info .price button{
@@ -157,11 +180,11 @@ body{
     border: none;
     padding: 10px;
     margin: 10px;
-    width: 100px;
+    width: 150px;
 }
 
 .info .price button:hover{
-    background-color: #8db469;
+    background-color: #eb2c0a;
     color: white;
     
 }
@@ -350,6 +373,15 @@ body{
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    .info .booking{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
         align-items: center;
         align-content: stretch;
     }
