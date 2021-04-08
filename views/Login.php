@@ -19,6 +19,8 @@
     include("../views/layouts/Navbarlogin.php");
     ?>
     </br>
+    </br>
+    </br>
 
 <div class="form">
 
@@ -65,6 +67,8 @@
        
 </div> <!-- cd-signup -->
 
+</br>
+</br>
 </br>
 
 

@@ -214,6 +214,42 @@ body {
     color: white;
 }
 
+
+.form-group-modifi{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+}
+
+.form-group-modifi .form-control-modifi{
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+    border: none;
+}
+
+.form-group-modifi select{
+    display: block;
+    width: 90%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border-radius: .25rem;
+}
+
+@media (width: 280px) {
+    .form-group-modifi{
+        margin: 20px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr; */
+    }
+}
+
 @media (max-width: 1005px) {
     .container{
         width: 100%;

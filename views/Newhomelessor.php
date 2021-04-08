@@ -67,13 +67,19 @@
                         </Br>
                         <input class="number" type="number" placeholder="00" name="habitaciones" id="habitaciones" required>
                     </p>
-                </div>
-                <div>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description"><i class="fas fa-bath"></i>Baños</label>
                         </Br>
                         </Br>
                         <input class="number" type="number" placeholder="00" name="baños" id="baños" required>
+                    </p>
+                </div>
+                <div>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description"><i class="fas fa-directions"></i>Dirección</label>
+                        </Br>
+                        </Br>
+                        <input class="text" type="text" placeholder="Carrera 14 # 9-41, Armenia, Quindío" name="direction" id="direction" required>
                     </p>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description"><i class="fas fa-parking"></i>Parqueadero</label>

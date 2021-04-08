@@ -2,7 +2,7 @@
 session_start();
 ?>
 <header>
-    <a href="../views/GeneralLessee.php">
+    <a href="../views/Lesseegalery.php">
         <img src="../assests/img/hotel2.png" />
     </a>
     <input type="checkbox" id="btn-menu">
