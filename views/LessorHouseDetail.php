@@ -84,7 +84,7 @@
                                 <h3>Precio:</h3>
                                 <p>$price</p>
                                 <a href=''>
-                                    <button>Actualizar servicios </button>
+                                    <button>Actualizar servicios</button>
                                 <a>
                         </div>";
 
@@ -101,7 +101,7 @@
                                 ?>
                             </div>
                         </div>
-                </div>;
+                </div>
                 </div>
 
 

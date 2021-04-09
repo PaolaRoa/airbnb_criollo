@@ -79,7 +79,7 @@
                         <label class="image-replace cd-email" for="description"><i class="fas fa-directions"></i>Dirección</label>
                         </Br>
                         </Br>
-                        <input class="text" type="text" placeholder="Carrera 14 # 9-41, Armenia, Quindío" name="direction" id="direction" required>
+                        <input class="text" type="text" pattern="^([A-Za-z]+[0-9]+[#- ]){25,100}$" placeholder="Carrera 14 # 9-41, Armenia, Quindío" name="direction" id="direction" required>
                     </p>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description"><i class="fas fa-parking"></i>Parqueadero</label>

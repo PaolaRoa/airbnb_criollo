@@ -12,7 +12,7 @@ body{
 }
 
 .galery {
-    background-color: #ff914d60;
+    background-color: #ff914dab;
 }
 
 .galery h1 {
@@ -181,11 +181,13 @@ body{
     padding: 10px;
     margin: 10px;
     width: 150px;
+    outline:none;
 }
 
 .info .price button:hover{
     background-color: #eb2c0a;
     color: white;
+    outline:none;
     
 }
 

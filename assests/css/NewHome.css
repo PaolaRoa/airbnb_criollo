@@ -78,12 +78,14 @@ body{
     padding: 10px;
     border-radius: 20px;
     width: 80%;
+    outline:none;
     
 }
 
 .fieldset .button:hover{
     background-color: #EB600A;
     color: white;
+    outline:none;
 }
 
 option{
@@ -121,12 +123,14 @@ option{
         padding: 10px;
         border-radius: 20px;
         width: 60%;
+        outline:none;
         
     }
     
     .fieldset .button:hover{
         background-color: #EB600A;
         color: white;
+        outline:none;
     }
 }
 @media (width: 1024px) {

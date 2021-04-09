@@ -24,10 +24,11 @@
     ?>
     <!-- BANNER -->
     <div class="banner">
-        <div class="banner-content">
-            <h1>¿Tienes alguna queja o reclamo?</h1>
-
-        </div>
+        </br>
+        </br>
+        <h1>¿Tienes alguna queja o reclamo?</h1>
+        </br>
+        </br>
     </div>
     <!--BANNER END -->
 
