@@ -46,44 +46,54 @@
                     </p>
 
                     <p class="fieldset">
-                      
-                        <label class="image-replace cd-email" for="description"><i class="fas fa-image"></i>imagen principal</label>
-                        </Br>
-                        </Br>
-                        <input class="text" type="file" placeholder="Descripción" name="main-picture" id="main-picture" required>
-
+                        <label class="update-box " for="description"><i class="fas fa-image"></i>Imagenes Principals</label>
                     </p>
-                    <p class="fieldset">
-                        <label class="image-replace " for="description">Imagenes de apoyo 1</label>
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="description"><i class="fas fa-images"></i></label>
+                    <p class="div-fill">
+                        <label class="update-box" for="description">Agregar img</label>
                         </Br>
                         </Br>
-                        <input class="text" type="file" placeholder="Descripción" name="additional-images" id="additional-images" required>
+                        <input  type="file"  name="main-picture" id="main-picture"  required>
                     </p>
 
+                    </Br>
+                    </Br>
+                    <!---->
                     <p class="fieldset">
-                        <label class="image-replace " for="description">Imagenes de apoyo 2</label>
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="description"><i class="fas fa-images"></i></label>
-                        </Br>
-                        </Br>
-                        <input class="text" type="file" placeholder="Descripción" name="additional-images-2" id="additional-images-2" required>
+                        <label class="update-box " for="description"><i class="fas fa-image"></i>Imagenes de apoyo 1</label>
                     </p>
+                    <p class="div-fill">
+                        <label class="update-box" for="description">Agregar img</label>
+                        </Br>
+                        </Br>
+                        <input  type="file"  name="additional-images" id="additional-images" required>
+                    </p>
+                    </Br>
+                    </Br>
+                    <p class="fieldset">
+                        <label class="update-box " for="description"><i class="fas fa-image"></i>Imagenes de apoyo 2</label>
+                    </p>
+                    <p class="div-fill">
+                        <label class="update-box" for="description">Agregar img</label>
+                        </Br>
+                        </Br>
+                        <input  type="file"  name="additional-images-2" id="additional-images-2" required>
+                    </p>
+                    <!---->
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description"><i class="fas fa-bed"></i>Habitaciones</label>
                         </Br>
                         </Br>
                         <input class="number" type="number" placeholder="00" name="habitaciones" id="habitaciones" required>
                     </p>
+        
+                </div>
+                <div>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description"><i class="fas fa-bath"></i>Baños</label>
                         </Br>
                         </Br>
                         <input class="number" type="number" placeholder="00" name="baños" id="baños" required>
                     </p>
-                </div>
-                <div>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description"><i class="fas fa-directions"></i>Dirección</label>
                         </Br>

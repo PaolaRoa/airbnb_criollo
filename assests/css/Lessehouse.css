@@ -46,10 +46,12 @@ body{
     padding:  10px;
 }
 
-.container .product img{
+.container .product img {
     height: 280px;
+    width: 500px;
     margin: 0px 50px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .container .House .product-small{
@@ -68,6 +70,7 @@ body{
     width: 180px;
     height: 140px;
     padding: 8px;
+    object-fit: cover;
     cursor: pointer;
     border-radius: 20px;
 } 
@@ -221,28 +224,15 @@ body{
 }
 
 
-@media (max-width: 900px) {
-    .container-one{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    .container .House {
-        height: 460px;
-        width: calc(100vh - 100px);
-        background-color: white;
-        box-shadow: 0px 4px 10px 3px rgb(0 0 0 / 13%);
-        border-radius: 20px;
-        margin: auto;
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
-        /* gap: 20px 0px; */
-    }
-}
+
 
 @media (width: 768px) {
+
+    .container-one {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+    }
     .container .House {
         height: auto;
         width: 700px;
@@ -261,6 +251,8 @@ body{
         height: 380px;
         margin: 0px 50px;
         border-radius: 20px;
+        width: 600px;
+        object-fit: cover;
     }
 
     .container .House .product-small img {
@@ -272,11 +264,41 @@ body{
     }
 }
 
+@media (width: 900px) {
+    .container-one {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .container .House {
+        height: 460px;
+        width: calc(100vh - 100px);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 4px 10px 3px rgb(0 0 0 / 13%);
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        /* gap: 20px 0px; */
+    }
+
+    .container .product img {
+        height: 280px;
+        width: 500px;
+        margin: 0px 50px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}
 @media (width: 1024px) {
     .container-one {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        gap: 40px 0px;
     }
     
     .container .House {
@@ -295,8 +317,10 @@ body{
 
     .container .product img {
         height: 380px;
-        margin: 0px 50px;
+        margin: 0px 20px;
         border-radius: 20px;
+        width: 640px;
+        object-fit: cover;
     }
 
     .container .House .product-small img {
@@ -333,7 +357,10 @@ body{
         height: 200px;
         margin: 0px 10px;
         border-radius: 20px;
+        width: 300px;
+        object-fit: cover;
     }
+
 
     .container .House .product-small img {
         width: 100px;
@@ -410,8 +437,10 @@ body{
 
     .container .product img {
         height: 180px;
-        margin: 0px 5px;
+        margin: 0px 10px;
         border-radius: 20px;
+        width: 260px;
+        object-fit: cover;
     }
 
 }
@@ -438,8 +467,10 @@ body{
 
     .container .product img {
         height: 160px;
-        margin: 0px 0px;
+        margin: 0px 5px;
         border-radius: 20px;
+        width: 230px;
+        object-fit: cover;
     }
 
     .container .House .product-small img {

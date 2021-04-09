@@ -61,6 +61,7 @@ body{
     padding: 10px;
     border: none;
 }
+
 .fieldset .number{
     font-size: 20px;
     width: 80%;
@@ -87,6 +88,106 @@ body{
     color: white;
     outline:none;
 }
+
+.div-fill{
+    position: relative;
+    cursor: pointer;
+    margin: 20px auto;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: #FF914D;
+    text-align: center;
+    color: white;
+    -webkit-border-radius: 50px;
+    -webkit-box-shadow: -1px 6px 16px #0000005c;
+}
+
+
+.div-fill:hover{
+    position: relative;
+    margin: 20px auto;
+    padding: 10px;
+    width: 150px;
+    background-color: #EB600A;
+    text-align: center;
+    color: white;
+    -webkit-border-radius: 50px;
+}
+
+.div-fil i{
+    color: red;
+}
+.div-fil .update-box{
+    text-align: center;
+    color: white;
+}
+
+#main-picture{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 150px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+#additional-images{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 150px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+#additional-images-2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 150px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+/* .fieldset .update-box{
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+::-webkit-file-upload-button{
+    background-color: #FF914D;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    outline:none;
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button:hover{
+    background-color: #EB600A;
+    color: white;
+    outline:none;
+} */
 
 option{
     font-size: 20px;
