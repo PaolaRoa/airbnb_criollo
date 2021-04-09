@@ -137,6 +137,19 @@ body{
     color: #ffffff;
 }
 
+.info .direction{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+.info .direction h3{
+    color: #FF914D;
+ }
+
 .info .price{
     display: flex;
 	flex-direction: row;
@@ -157,12 +170,14 @@ body{
     border: none;
     padding: 10px;
     margin: 10px;
-    width: 100px;
+    width: 150px;
+    outline:none;
 }
 
 .info .price button:hover{
     background-color: #8db469;
     color: white;
+    outline:none;
     
 }
 

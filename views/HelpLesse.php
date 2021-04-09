@@ -24,10 +24,11 @@
     ?>
     <!-- BANNER -->
     <div class="banner">
-        <div class="banner-content">
-            <h1>¿Tienes alguna queja o reclamo?</h1>
-
-        </div>
+        </br>
+        </br>
+        <h1>¿Tienes alguna queja o reclamo?</h1>
+        </br>
+        </br>
     </div>
     <!--BANNER END -->
 
@@ -55,7 +56,7 @@
                         <i class="fas fa-envelope-open-text"></i>
 
 
-                        <input class="text" id="signup-password" type="text" placeholder="Mensaje" name="signup-password" id="signup-password" required>
+                        <input class="text" id="signup-password" type="text" placeholder="Mensaje " name="signup-password" id="signup-password" required>
                     </p>
                     </br>
                     </br>

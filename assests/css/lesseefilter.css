@@ -52,11 +52,13 @@ form {
     padding: 10px;
     border-radius: 20px;
     width: 80%;
+    outline:none;
 }
 
 .fieldset .button:hover {
     background-color: #EB600A;
     color: white;
+    outline:none;
 }
 
 .galery {
@@ -143,11 +145,13 @@ form {
     padding: 10px;
     border-radius: 20px;
     width: 100px;
+    outline:none;
 }
 
 .contedor-tarjetas .card-one button:hover {
     background-color: #EB600A;
     color: white;
+    outline:none;
 }
 
 
@@ -199,10 +203,12 @@ form {
         padding: 10px;
         border-radius: 20px;
         width: 80%;
+        outline:none;
     }
     .fieldset .button:hover {
         background-color: #EB600A;
         color: white;
+        outline:none;
     }
     .galery {
         background-color: #ff914d60;

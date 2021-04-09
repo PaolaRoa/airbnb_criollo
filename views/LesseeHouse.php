@@ -54,6 +54,7 @@
                         $idHouse = $houseTemp['idhouses'];
                         $name=$houseTemp['name'];
                         $description = $houseTemp['description'];
+                        $direction = $houseTemp['direction'];
                         $beds= $houseTemp['num_rooms'];
                         $baths = $houseTemp['num_toilets'];
                         $price = $houseTemp['price_pn'];
@@ -79,6 +80,10 @@
                                 <h2>Internet:</h2>
                                 <p>$internet</p>
                             </div>
+                        </div>
+                        <div class='direction'>
+                                <h3>Dirección:</h3>
+                                <p>$direction</p>
                         </div>
                         <div class='price'>
                                 <h3>Precio:</h3>

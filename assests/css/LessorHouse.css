@@ -170,7 +170,7 @@ body {
 
 .card .buttons{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
@@ -182,6 +182,7 @@ body {
     padding: 5px;
     border-radius: 20px;
     width: 100px;
+    outline:none;
 }
 
 .btn-primary i{
@@ -202,6 +203,7 @@ body {
     padding: 5px;
     border-radius: 20px;
     width: 100px;
+    outline:none;
 }
 
 .btn-danger i{
@@ -316,6 +318,7 @@ body {
         border-radius: 30px;
         width: 200px;
         font-size: 20px;
+        outline:none;
     }
     
     .btn-primary i{
@@ -337,6 +340,7 @@ body {
         border-radius: 30px;
         width: 200px;
         font-size: 20px;
+        outline:none;
     }
     
     .btn-danger i{
