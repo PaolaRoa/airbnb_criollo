@@ -39,7 +39,7 @@
                     <img id="image-box" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
                 </div>
                 <div class="product-small">
-                    <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    <img src="https://images.pexels.com/photos/584399/living-room-couch-interior-room-584399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                     onclick="img(this)">
                     <img src="https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" onclick="img(this)">
                     <img src="https://images.pexels.com/photos/2029687/pexels-photo-2029687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" onclick="img(this)">
@@ -54,7 +54,6 @@
                         $idHouse = $houseTemp['idhouses'];
                         $name=$houseTemp['name'];
                         $description = $houseTemp['description'];
-                        $direction = $houseTemp['direction'];
                         $beds= $houseTemp['num_rooms'];
                         $baths = $houseTemp['num_toilets'];
                         $price = $houseTemp['price_pn'];
@@ -81,10 +80,6 @@
                                 <p>$internet</p>
                             </div>
                         </div>
-                        <div class='direction'>
-                                <h3>Dirección:</h3>
-                                <p>$direction</p>
-                        </div>
                         <div class='price'>
                                 <h3>Precio:</h3>
                                 <p>$price</p>
@@ -100,7 +95,7 @@
                     
                     }
                 ?>
-                <div class='data-two'>
+                        <div class='data-two'>
                             <h2>Servicios adicionales</h2>
                             <div class='items'>
                                 <?php
@@ -117,6 +112,20 @@
                         </div>
                 </div>;
                 </div>
+        <div class="two">
+            <h2>Otras propiedades</h2>
+                <div class="others">
+
+                    <div class="other-house">
+                        <div class="product">
+                            <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        </div>
+                        <div class="info">
+                        <h1>Nombre de la casa</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor qui ipsum molestiae commodi sed quod dolorem odit, fugit itaque, deserunt ad ex, quibusdam consectetur obcaecati necessitatibus nulla accusantium repellendus. Ullam.</p>
+                        </div>
+                    </div>
+        </div>
         
     </div>
 

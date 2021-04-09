@@ -40,6 +40,22 @@ class Imagenes {
     }
 
 
+    public function imageMain($idhouse){
+        $stmt = Conexion::connect()->prepare("SELECT url FROM images WHERE houses_idhouses='$idhouse' AND main =1");
+        $stmt->execute();
+        $arrimagesmain = $stmt->fetch();
+        return $arrimagesmain;
+
+    }
+
+    public function imageHelps($idhouse){
+        $stmt = Conexion::connect()->prepare(" SELECT url FROM images WHERE houses_idhouses='$idhouse' AND main=0");
+        $stmt->execute();
+        $arrimageshelp = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $arrimageshelp;
+    }
+
+
 }
 
 

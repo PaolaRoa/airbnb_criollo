@@ -23,9 +23,16 @@ switch ($action){
       session_start();
       $_SESSION['houseDetail'] = $house;
       $_SESSION['houseServices'] = $services;
-      header('Location: ../views/LessorHouseDetail.php');
-   
 
+
+      $imagenObj = new Imagenes();
+      $imagenMain = $imagenObj->imageMain($houseId);
+      $imagenHelp = $imagenObj->imageHelps($houseId);
+
+      $_SESSION['houseImagesMain'] = $imagenMain;
+      $_SESSION['houseImagesHelp'] = $imagenHelp;
+
+      header('Location: ../views/LessorHouseDetail.php');
       break;
 
       default:
@@ -34,12 +41,6 @@ switch ($action){
 
 
 }
-
-
-
-
-
-
 
 
 // DELETE AND EDIT HOUSE AJAX
