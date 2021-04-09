@@ -15,9 +15,14 @@ switch ($action){
         break;
     case "detail":
         showHouse();
+        break;
         //header('Location: ../views/LesseHouse.php');
     case "bookings":
         getBookings();
+        break;
+    case "delete":
+        delete();
+        break;
 }
 function search(){
     session_start();
@@ -43,13 +48,15 @@ function book(){
     if($resp){
         echo '<script type="text/javascript">
         alert("Registro exitoso");
-        window.location.href="../index.php";
+        window.location.href="../controllers/BookingController.php?action=bookings"
         </script>';
+        //getBookings();
+
     }
     else{
         echo'<script type="text/javascript">
         alert("no se pudo reservar");
-        window.location.href="../index.php";
+        window.location.href="../views/Lesseegalery.php";
         </script>';
     }
 }
@@ -65,11 +72,29 @@ function showHouse(){
     header('Location: ../views/LesseeHouse.php');
 }
 function getBookings(){
+    session_start();
     $booking = new Booking();
     $iduser = $_SESSION['iduser'];
     $userbookings = $booking->getUserBookings($iduser);
-    session_start();
     $_SESSION['userBookings'] = $userbookings;
+    header('Location: ../views/BookingLessee.php');
+}
+function delete(){
+    $idB = $_GET['idB'];
+    $booking = new Booking($idB);
+    $resp = $booking->deleteBooking($idB);
+    if($resp){
+        echo '<script type="text/javascript">
+        alert("se ha eliminado la reserva");
+        window.location.href="../controllers/BookingController.php?action=bookings"
+        </script>';
+    }
+    else{
+        echo '<script type="text/javascript">
+        alert("no se pudó eliminar");
+        window.location.href="../controllers/BookingController.php?action=bookings"
+        </script>';
+    }
 }
 ?>
 <?php ob_end_flush();?>
