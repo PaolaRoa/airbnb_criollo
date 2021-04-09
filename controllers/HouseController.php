@@ -128,58 +128,21 @@ if (isset($_POST["typeoperation"])){
          }
 
 
-
-         $imagen = $_FILES['main-picture']['name'];
-         $size_img=$_FILES["main-picture"] ['size'];
-         $type_img=$_FILES["main-picture"] ['type'];
-         $nombre = time();
-         $url = $nombre."-".$imagen;
-         $storage_img=$_SERVER['DOCUMENT_ROOT'];
+         // storage
+         $imagen_name = 'main-picture';
          $main =1;
+         loadImages($imagen_name, $main, $lastid_house["idhouses"]);
 
+         //Image help1
 
-         if ($size_img<=4000000000000000) {
-            //Tipo de archivos permitidos
-            if ( $type_img=='image/png'||$type_img=='image/jpeg'||$type_img=='image/jpg'||$type_img=='image/gif') {
-                   $temp  = $_FILES['main-picture']['tmp_name'];
-                  $Imagen = new Imagenes();
-                  $Imagen->setImagen($url, $main , $lastid_house["idhouses"]);
-                  $Imagen->createImagenMain();
-                  move_uploaded_file($temp,$storage_img."/"."airbnb_criollo"."/"."imagenes"."/".$url);
-         } else{
-               echo "formato no permitido";
+         $images_apoyo = array('additional-images','additional-images-2');
+         $main_a=0;
+
+         foreach ($images_apoyo as $imagen_a) {
+            loadImages($imagen_a, $main_a, $lastid_house["idhouses"]);
          }
-         } else{
-               echo "El tamaño es superior al permitido";
-         }
+         unset($imagen_a);
 
-         //Imagen de apoyo
-
-         $imagen_a = $_FILES['additional-images']['name'];
-         $size_a=$_FILES["additional-images"] ['size'];
-         $type_a=$_FILES["additional-images"] ['type'];
-         $nombre = time();
-         $url_a = $nombre."-".$imagen_a;
-         $storage_img=$_SERVER['DOCUMENT_ROOT'];
-         $main_a =0;
-
-
-         if ($size_a<=4000000000000000) {
-            //Tipo de archivos permitidos
-            if ( $type_a=='image/png'||$type_a=='image/jpeg'||$type_a=='image/jpg'||$type_a=='image/gif') {
-               $temp  = $_FILES['additional-images']['tmp_name'];
-               $Imagen = new Imagenes();
-               $Imagen->setImagen($url_a, $main_a , $lastid_house["idhouses"]);
-               $Imagen->createImagenMain();
-
-               move_uploaded_file($temp,$storage_img."/"."airbnb_criollo"."/"."imagenes"."/".$url_a);
-            }
-            else{
-               echo "formato no permitido";
-            }
-            } else{
-               echo "El tamaño es superior al permitido";
-            }
          echo json_encode($create_house);
          break;
 
@@ -192,11 +155,11 @@ if (isset($_POST["typeoperation"])){
 }
 
 
+
 // SHOW HOUSE
 
 else
 {
-  
    $house = new House();
    $house->setSessionHouse($_SESSION['iduser']);
 
@@ -205,6 +168,27 @@ else
    </script>';
 }
 
+// LOAD IMAGES
+function loadImages($nameform, $main, $lastid_house){
+   //  esta funcion falta mejorarla
+   $imagen = $_FILES[$nameform]['name'];
+   $type=$_FILES[$nameform] ['type'];
+   $nombre = time();
+   $url = $nombre."-".$imagen;
+   $storage_img=$_SERVER['DOCUMENT_ROOT'];
+
+      if ( $type=='image/png'||$type=='image/jpeg'||$type=='image/jpg'||$type=='image/gif') {
+         $temp  = $_FILES[$nameform]['tmp_name'];
+         $Imagen = new Imagenes();
+         $Imagen->setImagen($url, $main , $lastid_house);
+         $Imagen->createImagenMain();
+
+         move_uploaded_file($temp,$storage_img."/"."airbnb_criollo"."/"."imagenes"."/".$url);
+      }
+      else{
+         echo "formato no permitido";
+      }
+}
 
 
 

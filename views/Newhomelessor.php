@@ -54,12 +54,21 @@
 
                     </p>
                     <p class="fieldset">
-                        <label class="image-replace " for="description">Imagenes de apoyo</label>
+                        <label class="image-replace " for="description">Imagenes de apoyo 1</label>
                     <p class="fieldset">
-                        <label class="image-replace cd-email" for="description"><i class="fas fa-images"></i>Imagenes de apoyo</label>
+                        <label class="image-replace cd-email" for="description"><i class="fas fa-images"></i></label>
                         </Br>
                         </Br>
                         <input class="text" type="file" placeholder="Descripción" name="additional-images" id="additional-images" required>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace " for="description">Imagenes de apoyo 2</label>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="description"><i class="fas fa-images"></i></label>
+                        </Br>
+                        </Br>
+                        <input class="text" type="file" placeholder="Descripción" name="additional-images-2" id="additional-images-2" required>
                     </p>
                     <p class="fieldset">
                         <label class="image-replace cd-email" for="description"><i class="fas fa-bed"></i>Habitaciones</label>
