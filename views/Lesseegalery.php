@@ -86,8 +86,9 @@
                 $beds= $house['num_rooms'];
                 $bahts = $house['num_toilets'];
                 $price = $house['price_pn'];
+                $img = $house['url'];
                 echo "        <div class='card-one'>
-                                <img src='../assests/img/photo1.jpg'>
+                                <img src='../imagenes/$img'>
                                  </br>
                                 <h4>".$name."</h4>
                                 <P>".$description."</P>
