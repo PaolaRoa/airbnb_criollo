@@ -36,13 +36,21 @@
         <div class="container-one">
             <div class="House">
                 <div class="product">
-                    <img id="image-box" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    <?php
+                            $images = $_SESSION['bImages'];
+                            $imgP = $images[0]['url'];
+                            $img1 = $images[1]['url'];
+                            $img2 = $images[2]['url'];
+                    ?>
+                    <img id="image-box" src="../imagenes/<?php echo $imgP?>">
                 </div>
                 <div class="product-small">
-                    <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    <img src="../imagenes/<?php echo $imgP?>"
                     onclick="img(this)">
-                    <img src="https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" onclick="img(this)">
-                    <img src="https://images.pexels.com/photos/2029687/pexels-photo-2029687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" onclick="img(this)">
+                    <img src="../imagenes/<?php echo $img1?>" 
+                    onclick="img(this)">
+                    <img src="../imagenes/<?php echo $img2?>" 
+                    onclick="img(this)">">
 
                 </div>
             </div>

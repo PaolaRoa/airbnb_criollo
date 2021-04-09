@@ -82,7 +82,7 @@ class House {
         $stmt = Conexion::connect()->prepare("SELECT h.*,  i.url
         FROM houses h
         join images i on h.idhouses = i.houses_idhouses
-        where main = 1");
+        where i.main = 1");
         $stmt->execute();
         $arrHouses = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $arrHouses;
