@@ -51,15 +51,17 @@ class Booking{
     }
     public function getAvalaibles($sDate, $eDate){
         $con = Conexion::connect();
-        $stmt = $con->prepare("select h.*
-        FROM houses h
-        left join Bookings b 
-        on h.idhouses = b.housesId
-        where 
-        '$sDate' not between b.start_date and b.final_date
-        and '$eDate' not between b.start_date and b.final_date
-        or h.idhouses not in 
-        (select housesId from Bookings)");
+        $stmt = $con->prepare("select h.*, i.url
+                FROM houses h
+                left join Bookings b 
+                on h.idhouses = b.housesId
+                join images i on i.houses_idhouses = b.housesId
+                where 
+                '$sDate' not between b.start_date and b.final_date
+                and '$eDate' not between b.start_date and b.final_date
+                or h.idhouses not in 
+                (select housesId from Bookings)
+                and i.main =1;");
         $resp = $stmt->execute();
         $arrHouses = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $arrHouses;
