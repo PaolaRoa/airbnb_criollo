@@ -50,7 +50,7 @@
                     <img src="../imagenes/<?php echo $img1?>" 
                     onclick="img(this)">
                     <img src="../imagenes/<?php echo $img2?>" 
-                    onclick="img(this)">">
+                    onclick="img(this)">
 
                 </div>
             </div>
@@ -62,7 +62,7 @@
                         $idHouse = $houseTemp['idhouses'];
                         $name=$houseTemp['name'];
                         $description = $houseTemp['description'];
-                        $direction = $houseTemp['direction'];
+                        $direction = $houseTemp['direccion'];
                         $beds= $houseTemp['num_rooms'];
                         $baths = $houseTemp['num_toilets'];
                         $price = $houseTemp['price_pn'];
