@@ -63,20 +63,20 @@
                             </Br>
                             </Br>
                             <i class="fas fa-key"></i>
-                            <input class="password" id="signup-password" type="password"  placeholder="Contraseña" name="signuppassword" id="signup-password" required>
+                            <input class="password" id="signup-password" type="password"  placeholder="Contraseña" name="signup-password" id="signup-password" required>
                             <i class="fas fa-eye" id="show"></i>
 
                         </p>
 
-                        <p class="fieldset">
+                        <!-- <p class="fieldset">
                             <label class="image-replace cd-password" for="signup-password">Confirmar Contraseña</label>
                             </Br>
                             </Br>
                             <i class="fas fa-key"></i>
-                            <input class="password" id="signup-password_v" type="password"  placeholder="Confirma Contraseña" name="signuppassword_v" id="signup-password_v" required>
+                            <input class="password" id="signup-password_v" type="password"  placeholder="Confirma Contraseña" name="signup-password_v" id="signup-password_v" required>
                             <i class="fas fa-eye" id="show_v"></i>
 
-                        </p>
+                        </p> -->
                 </div>
                     <div>
                         <p class="fieldset">

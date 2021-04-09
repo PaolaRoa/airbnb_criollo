@@ -3,16 +3,6 @@
 
 require_once "../models/User.php";
 
-function validaPassword($var1, $var2){
-  if(stromp($var1, $var2) !==0){
-          return false;
-  }
-  else{
-      return true;
-  }
-}
-
-
 
 
 
@@ -26,7 +16,7 @@ if (isset($_POST["typeoperation"])){
       case 'insert_user':
         $name_user = $_POST["signup-username"];
         $rawPassword = $_POST["signup-password"];
-        $raw1Password = $_POST["signup-password_v"];
+        // $raw1Password = $_POST["signup-password_v"];
         $password= hash('sha256', $rawPassword);
         $email =  $_POST["signup-email"];
         $city =  $_POST["city"];

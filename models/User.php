@@ -76,9 +76,7 @@ class User{
                 $this->name_user = $row['name_user'];
                 $this->city = $row['city'];
                 $this->rol = $row['rol'];
-               // $this->$email= $row['email'];
             }
-           // $this->setUserRegister($datos[0][1],$datos[0][3],$datos[0][2],$datos[0][4],$datos[0][6],$datos[0][5]);
            $estmt= $stmt->rowCount();
            return $estmt;
     }
