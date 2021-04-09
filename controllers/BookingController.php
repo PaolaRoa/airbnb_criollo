@@ -33,7 +33,7 @@ function search(){
     $booking = new Booking;
     $houses = $booking->getAvalaibles($_SESSION['start_date'], $_SESSION['end_date']);
     $_SESSION['houses']= $houses;
-    //echo $houses;
+     //echo $houses;
     header('Location: ../views/Lesseegalery.php');
 
 
