@@ -30,49 +30,68 @@
         </br>
     </div>
     <!--Galery-->
-    <div class="contedor-tarjetas">
-        <?php
-            $bookings = $_SESSION['userBookings'];
-            foreach ($bookings as $houseTemp) {
-                $idHouse = $houseTemp['idhouses'];
-                $idB = $houseTemp['idBookings'];
-                $name=$houseTemp['name'];
-                $description = $houseTemp['description'];
-                $beds= $houseTemp['num_rooms'];
-                $baths = $houseTemp['num_toilets'];
-                $price = $houseTemp['price_pn'];
-                $parking = $houseTemp['parking_lot'];
-                $internet = $houseTemp['internet'];
-                $total = $houseTemp['total'];
-                $start = $houseTemp['start_date'];
-                $end = $houseTemp['final_date'];
-                $img = $houseTemp['url'];
-                echo "        <div class='card-one'>
-                                <img src='../imagenes/$img'>
-                                 </br>
-                                <h4>".$name."</h4>
-                                <div class='booking'>
-                                    <h3>Fechas de reserva:</h3>
-                                    <p>$start</p>
-                                    <p>$end</p>
+    <div class="container"  id="card-house">
+    <?php
+                $bookings = $_SESSION['userBookings'];
+                foreach ($bookings as $houseTemp) {
+                    $idHouse = $houseTemp['idhouses'];
+                    $idB = $houseTemp['idBookings'];
+                    $name=$houseTemp['name'];
+                    $description = $houseTemp['description'];
+                    $beds= $houseTemp['num_rooms'];
+                    $baths = $houseTemp['num_toilets'];
+                    $price = $houseTemp['price_pn'];
+                    $parking = $houseTemp['parking_lot'];
+                    $internet = $houseTemp['internet'];
+                    $total = $houseTemp['total'];
+                    $start = $houseTemp['start_date'];
+                    $end = $houseTemp['final_date'];
+                    $img = $houseTemp['url'];
+                    echo "        <div class='card'>
+                                    <!-- Data main -->
+                                    <img src='../imagenes/$img' class='card-img-top' alt='photos'>
+                                    <div class='card-body'>
+                                        <h3 class='card-title'>".$name."</h3>
+
+                                        <div>
+                                            <p class='card-text'>".$description."</p>
+                                        </div>
                                     </div>
-                                 <span>
-                                 <i class='fa fa-bed'></i>".$beds."
-                                 </span>
-                                    <span>
-                                <i class='fa fa-bath'></i>".$baths."
-                                 </span>
-                                <div class='rent-price pull-left'>Total: $$total</div>   
-                                 <a href='../controllers/BookingController.php?action=delete&idB=$idB''>
-                                 <button>
-                                    Eliminar reserva
-                                </button>
-                                </a>
+
+                                    <!-- House Components -->
+                                    <ul class='list-group'>
+                                        <li class='list-group-item'><i class='fas fa-bed'></i>".$beds." Habitaciones </li>
+                                        <li class='list-group-item'><i class='fas fa-bath'></i>".$bahts." Baños</li>
+                                    </ul>
+
+                                    <div class='booking'>
+                                        <div><h4>Fechas de reserva:</h4></div>
+                                        <div class='booking-item'><h4>Inicio:</h4><p>$start</p></div>
+                                        <div class='booking-item'><h4>Inicio:</h4><p>$end</p></div>
+                                    </div>
+
+                                    <ul class='list-group-two'>
+                                        <li class='list-group-item'><i class='fas fa-directions'></i>dirección</li>
+                                    </ul>
+
+                                    <ul class='list-group-two'>
+                                        <li class='list-group-item'><i class='fas fa-dollar-sign'></i>".$price." Valor por noche </li>
+                                    </ul>
+
+                                    <!-- Buttons Crud -->
+                                    <div class='buttons'>
+                                    <a href='../controllers/BookingController.php?action=delete&idB=$idB''>
+                                        <button class='btn-danger'>
+                                            Eliminar reserva
+                                        </button>
+                                    </a>
+                                        </br>
+                                    </div>
                                 </div>";
-          
-               // $this->$email= $row['email'] <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>;
-            };
-        ?>
+            
+                // $this->$email= $row['email'] <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>;
+                };
+            ?>
     </div>
     
      <!--footer-->

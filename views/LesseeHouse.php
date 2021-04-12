@@ -88,6 +88,11 @@
                                 <p>$internet</p>
                             </div>
                         </div>
+                        <div class='direction'>
+                                <h3>Dirección:</h3>
+                                <p>Carrera 16 #7-09 Bogota</p>
+                                
+                        </div>
                         <div class='price'>
                                 <h3>Precio:</h3>
                                 <p>$price</p>
@@ -119,22 +124,7 @@
                             </div>
                         </div>
                 </div>;
-                </div>
-        <div class="two">
-            <h2>Otras propiedades</h2>
-                <div class="others">
-
-                    <div class="other-house">
-                        <div class="product">
-                            <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-                        </div>
-                        <div class="info">
-                        <h1>Nombre de la casa</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor qui ipsum molestiae commodi sed quod dolorem odit, fugit itaque, deserunt ad ex, quibusdam consectetur obcaecati necessitatibus nulla accusantium repellendus. Ullam.</p>
-                        </div>
-                    </div>
-        </div>
-        
+                </div>        
     </div>
 
 
