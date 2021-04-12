@@ -31,24 +31,29 @@
             Descripcción general del departamento (esto depende de los campos)-->
         <!--Medios de pago (no se si es una prioridad la verdad)-->
     <!--Boton de alquilar-->
+
+    <?php
+         $imageMain =$_SESSION['houseImagesMain'] ;
+         $imagesHelp=$_SESSION['houseImagesHelp'] ;
+    ?>
     <div class="container">
     <!--Inicia la galeria para hacer un trajeta con esto-->
         <div class="container-one">
             <div class="House">
                 <div class="product">
-                    <img id="image-box" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    <img id="image-box" src="../imagenes/<?php echo $imageMain['url']?> " onclick="img(this)">
                 </div>
                 <div class="product-small">
-                    <img src="https://images.pexels.com/photos/584399/living-room-couch-interior-room-584399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    onclick="img(this)">
-                    <img src="https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" onclick="img(this)">
-                    <img src="https://images.pexels.com/photos/2029687/pexels-photo-2029687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" onclick="img(this)">
-
-                </div>
+                    <img id="image-box" src="../imagenes/<?php echo $imageMain['url']?>" onclick="img(this)">
+                    <?php foreach($imagesHelp as $image) { ?>
+                        <img src="../imagenes/<?php echo $image['url']?>" onclick="img(this)">
+                    <?php
+                    }
+                    ?>
+                    </div>
             </div>
             <div class="info">
             <?php
-                    
                     $house = $_SESSION['houseDetail'];
                     foreach ($house as $houseTemp) {
                         $idHouse = $houseTemp['idhouses'];
@@ -112,9 +117,5 @@
     ?>
     <script src="../assests/js/imageHouse.js"></script>
     <script src="../assests/js/setIconService.js"></script>
-
-
-
-
 </body>
 </html>
