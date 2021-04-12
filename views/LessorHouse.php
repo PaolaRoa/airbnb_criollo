@@ -103,7 +103,11 @@ session_start();
 
     <div>
     <!--Footer-->
+
+
+    
     <?php
+    
     include("../views/layouts/Footer.php");
     ?>
 

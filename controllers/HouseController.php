@@ -55,12 +55,16 @@ if (isset($_POST["typeoperation"])){
       case 'delete':
          $house = new House();
          $newHouse =$house->deleteHouse($id_house,$id_lessor);
+
+         $house->setSessionHouse($_SESSION['iduser']);
          echo json_encode($newHouse);
         break;
 
         case 'edit':
          $house = new House();
          $getHouse =$house->getHouse($id_house);
+
+         
          echo json_encode($getHouse);
         break;
 
@@ -78,7 +82,11 @@ if (isset($_POST["typeoperation"])){
 
          $house = new House();
 
-         echo json_encode($house->updateHouse($id_house, $id_lessor,$name, $description, $num_rooms, $num_toilets, $parking_lot, $internet, $price_pn, $direction));
+         $updateHouse = $house->updateHouse($id_house, $id_lessor,$name, $description, $num_rooms, $num_toilets, $parking_lot, $internet, $price_pn, $direction);
+
+         $house->setSessionHouse($_SESSION['iduser']);
+
+         echo json_encode($updateHouse);
 
         break;
 
@@ -163,6 +171,8 @@ else
 {
    $house = new House();
    $house->setSessionHouse($_SESSION['iduser']);
+
+   
 
    echo '<script type="text/javascript">
    window.location.href="../views/LessorHouse.php";
