@@ -1,19 +1,16 @@
 <?php
-        header('Content-Type: text/html; charset=UTF-8');
+       header('Content-Type: text/html; charset=UTF-8');
         //Iniciar una nueva sesión o reanudar la existente.
         session_start();
         //si el rol es 1 es arrendatario entonces lo deja entrar
         if (!isset($_SESSION['rol'])){
-            header('Location: ../views/Login.php');//si no lo redirecciona a la vista de arrendador
-            die() ;
+            header('Location: ../views/Login.php');
 
         }else if($_SESSION['rol']==1){
             $cliente = $_SESSION['rol'];
-            die();
         }
         else{
-            header('Location: ../views/GeneralLessor.php');//si no lo redirecciona a la vista de arrendador
-            die() ;
+            header('Location: ../views/GeneralLessor.php');//si no lo redirecciona a la vista de arrendador  
         }
 ?>
 <!DOCTYPE html>
