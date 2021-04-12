@@ -51,29 +51,55 @@ class Booking{
     }
     public function getAvalaibles($sDate, $eDate){
         $con = Conexion::connect();
-        $stmt = $con->prepare("select h.*
+        $fecha= date($sDate);
+        $fecha2 = date($eDate);
+        $query = "SELECT h.*, i.url
         FROM houses h
         left join Bookings b 
         on h.idhouses = b.housesId
+        join images i on h.idhouses = i.houses_idhouses 
         where 
-        '$sDate' not between b.start_date and b.final_date
+        ('$sDate' not between b.start_date and b.final_date
         and '$eDate' not between b.start_date and b.final_date
         or h.idhouses not in 
-        (select housesId from Bookings)");
+        (select housesId from Bookings))
+        and i.main = 1;";
+        $stmt = $con->prepare($query);
         $resp = $stmt->execute();
         $arrHouses = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $arrHouses;
+        //return $query;
+            
     }
     public function getUserBookings($iduser){
         $con = Conexion::connect();
-        $stmt = $con->prepare("
-        SELECT h.*, b.total, b.start_date, b.final_date, b.idBookings FROM 
-        houses h, Bookings b
+        $stmt = $con->prepare("SELECT h.*, b.total, b.start_date, b.final_date, b.idBookings, i.url FROM 
+        houses h, Bookings b, images i
         where h.idhouses = b.housesId
-        and b.users_idusers =$iduser");
+        and h.idhouses = i.houses_idhouses
+        and i.main = 1
+        and b.users_idusers =$iduser;");
         $stmt->execute();
         $arrBookings = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $arrBookings;
+    }
+    public static function getImg($idH){
+        try {
+            $con = Conexion::connect();
+            $stmt = $con-> prepare("SELECT i.url, i.main
+            from images i
+            inner join houses h
+            on h.idhouses = i.houses_idhouses
+            where h.idhouses = $idH
+            order by main desc");
+            $stmt->execute();
+            $arrImg = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $arrImg;
+        } catch (\Throwable $th) {
+            return "no se hizo la consulta";
+            
+        }
+        
     }
     public function deleteBooking($idB){
         $con = Conexion::connect();

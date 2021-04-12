@@ -46,8 +46,9 @@
                 $total = $houseTemp['total'];
                 $start = $houseTemp['start_date'];
                 $end = $houseTemp['final_date'];
+                $img = $houseTemp['url'];
                 echo "        <div class='card-one'>
-                                <img src='../assests/img/photo1.jpg'>
+                                <img src='../imagenes/$img'>
                                  </br>
                                 <h4>".$name."</h4>
                                 <div class='booking'>

@@ -27,7 +27,7 @@
                 <label class="image-replace cd-username" for="start-d">Fecha de inicio</label>
                     </Br>
                 <i class="fas fa-calendar-week"></i>
-                <input class="date" type="date" placeholder="start-d" name ="start-date" id="start-date" min=<?php $hoy=date("Y-m-d"); echo $hoy;?>
+                <input class="date" type="date" placeholder="start-date" name ="start-date" id="start-date" min=<?php $hoy=date("Y-m-d"); echo $hoy;?>
                 value=<?php 
                     if(isset($_SESSION['start_date'])){
                         echo  $_SESSION['start_date'];
@@ -40,7 +40,7 @@
                 required>
             </p>
             <p class="fieldset">
-                <label class="image-replace cd-username" for="end-date">Fecha de finalización</label>
+                <label class="image-replace cd-username" for="ending-date">Fecha de finalización</label>
                     </Br>
                 <i class="fas fa-calendar-check"></i>
                 <input class="date" type="date" placeholder="ending-date" name ="ending-date" id="ending-date" 
@@ -86,8 +86,9 @@
                 $beds= $house['num_rooms'];
                 $bahts = $house['num_toilets'];
                 $price = $house['price_pn'];
+                $img = $house['url'];
                 echo "        <div class='card-one'>
-                                <img src='../assests/img/photo1.jpg'>
+                                <img src='../imagenes/$img'>
                                  </br>
                                 <h4>".$name."</h4>
                                 <P>".$description."</P>
