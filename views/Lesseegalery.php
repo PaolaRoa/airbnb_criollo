@@ -76,67 +76,52 @@
         </br>
     </div>
     <!--Galery-->
-    <div class="contedor-tarjetas">
-        <?php
-            $houses= $_SESSION['houses'];
-            foreach ($houses as $house) {
-                $idHouse = $house['idhouses'];
-                $name=$house['name'];
-                $description = $house['description'];
-                $beds= $house['num_rooms'];
-                $bahts = $house['num_toilets'];
-                $price = $house['price_pn'];
-                $img = $house['url'];
-                echo "        <div class='card-one'>
-                                <img src='../imagenes/$img'>
-                                 </br>
-                                <h4>".$name."</h4>
-                                <P>".$description."</P>
-                                 <span>
-                                 <i class='fa fa-map-marker'></i>
-                                EJE CAFETERO, FINLANDIA
-                                </span>
-                                 <span>
-                                 <i class='fa fa-bed'></i>".$beds."
-                                 </span>
-                                    <span>
-                                <i class='fa fa-bath'></i>".$bahts."
-                                 </span>
-                                <div class='rent-price pull-left'>".$price."</div>   
-                                 <a href='../controllers/BookingController.php?action=detail&id=".$idHouse."'>
-                                 <button>
-                                VER MAS
-                                </button>
-                                </a>
-                                </div>";
-          
-               // $this->$email= $row['email'] <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>;
-            };
-        ?>
-        <!-- <div class="card-one">
-                <img src="../assests/img/photo1.jpg">
-            </br>
-            <h4>Casa Camprestre </h4>
-            <P>Agradable casa para hasta 5 huéspedes </P>
-            <span>
-                <i class="fa fa-map-marker"></i>
-                EJE CAFETERO, FINLANDIA
-            </span>
-            <span>
-                <i class="fa fa-bed"></i>   3 Bedrooms
-            </span>
-            <span>
-                <i class="fa fa-bath"></i>2 Bathroom
-            </span>
-            <div class="rent-price pull-left">$200</div>
-            <a href="../views/LesseeHose.php">
-                <button>
-                    VER MAS
-                </button>
-            </a>
-        </div> -->
+    <div class="container"  id="card-house">
+    <?php
+                $houses= $_SESSION['houses'];
+                foreach ($houses as $house) {
+                    $idHouse = $house['idhouses'];
+                    $name=$house['name'];
+                    $description = $house['description'];
+                    $beds= $house['num_rooms'];
+                    $bahts = $house['num_toilets'];
+                    $price = $house['price_pn'];
+                    $img = $house['url'];
+                    echo "        <div class='card'>
+                                    <!-- Data main -->
+                                    <img src='../imagenes/$img' class='card-img-top' alt='photos'>
+                                    <div class='card-body'>
+                                        <h3 class='card-title'>".$name."</h3>
 
-        
+                                        <div>
+                                            <p class='card-text'>".$description."</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- House Components -->
+                                    <ul class='list-group'>
+                                        <li class='list-group-item'><i class='fas fa-bed'></i>".$beds." Habitaciones </li>
+                                        <li class='list-group-item'><i class='fas fa-bath'></i>".$bahts." Baños</li>
+                                    </ul>
+
+                                    <ul class='list-group-two'>
+                                        <li class='list-group-item'><i class='fas fa-dollar-sign'></i>".$price." Valor por noche </li>
+                                    </ul>
+
+                                    <!-- Buttons Crud -->
+                                    <div class='buttons'>
+                                    <a href='../controllers/BookingController.php?action=detail&id=".$idHouse."'>
+                                                <button class='btn-primary'><i class='fas fa-eye'></i>
+                                                Ver más
+                                                </button>
+                                                </a>
+                                        </br>
+                                    </div>
+                                </div>";
+            
+                // $this->$email= $row['email'] <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>;
+                };
+            ?>
     </div>
     
      <!--footer-->

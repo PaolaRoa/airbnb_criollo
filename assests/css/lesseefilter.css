@@ -82,79 +82,199 @@ form {
 
 
 /* --------------- */
-
-.contedor-tarjetas {
+.container{
     width: 100%;
-    height: calc(100% - 200px);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    height: calc(100% - 200px);
 }
 
-.card-one {
-    width: 320px;
-    height: 520px;
+.card {
+    height: auto;
     border-radius: 30px;
     box-shadow: -2px 9px 16px 0px rgb(0 0 0 / 27%);
     overflow: hidden;
     margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
     font-family: 'Arial, Helvetica, sans-serif';
-    color: rgb(2, 2, 2);
-    background-color: hsla(0, 0%, 100%, 0.568);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     font-size: 15px;
-    float: left;
 }
 
-.card-one:hover {
-    transform: translatey(-2%);
-    box-shadow: 0 12 px 16 px rgba (0, 0, 0, 0.2);
-}
-
-.card-one img {
+.card .card-img-top{
+    width: 100%;
     height: 300px;
-    width: 320px;
     object-fit: cover;
 }
 
-.fa {
+
+.card h3 {
+    font-size: 40px;
+    text-align: center;
+    color: #FF914D;
+    font-family: 'Satisfy', cursive;
+    padding-top: 10px;
+}
+
+.card .card-text {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    height: auto;
+}
+
+
+.card .list-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style: none;
+    margin: 5px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .booking{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style: none;
+    margin: 5px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .booking h4{ 
+    text-align: center;
+    color: #FF914D;
+}
+
+.card .booking .booking-item{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+.card .list-group-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.list-group-item {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+/* ICONS */
+
+.fa-bed {
     color: #FF914D;
     margin-left: 20px;
     margin-right: 10px;
 }
 
-.card-one h4 {
-    font-family: 'Satisfy', cursive;
+.fa-bath {
     color: #FF914D;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
-.contedor-tajetas .card-one p {
-    padding: 0 1rem;
-    font-size: 30%;
-    font-weight: 300;
+.fa-parking {
+    color: #FF914D;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
-.contedor-tarjetas .card-one button {
+.fa-wifi {
+    color: #FF914D;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.fa-dollar-sign {
+    color: #FF914D;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.fa-map-marker{
+    color: #FF914D;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.fa-directions{
+    color: #FF914D;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.card .buttons{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.btn-primary {
     background-color: #FF914D;
     color: white;
     border: none;
-    text-align: center;
-    margin: 10px 50px;
-    padding: 10px;
+    margin: 8px auto;
+    padding: 5px;
     border-radius: 20px;
-    width: 100px;
+    width: 120px;
     outline:none;
 }
 
-.contedor-tarjetas .card-one button:hover {
-    background-color: #EB600A;
+.btn-primary i{
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+.btn-primary:hover {
+    background-color: #8db469;
     color: white;
+}
+
+.btn-danger {
+    background-color: #FF914D;
+    color: white;
+    border: none;
+    margin: 8px auto;
+    padding: 5px;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
     outline:none;
 }
 
+.btn-danger i{
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+.btn-danger:hover {
+    background-color: #eb2c0a;
+    color: white;
+}
 
 /*Responsive*/
 
@@ -221,6 +341,108 @@ form {
         font-size: 40px;
         text-align: center;
         text-shadow: 0.2em 0.1em 3px #33333382;
+    }
+}
+
+@media (max-width: 1005px) {
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        flex-wrap: wrap;
+        height: calc(100% - 200px);
+    }
+}
+
+@media (max-width: 800px) {
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        flex-wrap: wrap;
+        height: calc(100% - 200px);
+    }
+}
+
+@media (width: 768px) {
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        flex-wrap: wrap;
+        height: calc(100% - 200px);
+    }
+}
+
+@media (width: 1024px) {
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        flex-wrap: wrap;
+    }
+
+    .card .list-group{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        list-style: none;
+        margin: 5px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .list-group-item{
+        margin: 10px 0px;
+        font-size: 25px;
+    }
+
+    .btn-primary {
+        background-color: #FF914D;
+        color: white;
+        border: none;
+        margin: 8px auto;
+        padding: 5px;
+        border-radius: 30px;
+        width: 200px;
+        font-size: 20px;
+        outline:none;
+    }
+    
+    .btn-primary i{
+        padding: 5px;
+        margin: 0px 5px;
+    }
+    
+    .btn-primary:hover {
+        background-color: #8db469;
+        color: white;
+    }
+
+    .btn-danger {
+        background-color: #FF914D;
+        color: white;
+        border: none;
+        margin: 8px auto;
+        padding: 5px;
+        border-radius: 30px;
+        width: 200px;
+        font-size: 20px;
+        outline:none;
+    }
+    
+    .btn-danger i{
+        padding: 5px;
+        margin: 0px 5px;
+    }
+    
+    .btn-danger:hover {
+        background-color: #eb2c0a;
+        color: white;
     }
 }
 

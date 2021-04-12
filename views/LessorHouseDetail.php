@@ -85,6 +85,11 @@
                                 <p>$internet</p>
                             </div>
                         </div>
+                        <div class='direction'>
+                                <h3>Dirección:</h3>
+                                <p>Carrera 16 #7-09 Bogota</p>
+                                
+                        </div>
                         <div class='price'>
                                 <h3>Precio:</h3>
                                 <p>$price</p>

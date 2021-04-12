@@ -17,7 +17,7 @@ session_start();
                     Contacto</a></li></a></li>
             <li><a href="../views/Lesseegalery.php"><i class="fas fa-user"></i>
                     <?php
-                    echo "Hola " . $_SESSION['name_user'];
+                    echo "Hola! " . $_SESSION['name_user'];
                     ?>
                 </a></a></li>
             <li><a href="../views/HelpLesse.php"><i class="fas fa-tools"></i>
