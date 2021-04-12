@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: white;
+    background-color: rgba(253, 179, 110, 0.164);
 }
 
-.form{
+.form {
     width: 90%;
     padding: 15px;
     margin: 10px;
@@ -20,7 +19,7 @@ body{
     justify-content: center;
 }
 
-.form .cd-form{
+.form .cd-form {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 10px 3px rgb(0 0 0 / 13%);
     margin-top: 150px;
@@ -28,49 +27,48 @@ body{
     padding: 30px;
     border-radius: 20px;
 }
-.form .cd-form h1{
+
+.form .cd-form h1 {
     text-align: center;
     padding-top: 10px;
     color: #FF914D;
     font-family: 'Satisfy', cursive;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     background-color: rgb(255, 255, 255);
 }
 
-.fieldset label{
+.fieldset label {
     color: rgb(0, 0, 0);
     margin-left: 20px;
 }
 
- .fieldset .fas {
+.fieldset .fas {
     font-size: 25px;
     color: #FF914D;
     margin-left: 20px;
     margin-right: 10px;
 }
 
-
-.fieldset .text{
+.fieldset .text {
     font-size: 20px;
     width: 90%;
     padding: 10px;
     border: none;
 }
 
-.fieldset .number{
+.fieldset .number {
     font-size: 20px;
     width: 80%;
     padding: 10px;
     border: none;
 }
 
-
-.fieldset .button{
+.fieldset .button {
     background-color: #FF914D;
     color: white;
     border: none;
@@ -79,17 +77,16 @@ body{
     padding: 10px;
     border-radius: 20px;
     width: 80%;
-    outline:none;
-    
+    outline: none;
 }
 
-.fieldset .button:hover{
+.fieldset .button:hover {
     background-color: #EB600A;
     color: white;
-    outline:none;
+    outline: none;
 }
 
-.div-fill{
+.div-fill {
     position: relative;
     cursor: pointer;
     margin: 20px auto;
@@ -103,8 +100,7 @@ body{
     -webkit-box-shadow: -1px 6px 16px #0000005c;
 }
 
-
-.div-fill:hover{
+.div-fill:hover {
     position: relative;
     margin: 20px auto;
     padding: 10px;
@@ -115,15 +111,16 @@ body{
     -webkit-border-radius: 50px;
 }
 
-.div-fil i{
+.div-fil i {
     color: red;
 }
-.div-fil .update-box{
+
+.div-fil .update-box {
     text-align: center;
     color: white;
 }
 
-#main-picture{
+#main-picture {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -133,10 +130,9 @@ body{
     height: 50px;
     opacity: 0;
     cursor: pointer;
-
 }
 
-#additional-images{
+#additional-images {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -146,10 +142,9 @@ body{
     height: 50px;
     opacity: 0;
     cursor: pointer;
-
 }
 
-#additional-images-2{
+#additional-images-2 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -159,8 +154,8 @@ body{
     height: 50px;
     opacity: 0;
     cursor: pointer;
-
 }
+
 
 /* .fieldset .update-box{
     font-size: 20px;
@@ -189,16 +184,15 @@ body{
     outline:none;
 } */
 
-option{
+option {
     font-size: 20px;
     width: 80%;
     padding: 10px;
-    border:orange;
+    border: orange;
 }
 
-
 @media (max-width: 800px) {
-    .form{
+    .form {
         width: 90%;
         padding: 15px;
         margin: 10px;
@@ -207,15 +201,13 @@ option{
         align-items: center;
         justify-content: center;
     }
-
-    .container{
+    .container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         background-color: rgb(255, 255, 255);
     }
-
-    .fieldset .button{
+    .fieldset .button {
         background-color: #FF914D;
         color: white;
         border: none;
@@ -224,18 +216,17 @@ option{
         padding: 10px;
         border-radius: 20px;
         width: 60%;
-        outline:none;
-        
+        outline: none;
     }
-    
-    .fieldset .button:hover{
+    .fieldset .button:hover {
         background-color: #EB600A;
         color: white;
-        outline:none;
+        outline: none;
     }
 }
+
 @media (width: 1024px) {
-    .form{
+    .form {
         width: 90%;
         height: 1110px;
         padding: 15px;
@@ -245,5 +236,4 @@ option{
         align-items: center;
         justify-content: center;
     }
-
 }
