@@ -1,10 +1,18 @@
 <?php
-session_start();
+       header('Content-Type: text/html; charset=UTF-8');
+        //Iniciar una nueva sesión o reanudar la existente.
+        session_start();
+        //si el rol es 1 es arrendatario entonces lo deja entrar
+        if (!isset($_SESSION['rol'])){
+            header('Location: ../views/Login.php');
+
+        }else if($_SESSION['rol']==0){
+            $cliente = $_SESSION['rol'];
+        }
+        else{
+            header('Location: ../views/Lesseegalery.php');//si no lo redirecciona a la vista de arrendador  
+        }
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
