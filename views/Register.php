@@ -24,16 +24,7 @@
 
     <div class="container">
 
-    <?php   if(isset( $_SESSION["msg"])) { ?>
-            <div class="alert alert-<?= $_SESSION["msg_type"];?> alert-dismissible fade show" role="alert">
-            <?= $_SESSION["msg"] ?>
-            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
-                
-            </button>
-          </div>
-          <?php session_unset();
-        }
-    ?>
+
 
 
         <div class="form">
@@ -58,6 +49,8 @@
                             <input class="text" id="signup-email" type="email" placeholder="E-mail" name="signup-email" id="signup-email" required>
                         </p>
 
+                        
+
                         <p class="fieldset">
                             <label class="image-replace cd-password" for="signup-password">Contraseña</label>
                             </Br>
@@ -77,6 +70,8 @@
                             <i class="fas fa-eye" id="show_v"></i>
 
                         </p>
+
+                        <div id="pwMsg"> </div>
                 </div>
                     <div>
                         <p class="fieldset">
