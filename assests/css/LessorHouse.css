@@ -6,6 +6,7 @@ body {
     height: calc(100% - 200px);
 }
 
+
 /* -------------- */
 
 
@@ -55,7 +56,8 @@ body {
 
 
 /* --------------- */
-.container-two{
+
+.container-two {
     height: calc(69vh - 200px);
     width: 100%;
     display: flex;
@@ -72,7 +74,7 @@ body {
     font-family: 'Satisfy', cursive;
 }
 
-.container{
+.container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -93,18 +95,24 @@ body {
     font-size: 15px;
 }
 
-.card .card-img-top{
+.card .card-img-top {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
-
 
 .card h3 {
     font-size: 40px;
     text-align: center;
     color: #FF914D;
     font-family: 'Satisfy', cursive;
+    padding-top: 10px;
+}
+
+.card h5 {
+    font-size: 20px;
+    text-align: center;
+    color: #FF914D;
     padding-top: 10px;
 }
 
@@ -116,8 +124,7 @@ body {
     height: auto;
 }
 
-
-.card .list-group{
+.card .list-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -128,16 +135,18 @@ body {
     justify-content: center;
 }
 
-.card .list-group-two{
+.card .list-group-two {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
 }
 
-.list-group-item{
+.list-group-item {
     margin: 10px 0px;
 }
+
+
 /* ICONS */
 
 .fa-bed {
@@ -170,7 +179,7 @@ body {
     margin-right: 10px;
 }
 
-.card .buttons{
+.card .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -184,10 +193,10 @@ body {
     padding: 5px;
     border-radius: 20px;
     width: 100px;
-    outline:none;
+    outline: none;
 }
 
-.btn-primary i{
+.btn-primary i {
     padding: 5px;
     margin: 0px 5px;
 }
@@ -205,10 +214,10 @@ body {
     padding: 5px;
     border-radius: 20px;
     width: 100px;
-    outline:none;
+    outline: none;
 }
 
-.btn-danger i{
+.btn-danger i {
     padding: 5px;
     margin: 0px 5px;
 }
@@ -218,22 +227,21 @@ body {
     color: white;
 }
 
-
-.form-group-modifi{
+.form-group-modifi {
     margin: 20px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 1fr; */
 }
 
-.form-group-modifi .form-control-modifi{
+.form-group-modifi .form-control-modifi {
     font-size: 20px;
     width: 90%;
     padding: 10px;
     border: none;
 }
 
-.form-group-modifi select{
+.form-group-modifi select {
     display: block;
     width: 90%;
     padding: .375rem 2.25rem .375rem .75rem;
@@ -246,7 +254,7 @@ body {
 }
 
 @media (width: 280px) {
-    .form-group-modifi{
+    .form-group-modifi {
         margin: 20px 0px;
         display: grid;
         grid-template-columns: 1fr;
@@ -255,7 +263,7 @@ body {
 }
 
 @media (max-width: 1005px) {
-    .container{
+    .container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -266,7 +274,7 @@ body {
 }
 
 @media (max-width: 800px) {
-    .container{
+    .container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
@@ -277,7 +285,7 @@ body {
 }
 
 @media (width: 768px) {
-    .container{
+    .container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -288,15 +296,14 @@ body {
 }
 
 @media (width: 1024px) {
-    .container{
+    .container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         flex-wrap: wrap;
     }
-
-    .card .list-group{
+    .card .list-group {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -306,11 +313,10 @@ body {
         align-items: center;
         justify-content: center;
     }
-    .list-group-item{
+    .list-group-item {
         margin: 10px 0px;
         font-size: 25px;
     }
-
     .btn-primary {
         background-color: #FF914D;
         color: white;
@@ -320,19 +326,16 @@ body {
         border-radius: 30px;
         width: 200px;
         font-size: 20px;
-        outline:none;
+        outline: none;
     }
-    
-    .btn-primary i{
+    .btn-primary i {
         padding: 5px;
         margin: 0px 5px;
     }
-    
     .btn-primary:hover {
         background-color: #8db469;
         color: white;
     }
-    
     .btn-danger {
         background-color: #FF914D;
         color: white;
@@ -342,14 +345,12 @@ body {
         border-radius: 30px;
         width: 200px;
         font-size: 20px;
-        outline:none;
+        outline: none;
     }
-    
-    .btn-danger i{
+    .btn-danger i {
         padding: 5px;
         margin: 0px 5px;
     }
-    
     .btn-danger:hover {
         background-color: #eb2c0a;
         color: white;
