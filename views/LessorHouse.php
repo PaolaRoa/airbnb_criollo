@@ -60,11 +60,6 @@ session_start();
                     <img src="../imagenes/<?php echo $descrip['url']?>" class="card-img-top" alt="photos">
                     <div class="card-body">
                         <h3 class="card-title"><?php echo $descrip['name'] ?></h3>
-                        <h3 class="card-title"><?php echo $descrip['direccion'] ?></h3>
-
-                        <div>
-                            <p class="card-text"><?php echo $descrip['description'] ?></p>
-                        </div>
                     </div>
 
                     <!-- House Components -->
@@ -75,6 +70,7 @@ session_start();
                         <li class="list-group-item"><i class="fas fa-parking"></i>Parqueadero: <?php echo $descrip['parking_lot'] ?> </li>
                     </ul>
 
+                   <div><h5 class="card-direction"><?php echo $descrip['direccion'] ?></h5></div>
                     <ul class="list-group-two">
                         <li class="list-group-item"><i class="fas fa-dollar-sign"></i><?php echo $descrip['price_pn'] ?> Valor por noche </li>
                     </ul>

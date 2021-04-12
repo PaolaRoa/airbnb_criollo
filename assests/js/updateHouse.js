@@ -9,10 +9,6 @@ const showhouse = (houses) => {
             <img src="../imagenes/${house.url}" class="card-img-top" alt="photos">
             <div class="card-body">
                 <h3 class="card-title">${house.name}</h3>
-                <h3 class="card-title">${house.direccion}</h3>  
-                <div>
-                    <p class="card-text">${house.description}</p>
-                </div>
             </div>
 
             <!-- House Components -->
@@ -22,6 +18,8 @@ const showhouse = (houses) => {
                 <li class="list-group-item"><i class="fas fa-wifi"></i>Zona WiFi: ${house.internet}</li>
                 <li class="list-group-item"><i class="fas fa-parking"></i>Parqueadero: ${house.parking_lot}</li>
             </ul>
+
+            <div><h5 class="card-direction">${house.direccion}</h5></div>
 
             <ul class="list-group-two">
                 <li class="list-group-item"><i class="fas fa-dollar-sign"></i>${house.price_pn} Valor por noche </li>
@@ -65,7 +63,7 @@ const editHouse = (id) => {
                 var internet = item.internet;
                 var price_pn = item.price_pn;
                 var direccion = item.direccion;
-                
+
 
                 if (parking_lot === "Si") {
                     parking_lot = `
