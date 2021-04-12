@@ -1,25 +1,23 @@
 <?php ob_start() ?>
 <?php
-
 require_once "../models/House.php";
-
 require_once "../models/AditionalServerHelp.php";
-
 require_once "../models/Imagenes.php";
-
 
 session_start();
 
 
+// VIEW MORE DETAIL HOUSE
+
 $action = $_GET['action'];
 switch ($action){
    case "detail":
-
       $houseId = $_GET['id'];
       $houseObj = new House();
       $house = $houseObj->getHouse($houseId);
       $servicesObj = new AditionalServerHelp();
       $services = $servicesObj->getHouseServices($houseId);
+
       session_start();
       $_SESSION['houseDetail'] = $house;
       $_SESSION['houseServices'] = $services;
@@ -37,13 +35,11 @@ switch ($action){
 
       default:
       break;
-
-
-
 }
 
 
-// DELETE AND EDIT HOUSE AJAX
+// DELETE AND EDIT HOUSE WITH  AJAX
+
 if (isset($_POST["typeoperation"])){
 
    $id_house = $_POST["id"];
@@ -55,20 +51,14 @@ if (isset($_POST["typeoperation"])){
       case 'delete':
          $house = new House();
          $newHouse =$house->deleteHouse($id_house,$id_lessor);
-
-         $house->setSessionHouse($_SESSION['iduser']);
+         $house->setSessionHouse($id_lessor);
          echo json_encode($newHouse);
         break;
-
         case 'edit':
          $house = new House();
          $getHouse =$house->getHouse($id_house);
-
-         
          echo json_encode($getHouse);
         break;
-
-
         case 'update':
          $id_house = $_POST["id_u"];
          $name = $_POST["name_u"];
@@ -81,17 +71,14 @@ if (isset($_POST["typeoperation"])){
          $direction = $_POST["direction_u"];
 
          $house = new House();
-
          $updateHouse = $house->updateHouse($id_house, $id_lessor,$name, $description, $num_rooms, $num_toilets, $parking_lot, $internet, $price_pn, $direction);
-
-         $house->setSessionHouse($_SESSION['iduser']);
+         $house->setSessionHouse($id_lessor);
 
          echo json_encode($updateHouse);
 
         break;
 
         case 'insert':
-
          $name_house = $_POST["title"] ;
          $description = $_POST["description"];
          $num_rooms =$_POST["habitaciones"];
@@ -101,38 +88,31 @@ if (isset($_POST["typeoperation"])){
          $price_pn=$_POST["price_noche"];
          $direction = $_POST["direction"];
 
-
          $house = new House();
          $house->setHouse($name_house, $description, $num_rooms, $num_toilets, $parking_lot, $internet,  $_SESSION['iduser'],$price_pn, $direction);
 
          $create_house=$house->createHouse();
-
          $lastid_house= $house->Last_id();
 
-         // // aditional server
+         // ADDITIONAL SERVICES
          $piscina = $_POST["piscina"];
          $limpieza = $_POST["limpieza"];
          $aire = $_POST["aire"];
          $agua = $_POST["agua"];
          $sauna = $_POST["sauna"];
 
-         $servers = array($piscina, $limpieza, $aire, $agua, $sauna);
+         $services = array($piscina, $limpieza, $aire, $agua, $sauna);
 
-         foreach($servers as $server )
+         foreach($services as $service )
          {
-               if($server != NULL){
-
-
-                  $serveradd  = new AditionalServerHelp();
+               if($service != NULL){
+                  $serviceadd  = new AditionalServerHelp();
                   // set for id service
-                  $serveradd->setServer($server);
-                  $idserver =$serveradd->idServer();
-                  // set fot add server
-                  $serveradd->setServerHelp($lastid_house["idhouses"], $idserver["idadditional_services"]);
-                  $serveradd->createServerHelp();
-
-
-
+                  $serviceadd->setService($service);
+                  $idservice =$serviceadd->idService();
+                  // set for add service
+                  $serviceadd->setServiceHelp($lastid_house["idhouses"], $idservice["idadditional_services"]);
+                  $serviceadd->createServiceHelp();
                }
          }
 
@@ -154,8 +134,6 @@ if (isset($_POST["typeoperation"])){
 
          echo json_encode($create_house);
          break;
-
-
         default:
          break;
 
@@ -171,9 +149,6 @@ else
 {
    $house = new House();
    $house->setSessionHouse($_SESSION['iduser']);
-
-   
-
    echo '<script type="text/javascript">
    window.location.href="../views/LessorHouse.php";
    </script>';
@@ -181,7 +156,7 @@ else
 
 // LOAD IMAGES
 function loadImages($nameform, $main, $lastid_house){
-   //  esta funcion falta mejorarla
+   //  THIS FUNCTION SHOULD BE BETTER
    $imagen = $_FILES[$nameform]['name'];
    $type=$_FILES[$nameform] ['type'];
    $nombre = time();

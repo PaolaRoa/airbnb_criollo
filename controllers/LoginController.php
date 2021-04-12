@@ -1,11 +1,10 @@
 <?php ob_start() ?>
-<?php 
-
+<?php
 require_once "../models/User.php";
 require_once "../models/House.php";
-require_once "../utils/funcionesvalidacion.php";
 
-$errors = array();
+
+
 
 $email = $_POST["signup-email"];
 $rawPassword = $_POST["signup-password"];

@@ -10,16 +10,16 @@ class AditionalServerHelp{
 
     }
 
-    public function setServerHelp($id_house,$id_service){
+    public function setServiceHelp($id_house,$id_service){
         $this->id_house = $id_house;
         $this->id_service = $id_service;
     }
 
-    public function setServer($server){
+    public function setService($server){
         $this->server = $server;
     }
 
-    public function idServer(){
+    public function idService(){
         $stmt = Conexion::connect()->prepare("SELECT * FROM additional_services WHERE service = '$this->server'");
         $stmt -> execute();
         $arr = $stmt->fetch();
@@ -27,7 +27,7 @@ class AditionalServerHelp{
     }
 
 
-    public function createServerHelp(){
+    public function createServiceHelp(){
         $con = Conexion::connect();
         $stmt = $con->prepare("INSERT INTO additional_services_help (houses_idhouses, idadditional_services) values('$this->id_house','$this->id_service')");
         $resp = $stmt->execute();
