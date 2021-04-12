@@ -24,16 +24,7 @@
 
     <div class="container">
 
-    <?php   if(isset( $_SESSION["msg"])) { ?>
-            <div class="alert alert-<?= $_SESSION["msg_type"];?> alert-dismissible fade show" role="alert">
-            <?= $_SESSION["msg"] ?>
-            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
-                
-            </button>
-          </div>
-          <?php session_unset();
-        }
-    ?>
+
 
 
         <div class="form">
@@ -58,6 +49,8 @@
                             <input class="text" id="signup-email" type="email" placeholder="E-mail" name="signup-email" id="signup-email" required>
                         </p>
 
+                        
+
                         <p class="fieldset">
                             <label class="image-replace cd-password" for="signup-password">Contraseña</label>
                             </Br>
@@ -68,7 +61,7 @@
 
                         </p>
 
-                        <!-- <p class="fieldset">
+                        <p class="fieldset">
                             <label class="image-replace cd-password" for="signup-password">Confirmar Contraseña</label>
                             </Br>
                             </Br>
@@ -76,7 +69,9 @@
                             <input class="password" id="signup-password_v" type="password"  placeholder="Confirma Contraseña" name="signup-password_v" id="signup-password_v" required>
                             <i class="fas fa-eye" id="show_v"></i>
 
-                        </p> -->
+                        </p>
+
+                        <div id="pwMsg"> </div>
                 </div>
                     <div>
                         <p class="fieldset">
@@ -116,7 +111,7 @@
                 </p>
 
                 <p class="fieldset">
-                    <button class="button" type="submit" onClick="PassworValidation()" style="outline">Crear cuenta</button>
+                    <button class="button" type="submit"  style="outline">Crear cuenta</button>
                 </p>
                 <p>¿Ya tienes cuenta?
                     <a class="link" href="Login.php">Iniciar Sesion</a>
