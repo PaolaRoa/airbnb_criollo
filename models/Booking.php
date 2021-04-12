@@ -53,15 +53,17 @@ class Booking{
         $con = Conexion::connect();
         $fecha= date($sDate);
         $fecha2 = date($eDate);
-        $query = "SELECT h.*, i.url 
-        FROM houses h 
+        $query = "SELECT h.*, i.url
+        FROM houses h
         left join Bookings b 
-        on h.idhouses = b.housesId 
+        on h.idhouses = b.housesId
         join images i on h.idhouses = i.houses_idhouses 
-        where (STR_TO_DATE('$fecha', '%Y,%m,%d') not between b.start_date 
-        and b.final_date) and (STR_TO_DATE('$fecha2', '%Y,%m,%d')
-        not between b.start_date and b.final_date) 
-        or h.idhouses not in (select housesId from Bookings) and i.main = 1;";
+        where 
+        ('$sDate' not between b.start_date and b.final_date
+        and '$eDate' not between b.start_date and b.final_date
+        or h.idhouses not in 
+        (select housesId from Bookings))
+        and i.main = 1;";
         $stmt = $con->prepare($query);
         $resp = $stmt->execute();
         $arrHouses = $stmt->fetchAll(PDO::FETCH_ASSOC);

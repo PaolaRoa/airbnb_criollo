@@ -28,13 +28,15 @@ function search(){
     session_start();
     $_SESSION['start_date']= $_POST['start-date'];
     $_SESSION['end_date']= $_POST['ending-date'];
+    header('Location: ../views/Lesseegalery.php');
+
     /*echo $_SESSION['start_date'];
     echo $_SESSION['end_date'];*/
     $booking = new Booking;
     $houses = $booking->getAvalaibles($_SESSION['start_date'], $_SESSION['end_date']);
     $_SESSION['houses']= $houses;
      //echo $houses;
-    header('Location: ../views/Lesseegalery.php');
+    //header('Location: ../views/Lesseegalery.php');
 
 
 }
