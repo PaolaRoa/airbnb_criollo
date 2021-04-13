@@ -8,8 +8,7 @@
     <nav class="menu">
         <ul>
             <!-- <li><a href="../views/Lesseegalery.php" >Inicio</a></li> -->
-            <li><a href="#"><i class="fas fa-home"></i>
-                    Casas</a></li>
+           
             <li><a href="#contacto"><i class="fas fa-question-circle"></i>
                     Contacto</a></li></a></li>
             <li><a href="#nosotros"><i class="fas fa-users"></i>

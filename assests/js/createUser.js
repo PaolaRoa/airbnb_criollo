@@ -11,7 +11,7 @@ if (confPw != null) {
 
 const validatePw = () => {
   if (pwT.value !== confPw.value && confPw.value.length > 0) {
-    pwMsg.innerHTML = "las contraseñas no coinciden";
+    pwMsg.innerHTML = "*las contraseñas no coinciden";
     pwMsg.classList.add("mesage");
 
     confPw.setCustomValidity("las contraseñas deben ser iguales");
