@@ -129,27 +129,20 @@ function pay(){
   );
   // Guarda y postea el pago
   $payment->save();
-  /*"status": "approved",
-  "status_detail": "accredited",
-  "id": 3055677,
-  "date_approved": "2017-02-23T00:01:10.000-04:00",
-  "payer": {
-      ...
-  },
-  "payment_method_id": "master",
-  "payment_type_id": "credit_card",
-  "refunds": [],*/
 
-  //...
   // Imprime el estado del pago
-
-  echo $payment->status;
+  $idPay = $payment->id;
+  $status= $payment->status;
+  /*echo $status.'<br>';
   echo $payment->status_detail;
   echo $payment->id;
   echo $payment->date_approved;
-  $status = $payment->status;
-  if($status == 'approved'){
-    Booking::savePayment($idproducto);
+  $payment = $payment->id;*/
+  //calls booking method to register payment
+
+
+  if($idPay!= null && $status == 'approved'){
+    Booking::savePayment($idproducto, $idPay);
     header('Location: ../views/BookingLessee.php');
   }
   else{
@@ -160,8 +153,7 @@ function pay(){
   }
   
 
-  //calls booking method to register payment
-
+  
 
 
   

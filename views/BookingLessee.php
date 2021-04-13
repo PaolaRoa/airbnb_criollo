@@ -70,6 +70,7 @@
                 $start = $houseTemp['start_date'];
                 $end = $houseTemp['final_date'];
                 $img = $houseTemp['url'];
+                $payment = $houseTemp['payment'];
                 
                 echo "        <div class='card'>
                 <!-- Data main -->
@@ -99,7 +100,7 @@
                 </ul>
 
                 <ul class='list-group-two'>
-                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i> $total Valor por noche </li>
+                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i> total : $ </li>
                 </ul>
 
                 <!-- Buttons Crud -->
@@ -109,16 +110,22 @@
                         Eliminar reserva
                     </button>
                 </a>
-                    </br>
-                </div>
-            </div>
-            <form action='../controllers/BookingController.php?action=payment&idB=$idB&total=$total' method='POST'>
-                <script
-                  src='https://www.mercadopago.com.co/integrations/v1/web-tokenize-checkout.js'
-                  data-public-key='TEST-124f0ff0-e85b-4d89-98f6-1b9b39d62bab'
-                  data-transaction-amount=$total>
-                </script>
-              </form>";
+                    </br>";
+                if($payment== null){
+                    echo "pagado";
+                }
+                else{
+                    echo "<form action='../controllers/BookingController.php?action=payment&idB=$idB&total=$total' method='POST'>
+                    <script
+                      src='https://www.mercadopago.com.co/integrations/v1/web-tokenize-checkout.js'
+                      data-public-key='TEST-124f0ff0-e85b-4d89-98f6-1b9b39d62bab'
+                      data-transaction-amount=$total>
+                    </script>
+                  </form>";
+                }
+
+              echo "</div>
+            </div>";
 
             
             

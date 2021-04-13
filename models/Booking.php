@@ -73,7 +73,7 @@ class Booking{
     }
     public function getUserBookings($iduser){
         $con = Conexion::connect();
-        $stmt = $con->prepare("SELECT h.*, b.total, b.start_date, b.final_date, b.idBookings, i.url FROM 
+        $stmt = $con->prepare("SELECT h.*, b.total, b.start_date, b.final_date, b.idBookings, b.payment, i.url FROM 
         houses h, Bookings b, images i
         where h.idhouses = b.housesId
         and h.idhouses = i.houses_idhouses
@@ -108,10 +108,10 @@ class Booking{
         return $resp;
     }
 
-    public static function savePayment($idB){
+    public static function savePayment($idB, $payment){
         $con = Conexion::connect();
         $stmt = $con -> prepare("UPDATE Bookings
-                                set payment= 1
+                                set payment= $payment
                                 where idBookings = $idB");
         $resp = $stmt->execute();
         return $resp;

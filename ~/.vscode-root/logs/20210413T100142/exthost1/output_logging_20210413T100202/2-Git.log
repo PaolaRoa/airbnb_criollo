@@ -881,3 +881,460 @@ Open repository: /opt/lampp/htdocs/airbnb_criollo
 > git remote --verbose
 > git config --get commit.template
 > git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 5df6fc723a36fc4c2394a05548c69f4522190779
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git show --textconv :controllers/BookingController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git show --textconv :controllers/BookingController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git show --textconv :controllers/BookingController.php
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git show --textconv :models/Booking.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/models/Booking.php
+> git cat-file -s 9608b09097498524d8505b5e4d903c7a630006ec
+> git show --textconv :views/Templates.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/Templates.php
+> git show --textconv :views/Lesseegalery.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/Lesseegalery.php
+> git cat-file -s 5ae6e01a6646b01c1060fdec529d6a621ecc2b2f
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git show --textconv :models/Booking.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/models/Booking.php
+> git cat-file -s 9608b09097498524d8505b5e4d903c7a630006ec
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :views/Lesseegalery.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/Lesseegalery.php
+> git cat-file -s 5ae6e01a6646b01c1060fdec529d6a621ecc2b2f
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :views/Lesseegalery.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/Lesseegalery.php
+> git cat-file -s 5ae6e01a6646b01c1060fdec529d6a621ecc2b2f
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git show --textconv :models/Booking.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/models/Booking.php
+> git cat-file -s 9608b09097498524d8505b5e4d903c7a630006ec
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git show --textconv :models/Booking.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/models/Booking.php
+> git cat-file -s 9608b09097498524d8505b5e4d903c7a630006ec
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :models/Booking.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/models/Booking.php
+> git cat-file -s 9608b09097498524d8505b5e4d903c7a630006ec
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :models/Booking.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/models/Booking.php
+> git cat-file -s 9608b09097498524d8505b5e4d903c7a630006ec
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git show --textconv :models/Booking.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/models/Booking.php
+> git cat-file -s 9608b09097498524d8505b5e4d903c7a630006ec
+> git show --textconv :controllers/BookingController.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+> git cat-file -s 8f9a7725d91073d1cc8ec4d748b2a2430b39fa67
+> git show --textconv :views/BookingLessee.php
+> git ls-files --stage -- /opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+> git cat-file -s 9e53f7559a0f1192a9729a6b0e88b878c182c264
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/mercadoPago refs/remotes/mercadoPago
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
