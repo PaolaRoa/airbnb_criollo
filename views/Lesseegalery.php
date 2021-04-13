@@ -93,6 +93,12 @@
     <!--Galery-->
     <div class="container"  id="card-house">
     <?php
+        if(count($_SESSION['houses'])===0 || !isset($_SESSION['houses'])){
+            echo '
+                <div class="container-not">
+                    <h1>No hay casas disponibles para reservar en estas fechas</h1>
+                </div>';
+        }else {
                 $houses= $_SESSION['houses'];
                 foreach ($houses as $house) {
                     $idHouse = $house['idhouses'];
@@ -125,14 +131,15 @@
 
                                     <!-- Buttons Crud -->
                                     <div class='buttons'>
-                                    <a href='../controllers/BookingController.php?action=detail&id=".$idHouse."'>
-                                                <button class='btn-primary'><i class='fas fa-eye'></i>
+                                        <a href='../controllers/BookingController.php?action=detail&id=".$idHouse."'>
+                                            <button class='btn-primary'><i class='fas fa-eye'></i>
                                                 Ver más
-                                                </button>
-                                                </a>
-                                        </br>
+                                            </button>
+                                        </a>
+                                    </br>
                                     </div>
                                 </div>";
+                    }
             
                 // $this->$email= $row['email'] <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>;
                 };

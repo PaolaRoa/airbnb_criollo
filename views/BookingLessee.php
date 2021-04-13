@@ -48,7 +48,10 @@
     <div class="container" id="card-house">
         <?php
             if(count($_SESSION['userBookings'])===0 || !isset($_SESSION['userBookings'])){
-                echo '<h1>no hay reservas registradas</h1>';
+                echo '
+                    <div class="container-not">
+                        <h1>no hay reservas registradas</h1>
+                    </div>';
             }
             else
             {
@@ -71,59 +74,52 @@
                 $img = $houseTemp['url'];
                 
                 echo "        <div class='card'>
-                <!-- Data main -->
-                <img src='../imagenes/$img' class='card-img-top' alt='photos'>
-                <div class='card-body'>
-                    <h3 class='card-title'>".$name."</h3>
+                                <!-- Data main -->
+                                <img src='../imagenes/$img' class='card-img-top' alt='photos'>
+                                <div class='card-body'>
+                                    <h3 class='card-title'>".$name."</h3>
 
-                    <div>
-                        <p class='card-text'>".$description."</p>
-                    </div>
-                </div>
+                                    <div>
+                                        <p class='card-text'>".$description."</p>
+                                    </div>
+                                </div>
 
-                <!-- House Components -->
-                <ul class='list-group'>
-                    <li class='list-group-item'><i class='fas fa-bed'></i>".$beds." Habitaciones </li>
-                    <li class='list-group-item'><i class='fas fa-bath'></i>".$bahts." Baños</li>
-                </ul>
+                                <!-- House Components -->
+                                <ul class='list-group'>
+                                    <li class='list-group-item'><i class='fas fa-bed'></i>".$beds." Habitaciones </li>
+                                    <li class='list-group-item'><i class='fas fa-bath'></i>".$bahts." Baños</li>
+                                </ul>
 
-                <div class='booking'>
-                    <div><h4>Fechas de reserva:</h4></div>
-                    <div class='booking-item'><h4>Inicio:</h4><p>$start</p></div>
-                    <div class='booking-item'><h4>Inicio:</h4><p>$end</p></div>
-                </div>
+                                <div class='booking'>
+                                    <div><h4>Fechas de reserva:</h4></div>
+                                    <div class='booking-item'><h4>Inicio:</h4><p>$start</p></div>
+                                    <div class='booking-item'><h4>Inicio:</h4><p>$end</p></div>
+                                </div>
 
-                <ul class='list-group-two'>
-                    <li class='list-group-item'><i class='fas fa-directions'></i>dirección</li>
-                </ul>
+                                <ul class='list-group-two'>
+                                    <li class='list-group-item'><i class='fas fa-directions'></i>dirección</li>
+                                </ul>
 
-                <ul class='list-group-two'>
-                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i>".$price." Valor por noche </li>
-                </ul>
+                                <ul class='list-group-two'>
+                                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i>".$price." Valor por noche </li>
+                                </ul>
 
-                <!-- Buttons Crud -->
-                <div class='buttons'>
-                <a href='../controllers/BookingController.php?action=delete&idB=$idB''>
-                    <button class='btn-danger'>
-                        Eliminar reserva
-                    </button>
-                </a>
-                    </br>
-                </div>
-            </div>";
+                                <!-- Buttons Crud -->
+                                <div class='buttons'>
+                                <a href='../controllers/BookingController.php?action=delete&idB=$idB''>
+                                    <button class='btn-danger'>
+                                        Eliminar reserva
+                                    </button>
+                                </a>
+                                </br>
+                                </div>
+                            </div>";
 
-            
-            
-            
             }
           
                // $this->$email= $row['email'] <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>;
             };
             ?>
-
-            
-
-
 
     </div>
     
