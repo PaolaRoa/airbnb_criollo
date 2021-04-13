@@ -108,4 +108,14 @@ class Booking{
         return $resp;
     }
 
+    public static function savePayment($idB){
+        $con = Conexion::connect();
+        $stmt = $con -> prepare("UPDATE Bookings
+                                set payment= 1
+                                where idBookings = $idB");
+        $resp = $stmt->execute();
+        return $resp;
+    }
+
+
 }

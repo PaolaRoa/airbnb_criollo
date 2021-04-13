@@ -116,6 +116,7 @@ function pay(){
 
   MercadoPago\SDK::setAccessToken("TEST-5491215237072949-041317-09b6896b629d0da7953cdec650c21ae4-548275510");
   //...
+  $idproducto = $_GET['idB'];
   $payment = new MercadoPago\Payment();
   $payment->transaction_amount = $_GET['total'];
   $payment->token = $token;
@@ -128,10 +129,40 @@ function pay(){
   );
   // Guarda y postea el pago
   $payment->save();
+  /*"status": "approved",
+  "status_detail": "accredited",
+  "id": 3055677,
+  "date_approved": "2017-02-23T00:01:10.000-04:00",
+  "payer": {
+      ...
+  },
+  "payment_method_id": "master",
+  "payment_type_id": "credit_card",
+  "refunds": [],*/
+
   //...
   // Imprime el estado del pago
+
   echo $payment->status;
-  //...
+  echo $payment->status_detail;
+  echo $payment->id;
+  echo $payment->date_approved;
+  $status = $payment->status;
+  if($status == 'approved'){
+    Booking::savePayment($idproducto);
+    header('Location: ../views/BookingLessee.php');
+  }
+  else{
+    echo '<script type="text/javascript">
+    alert("no se pudó procesar tu pago");
+    window.location.href="../controllers/BookingController.php?action=bookings"
+    </script>';
+  }
+  
+
+  //calls booking method to register payment
+
+
 
   
 }
