@@ -1,5 +1,17 @@
 <?php
-    /*session_start();*/
+       header('Content-Type: text/html; charset=UTF-8');
+        //Iniciar una nueva sesión o reanudar la existente.
+        session_start();
+        //si el rol es 1 es arrendatario entonces lo deja entrar
+        if (!isset($_SESSION['rol'])){
+            header('Location: ../views/Login.php');
+
+        }else if($_SESSION['rol']==1){
+            $cliente = $_SESSION['rol'];
+        }
+        else{
+            header('Location: ../views/GeneralLessor.php');//si no lo redirecciona a la vista de arrendador  
+        }
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -37,10 +49,19 @@
             <div class="House">
                 <div class="product">
                     <?php
+                        if(isset($_SESSION['bImages'])){
                             $images = $_SESSION['bImages'];
-                            $imgP = $images[0]['url'];
+                            $imgP = $images[0]['url'];  
                             $img1 = $images[1]['url'];
                             $img2 = $images[2]['url'];
+                        }
+                        else{
+                            
+                            $imgP = null;  
+                            $img1 = null;
+                            $img2 = null;
+                        }
+                            
                     ?>
                     <img id="image-box" src="../imagenes/<?php echo $imgP?>">
                 </div>
@@ -56,7 +77,11 @@
             </div>
             <div class="info">
             <?php
-                    $house = $_SESSION['houseDetail'];
+                    if(!isset($_SESSION['houseDetail'])){
+                        echo '<h1>No se pudo obtener el detalle de la casa</h1>';
+                    }
+                    else
+                    {$house = $_SESSION['houseDetail'];
                     foreach ($house as $houseTemp) {
                         $idHouse = $houseTemp['idhouses'];
                         $name=$houseTemp['name'];
@@ -99,7 +124,7 @@
                                 <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>
                                     <button>Reservar</button>
                                 <a>
-                        </div>";
+                        </div>";}
                     
                     /*$services = $_SESSION['houseServices'];
                     foreach($services as $s){
@@ -112,9 +137,13 @@
                             <h2>Servicios adicionales</h2>
                             <div class='items'>
                                 <?php
-                                    $services = $_SESSION['houseServices'];
+                                    if(!isset($_SESSION['houseServices'])){
+                                        echo '<h1>Ups!</h1>';
+                                    }
+                                    else
+                                    {$services = $_SESSION['houseServices'];
                                     foreach($services as $s){
-                                        echo "<i class='fas' id=$s></i>";}
+                                        echo "<i class='fas' id=$s></i>";}}
                                 ?>
                                 <!--<i class='fas fa-swimmer'></i>
                                 <i class='fas fa-concierge-bell'></i>
