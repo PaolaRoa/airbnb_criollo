@@ -1,0 +1,74 @@
+DEBUG     Checking PHPLS_ALLOW_XDEBUG
+DEBUG     The xdebug extension is not loaded
+
+[Info  - 10:02:03 a. m.] 33 files total
+[Info  - 10:02:03 a. m.] Indexing project for definitions and static references
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/utils/funcionesvalidacion.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/utils/conexion.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/utils/logout.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/index.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/LessorHouse.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/Lesseegalery.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/home-single.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/LesseeHouse.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/HelpLesse.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/HelpLessor.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/Login.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/LessorHouseDetail.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/NavbarRegister.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/NavbarLessee.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/Navbarlogin.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/NavbarLessor.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/Navbarindex.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/Footer.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/Newhomelessor.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/NoFound.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/GeneralLessor.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/Register.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/controllers/RegisterController.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/controllers/HouseController.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/controllers/LoginController.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/Booking.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/House.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/AditionalServerHelp.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/Imagenes.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/User.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/AditionalServer.php
+[Info  - 10:02:04 a. m.] Indexing project for dynamic references
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/utils/funcionesvalidacion.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/utils/conexion.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/utils/logout.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/index.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/LessorHouse.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/Lesseegalery.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/home-single.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/LesseeHouse.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/BookingLessee.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/HelpLesse.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/HelpLessor.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/Login.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/LessorHouseDetail.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/NavbarRegister.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/NavbarLessee.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/Navbarlogin.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/NavbarLessor.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/Navbarindex.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/layouts/Footer.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/Newhomelessor.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/NoFound.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/GeneralLessor.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/views/Register.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/controllers/RegisterController.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/controllers/HouseController.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/controllers/LoginController.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/controllers/BookingController.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/Booking.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/House.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/AditionalServerHelp.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/Imagenes.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/User.php
+Parsing file:///opt/lampp/htdocs/airbnb_criollo/models/AditionalServer.php
+[Info  - 10:02:04 a. m.] 0 Packages
+[Info  - 10:02:04 a. m.] All 33 PHP files parsed in 0 seconds. 152 MiB allocated.

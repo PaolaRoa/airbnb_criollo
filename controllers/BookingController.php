@@ -23,6 +23,8 @@ switch ($action){
     case "delete":
         delete();
         break;
+    case "payment":
+        pay();
 }
 function search(){
     session_start();
@@ -103,5 +105,39 @@ function delete(){
         </script>';
     }
 }
+
+function pay(){
+  $token = $_REQUEST["token"];
+  $payment_method_id = $_REQUEST["payment_method_id"];
+  $installments = $_REQUEST["installments"];
+  $issuer_id = $_REQUEST["issuer_id"];
+
+  require_once '../vendor/autoload.php';
+
+  MercadoPago\SDK::setAccessToken("TEST-5491215237072949-041317-09b6896b629d0da7953cdec650c21ae4-548275510");
+  //...
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = $_GET['total'];
+  $payment->token = $token;
+  $payment->description = $_GET['idB'];
+  $payment->installments = $installments;
+  $payment->payment_method_id = $payment_method_id;
+  $payment->issuer_id = $issuer_id;
+  $payment->payer = array(
+  "email" => "john@yourdomain.com"
+  );
+  // Guarda y postea el pago
+  $payment->save();
+  //...
+  // Imprime el estado del pago
+  echo $payment->status;
+  //...
+
+  
+}
+
+
+
+
 ?>
 <?php ob_end_flush();?>

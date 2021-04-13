@@ -27,6 +27,7 @@
     <link rel="stylesheet"  href="../assests/css/Navbarlessee.css">
     <link rel="stylesheet"  href="../assests/css/lesseefilter.css">
     <link rel="stylesheet" href="../assests/css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
 <body>
     <?php
@@ -84,7 +85,7 @@
                 <!-- House Components -->
                 <ul class='list-group'>
                     <li class='list-group-item'><i class='fas fa-bed'></i>".$beds." Habitaciones </li>
-                    <li class='list-group-item'><i class='fas fa-bath'></i>".$bahts." Baños</li>
+                    <li class='list-group-item'><i class='fas fa-bath'></i>".$baths." Baños</li>
                 </ul>
 
                 <div class='booking'>
@@ -98,7 +99,7 @@
                 </ul>
 
                 <ul class='list-group-two'>
-                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i>".$price." Valor por noche </li>
+                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i> $total Valor por noche </li>
                 </ul>
 
                 <!-- Buttons Crud -->
@@ -110,7 +111,14 @@
                 </a>
                     </br>
                 </div>
-            </div>";
+            </div>
+            <form action='../controllers/BookingController.php?action=payment&idB=$idB&total=$total' method='POST'>
+                <script
+                  src='https://www.mercadopago.com.co/integrations/v1/web-tokenize-checkout.js'
+                  data-public-key='TEST-124f0ff0-e85b-4d89-98f6-1b9b39d62bab'
+                  data-transaction-amount=$total>
+                </script>
+              </form>";
 
             
             
