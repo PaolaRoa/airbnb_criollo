@@ -27,6 +27,7 @@
     <link rel="stylesheet"  href="../assests/css/Navbarlessee.css">
     <link rel="stylesheet"  href="../assests/css/lesseefilter.css">
     <link rel="stylesheet" href="../assests/css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
 <body>
     <?php
@@ -72,6 +73,7 @@
                 $start = $houseTemp['start_date'];
                 $end = $houseTemp['final_date'];
                 $img = $houseTemp['url'];
+                $payment = $houseTemp['payment'];
                 
                 echo "        <div class='card'>
                                 <!-- Data main -->
@@ -84,11 +86,11 @@
                                     </div>
                                 </div>
 
-                                <!-- House Components -->
-                                <ul class='list-group'>
-                                    <li class='list-group-item'><i class='fas fa-bed'></i>".$beds." Habitaciones </li>
-                                    <li class='list-group-item'><i class='fas fa-bath'></i>".$bahts." Baños</li>
-                                </ul>
+                                 <!-- House Components -->
+                                    <ul class='list-group'>
+                                     <li class='list-group-item'><i class='fas fa-bed'></i>".$beds." Habitaciones </li>
+                                    <li class='list-group-item'><i class='fas fa-bath'></i>".$baths." Baños</li>
+                                   </ul>
 
                                 <div class='booking'>
                                     <div><h4>Fechas de reserva:</h4></div>
@@ -100,31 +102,40 @@
                                     <li class='list-group-item'><i class='fas fa-directions'></i>dirección</li>
                                 </ul>
 
-                                <ul class='list-group-two'>
-                                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i>".$price." Valor por noche </li>
-                                </ul>
+                                  <ul class='list-group-two'>
+                                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i> total : $total </li>
+                                  </ul>
 
-                                <!-- Buttons Crud -->
-                                <div class='buttons'>
-                                <a href='../controllers/BookingController.php?action=delete&idB=$idB''>
-                                    <button class='btn-danger'>
-                                        Eliminar reserva
-                                    </button>
-                                </a>
-                                </br>
-                                </div>
-                            </div>";
+                             <!-- Buttons Crud -->
+                             <div class='buttons'>
+                             <a href='../controllers/BookingController.php?action=delete&idB=$idB''>
+                                  <button class='btn-danger'>
+                                     Eliminar reserva
+                              </button>
+                                  </a>
+                                 </br>";
+                if($payment!= null){
+                    //boton que indique que ya se pago
+                    echo "pagado";
+                }
+                else{
+                    echo "<form action='../controllers/BookingController.php?action=payment&idB=$idB&total=$total' method='POST'>
+                    <script
+                      src='https://www.mercadopago.com.co/integrations/v1/web-tokenize-checkout.js'
+                      data-public-key='TEST-124f0ff0-e85b-4d89-98f6-1b9b39d62bab'
+                      data-transaction-amount=$total>
+                    </script>
+                  </form>";
+                }
 
+              echo "</div>
+            </div>";
             }
-          
-               // $this->$email= $row['email'] <a href='../controllers/BookingController.php?action=book&id=".$idHouse."'>;
             };
             ?>
 
     </div>
-    
      <!--footer-->
-     
     <?php
         include("../views/layouts/Footer.php");
     ?>
