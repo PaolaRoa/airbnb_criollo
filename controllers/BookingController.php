@@ -143,7 +143,8 @@ function pay(){
 
   if($idPay!= null && $status == 'approved'){
     Booking::savePayment($idproducto, $idPay);
-    header('Location: ../views/BookingLessee.php');
+    getBookings();
+    /*header('Location: ../views/BookingLessee.php');*/
   }
   else{
     echo '<script type="text/javascript">

@@ -100,7 +100,7 @@
                 </ul>
 
                 <ul class='list-group-two'>
-                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i> total : $ </li>
+                    <li class='list-group-item'><i class='fas fa-dollar-sign'></i> total : $total </li>
                 </ul>
 
                 <!-- Buttons Crud -->
@@ -111,7 +111,8 @@
                     </button>
                 </a>
                     </br>";
-                if($payment== null){
+                if($payment!= null){
+                    //boton que indique que ya se pago
                     echo "pagado";
                 }
                 else{
@@ -127,8 +128,6 @@
               echo "</div>
             </div>";
 
-            
-            
             
             }
           
