@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 13, 2021 at 07:50 PM
+-- Generation Time: Apr 14, 2021 at 11:28 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -66,7 +66,8 @@ CREATE TABLE `Bookings` (
   `final_date` date NOT NULL,
   `users_idusers` int(11) NOT NULL,
   `housesId` int(11) NOT NULL,
-  `total` float NOT NULL
+  `total` float NOT NULL,
+  `payment` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
