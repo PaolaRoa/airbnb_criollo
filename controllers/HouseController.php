@@ -29,6 +29,8 @@ switch ($action){
 
       $_SESSION['houseImagesMain'] = $imagenMain;
       $_SESSION['houseImagesHelp'] = $imagenHelp;
+      
+    
 
       header('Location: ../views/LessorHouseDetail.php');
       break;
@@ -36,6 +38,8 @@ switch ($action){
       default:
       break;
 }
+
+
 
 
 // DELETE AND EDIT HOUSE WITH  AJAX
