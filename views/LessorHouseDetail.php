@@ -22,7 +22,7 @@
     <title>¡House rent Armenia!</title>
     <!-- FONT AWESOEM-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
+        
     <link rel="stylesheet"  href="../assests/css/Navbarlessee.css">
     <link rel="stylesheet"  href="../assests/css/Lessehouse.css">
     <link rel="stylesheet" href="../assests/css/footer.css">
@@ -76,6 +76,7 @@
                         $price = $houseTemp['price_pn'];
                         $parking = $houseTemp['parking_lot'];
                         $internet = $houseTemp['internet'];
+                        $direction = $houseTemp['direccion'];
                         echo "
                         <h1>$name</h1>
                         <p>$description</p>
@@ -99,23 +100,22 @@
                         </div>
                         <div class='direction'>
                                 <h3>Dirección:</h3>
-                                <p>Carrera 16 #7-09 Bogota</p>
-                                
+                                <p> $direction</p>
                         </div>
                         <div class='price'>
                                 <h3>Precio:</h3>
                                 <p>$price</p>
-                                <a href=''>
-                                    <button>Actualizar servicios</button>
-                                <a>
+                                
+                                    <button onclick = 'editServices($idHouse)'>Actualizar servicios</button>
+                                
                         </div>";
 
 
                     }
                 ?>
-                        <div class='data-two'>
+                        <div class='data-two' >
                             <h2>Servicios adicionales</h2>
-                            <div class='items'>
+                            <div class='items' id="data-two">
                                 <?php
                                     $services = $_SESSION['houseServices'];
                                     foreach($services as $s){
@@ -127,12 +127,17 @@
                 </div>
 
 
-
      <!--Footer-->
      <?php
         include("../views/layouts/Footer.php");
     ?>
+
+
+   
     <script src="../assests/js/imageHouse.js"></script>
     <script src="../assests/js/setIconService.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    
 </body>
 </html>

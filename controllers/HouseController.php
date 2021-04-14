@@ -29,6 +29,8 @@ switch ($action){
 
       $_SESSION['houseImagesMain'] = $imagenMain;
       $_SESSION['houseImagesHelp'] = $imagenHelp;
+      
+    
 
       header('Location: ../views/LessorHouseDetail.php');
       break;
@@ -36,6 +38,8 @@ switch ($action){
       default:
       break;
 }
+
+
 
 
 // DELETE AND EDIT HOUSE WITH  AJAX
@@ -163,7 +167,7 @@ function loadImages($nameform, $main, $lastid_house){
    $url = $nombre."-".$imagen;
    $storage_img=$_SERVER['DOCUMENT_ROOT'];
 
-      if ( $type=='image/png'||$type=='image/jpeg'||$type=='image/jpg'||$type=='image/gif') {
+      if ( $type=='image/png'||$type=='image/jpeg'||$type=='image/jpg') {
          $temp  = $_FILES[$nameform]['tmp_name'];
          $Imagen = new Imagenes();
          $Imagen->setImagen($url, $main , $lastid_house);

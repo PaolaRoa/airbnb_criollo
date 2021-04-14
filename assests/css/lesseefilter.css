@@ -83,15 +83,36 @@ form {
 
 /* --------------- */
 .container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
+    /* width: 85%; */
+    margin: auto;
+    justify-content: center;
     height: calc(100% - 200px);
 }
 
+.container .container-not{
+    height: calc(77vh - 200px);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.container .container-not h1{
+    font-family: 'Satisfy', cursive;
+    color: #FF914D;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+
 .card {
+    width: 30%;
     height: auto;
     border-radius: 30px;
     box-shadow: -2px 9px 16px 0px rgb(0 0 0 / 27%);
@@ -227,7 +248,7 @@ form {
 .card .buttons{
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	align-content: stretch;
@@ -344,46 +365,52 @@ form {
     }
 }
 
+
 @media (max-width: 1005px) {
     .container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
         flex-wrap: wrap;
+        align-content: space-between;
+        /* width: 85%; */
+        margin: auto;
+        justify-content: center;
         height: calc(100% - 200px);
     }
 }
 
 @media (max-width: 800px) {
     .container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
         flex-wrap: wrap;
+        align-content: space-between;
+        /* width: 85%; */
+        margin: auto;
+        justify-content: center;
         height: calc(100% - 200px);
     }
 }
 
 @media (width: 768px) {
     .container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
         flex-wrap: wrap;
+        align-content: space-between;
+        /* width: 85%; */
+        margin: auto;
+        justify-content: center;
         height: calc(100% - 200px);
     }
 }
 
 @media (width: 1024px) {
     .container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
         flex-wrap: wrap;
+        align-content: space-between;
+        /* width: 85%; */
+        margin: auto;
+        justify-content: center;
+        height: calc(100% - 200px);
     }
 
     .card .list-group{
@@ -446,3 +473,32 @@ form {
     }
 }
 
+@media (max-width: 1400px){
+    .card {
+        width: 40%;
+        height: auto;
+        border-radius: 30px;
+        box-shadow: -2px 9px 16px 0px rgb(0 0 0 / 27%);
+        overflow: hidden;
+        margin: 20px;
+        font-family: 'Arial, Helvetica, sans-serif';
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 700px){
+    .card {
+        width: 90%;
+        height: auto;
+        border-radius: 30px;
+        box-shadow: -2px 9px 16px 0px rgb(0 0 0 / 27%);
+        overflow: hidden;
+        margin: 20px;
+        font-family: 'Arial, Helvetica, sans-serif';
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        font-size: 15px;
+    }
+}
