@@ -43,6 +43,10 @@ class AditionalServerHelp{
         return $arr;
     }
 
+    // public function setSessionService($idhouse){
+    //     $_SESSION['houseServices'] =$this->getHouseServices($id_house);
+    // }
+
 
     // public function getServices($iduser){
     //     $con = Conexion::connect();
