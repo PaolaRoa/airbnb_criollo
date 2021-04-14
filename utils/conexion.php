@@ -1,13 +1,12 @@
 <?php
-    $url = parse_url(getenv("mysql://us-cdbr-east-03.cleardb.com/heroku_1db393ffc316d6b=true"));
-
-    $servername = $url["us-cdbr-east-03.cleardb.com"];
     
-    $username = $url["b929cd0fbe4485"];
+    $servername = "us-cdbr-east-03.cleardb.com";
     
-    $password = $url["e5cdb617"];
+    $username = "b929cd0fbe4485";
     
-    $db = substr($url["path"], 1);
+    $password = "e5cdb617";
+    
+    $db = "heroku_1db393ffc316d6b";
 
 class Conexion{
 
