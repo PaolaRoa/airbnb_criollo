@@ -55,32 +55,33 @@
 
             <div class="form">
     
-                <form class="cd-form" method="POST" action="../controllers/LoginController.php">
+                <form class="cd-form" method="POST" action="../controllers/EmailControlerLessee.php">
                     <p class="fieldset">
-                        <label class="image-replace cd-email" for="signup-asunto"></label>
-
-
-                        <i class="fas fa-pencil-alt"></i> <input class="text" id="signup-email" type="email" placeholder="Asunto" name="signup-email" id="signup-email" required>
+                        <i class="fas fa-file-signature"></i>
+                        <input class="text" type="text" placeholder="Nombre" name="name"  required>
+                    </p>
+                    <p class="fieldset">
+                        <i class="fas fa-envelope"></i>
+                        <input class="text" type="email" placeholder="Email" name="email"  required>
+                    </p>
+                    <p class="fieldset">
+                      <i class="fas fa-pencil-alt"></i>
+                      <input class="text" type="text" placeholder="Asunto" name="business"  required>
                     </p>
                     </br>
-                    </br>
-                    </br>
                     <p class="fieldset">
-                        <label class="image-replace cd-password" for="signup-password"></label>
-
                         <i class="fas fa-envelope-open-text"></i>
-
-
-                        <input class="text" id="signup-password" type="text" placeholder="Mensaje " name="signup-password" id="signup-password" required>
+                        <textarea type="text" placeholder="Mensaje " name="msj"  required></textarea>
                     </p>
                     </br>
                     </br>
                     <p class="fieldset">
                         <input class="button" type="submit" value="Enviar">
                     </p>
-                    <p>¿Deseas comunicarte directamente con un asesor?
+                    <p class="tranks">¡Gracias por comunicar te con nosotros!</p>
+                    <!-- <p>¿Deseas comunicarte directamente con un asesor?
                         <a class="link" href="../views/Register.php">haz clic aquí</a>
-                    </p>
+                    </p> -->
                 </form>
 
             </div>
