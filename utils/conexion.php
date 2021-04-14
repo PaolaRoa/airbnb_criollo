@@ -5,7 +5,7 @@
     
     $username = $url["b929cd0fbe4485"];
     
-    $password = $url["e5cdb617 "];
+    $password = $url["e5cdb617"];
     
     $db = substr($url["path"], 1);
 
