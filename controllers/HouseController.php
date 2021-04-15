@@ -160,6 +160,9 @@ else
 
 // LOAD IMAGES
 function loadImages($nameform, $main, $lastid_house){
+
+
+
    //  THIS FUNCTION SHOULD BE BETTER
    $imagen = $_FILES[$nameform]['name'];
    $type=$_FILES[$nameform] ['type'];
