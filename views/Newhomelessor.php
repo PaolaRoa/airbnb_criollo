@@ -174,21 +174,7 @@
                         </p>
                    </div>
         </form>
-        <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>  
-                    <script type="text/javascript">  
-                        var myWidget = cloudinary.createUploadWidget({
-                        cloudName: 'hb9dmhdvu', 
-                        uploadPreset: 'ml_default'}, (error, result) => { 
-                            if (!error && result && result.event === "success") { 
-                                console.log('Done! Here is the image info: ', result.info); 
-                                     }
-                                        }
-                                        )
 
-                                document.getElementById("main-picture").addEventListener("click", function(){
-                                myWidget.open();
-                                 }, false);
-                                </script>
 
     </div> <!-- cd-signup -->
     </div>

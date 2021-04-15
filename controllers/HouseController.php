@@ -163,6 +163,7 @@ function loadImages($nameform, $main, $lastid_house){
 
 
 
+
    //  THIS FUNCTION SHOULD BE BETTER
    $imagen = $_FILES[$nameform]['name'];
    $type=$_FILES[$nameform] ['type'];
@@ -176,7 +177,14 @@ function loadImages($nameform, $main, $lastid_house){
          $Imagen->setImagen($url, $main , $lastid_house);
          $Imagen->createImagenMain();
 
-         move_uploaded_file($temp,$storage_img."/"."airbnb_criollo"."/"."imagenes"."/".$url);
+         //move_uploaded_file($temp,$storage_img."/"."airbnb_criollo"."/"."imagenes"."/".$url);
+
+         //trying cloudinary
+
+         $cloudinary->uploadApi()->upload($temp, 
+         ["public_id" => $url]);
+
+
       }
       else{
          echo "formato no permitido";
